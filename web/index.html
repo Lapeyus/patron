@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Prevent the browser from requesting /favicon.ico (avoids 404 noise). -->
+	    <link rel="icon" href="data:,">
+	    <title>Catálogo Patrón</title>
+	    <style>
+        :root {
+            --primary: #222;
+            --secondary: #717171;
+            --accent: #e51d53;
+            --bg: #fff;
+            --card-bg: #fff;
+            --border: #dddddd;
+        }
+
+        body {
+            font-family: "Circular", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+            background: #fff;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            height: 100dvh;
+            color: var(--primary);
+        }
+
+        #filters-backdrop {
+            display: none;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 280px;
+            background: #fff;
+            border-right: 1px solid var(--border);
+            padding: 24px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            z-index: 10;
+            scrollbar-width: thin;
+        }
+
+        .filters-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .filters-close {
+            display: none;
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            color: #333;
+            flex: 0 0 auto;
+        }
+
+        .filters-toggle {
+            display: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+            color: #222;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        aside h2 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 700;
+            color: #ff385c;
+        }
+
+        .filter-group h3 {
+            margin: 0 0 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            color: var(--secondary);
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .filter-group label:hover {
+            color: var(--primary);
+        }
+
+        .filter-group input {
+            width: 16px;
+            height: 16px;
+            accent-color: #222;
+            cursor: pointer;
+        }
+
+        /* Main Grid */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 40px;
+            overflow: hidden;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+
+        .controls input {
+            padding: 12px 16px;
+            border-radius: 40px;
+            border: 1px solid var(--border);
+            width: 300px;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .controls input:focus {
+            outline: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-color: #222;
+        }
+
+        .controls select {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #stats {
+            padding: 10px;
+            color: #666;
+        }
+
+        .lang-select {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            overflow-y: auto;
+            padding-right: 10px;
+            padding-bottom: 40px;
+        }
+
+        /* Modern Card */
+        .card {
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .card-img-container {
+            position: relative;
+            aspect-ratio: 3/4;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f7f7f7;
+            margin-bottom: 10px;
+        }
+
+        .card-img-container img.main-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card-img-container video.main-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card:hover .card-img-container img.main-img {
+            transform: scale(1.05);
+        }
+
+        .card-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .age {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #717171;
+        }
+
+        .price {
+            font-size: 14px;
+            color: #222;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 6px;
+        }
+
+        .pill {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: #f1f1f1;
+            color: #444;
+        }
+
+        .media-counter {
+            position: absolute;
+            left: 8px;
+            bottom: 8px;
+            display: flex;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+            pointer-events: none;
+        }
+
+        .media-counter .mc-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+        }
+
+        .media-counter .mc-icon {
+            width: 14px;
+            height: 14px;
+            flex: 0 0 auto;
+            display: inline-block;
+        }
+
+        /* Lightbox Enhanced -> Profile Modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        #lightbox.active {
+            display: flex;
+        }
+
+        .lb-content {
+            display: flex;
+            width: 90%;
+            height: 90%;
+            max-width: 1100px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .lb-media {
+            flex: 1.5;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .lb-media img,
+        .lb-media video {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .lb-details {
+            flex: 1;
+            min-width: 350px;
+            background: #fff;
+            padding: 32px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .lb-close {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            /* On the image side? No, maybe top right of modal */
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 40px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 40px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        /* Put close button on top right of WHOLE modal */
+        #lb-close-global {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 36px;
+            height: 36px;
+            background: #f0f0f0;
+            color: #333;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 20;
+        }
+
+        #lb-close-global:hover {
+            background: #e0e0e0;
+        }
+
+        .lb-header {
+            margin-bottom: 24px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 16px;
+        }
+
+        .lb-header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .lb-header p {
+            margin: 4px 0 0;
+            color: #717171;
+        }
+
+        .lb-section {
+            margin-bottom: 24px;
+        }
+
+        .lb-section h3 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #222;
+            margin-bottom: 12px;
+        }
+
+        .reviews-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        .reviews-list li {
+            margin: 0;
+            padding: 14px 54px 12px 14px;
+            border-radius: 14px;
+            border: 1px solid #eee;
+            border-left: 4px solid rgba(229, 29, 83, 0.55);
+            background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reviews-list li::before {
+            content: "“";
+            position: absolute;
+            top: 4px;
+            right: 14px;
+            font-size: 56px;
+            line-height: 1;
+            color: rgba(229, 29, 83, 0.14);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .review-text {
+            white-space: pre-line;
+            line-height: 1.55;
+            color: #333;
+        }
+
+        .reviews-count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #222;
+            background: #f2f2f2;
+            border: 1px solid #e7e7e7;
+        }
+
+        .lb-attr-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .lb-attr {
+            font-size: 14px;
+        }
+
+        .lb-attr span {
+            display: block;
+        }
+
+        .lb-attr .k {
+            color: #717171;
+            font-size: 12px;
+        }
+
+        .lb-attr .v {
+            color: #222;
+            font-weight: 500;
+        }
+
+        .lb-price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f9f9f9;
+            font-size: 14px;
+        }
+
+        .lb-price-item .amt {
+            font-weight: 600;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .price-table th,
+        .price-table td {
+            text-align: left;
+            padding: 8px 4px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .price-table th {
+            font-weight: 600;
+            color: #555;
+        }
+
+        .price-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        /* Key/value tables inside extraction (e.g., other_attributes) should not right-align values. */
+        .kv-table td:last-child {
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .lb-thumbs {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            transform: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            gap: 8px;
+            padding: 8px 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 16px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            z-index: 5;
+        }
+
+        .lb-thumbs::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .lb-thumbs::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+        }
+
+        .lb-thumbs::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 999px;
+        }
+
+        .lb-thumb {
+            width: 40px;
+            height: 40px;
+            flex: 0 0 auto;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            opacity: 0.7;
+            border: 2px solid transparent;
+        }
+
+        .lb-thumb.active {
+            opacity: 1;
+            border-color: white;
+        }
+
+        .lb-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            background: rgba(0, 0, 0, 0.45);
+            color: #fff;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 6;
+            font-size: 24px;
+            line-height: 1;
+            padding: 0;
+            user-select: none;
+            backdrop-filter: blur(6px);
+        }
+
+        .lb-nav:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .lb-nav:active {
+            transform: translateY(-50%) scale(0.97);
+        }
+
+        .lb-nav:focus-visible {
+            outline: 2px solid rgba(255, 255, 255, 0.9);
+            outline-offset: 2px;
+        }
+
+        .lb-nav-left {
+            left: 16px;
+        }
+
+        .lb-nav-right {
+            right: 16px;
+        }
+
+        .cta-btn {
+            display: block;
+            background: #25D366;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        /* Password gate modal (blocks catalog load until authenticated) */
+        #auth-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.72);
+            z-index: 3000;
+            padding: 24px;
+        }
+
+        #auth-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .auth-modal {
+            width: min(520px, 100%);
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+        }
+
+        .auth-header {
+            padding: 18px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .auth-header h3 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: #222;
+        }
+
+        .auth-body {
+            padding: 18px 20px 20px;
+        }
+
+        .auth-subtitle {
+            margin: 0 0 14px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .auth-input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        .auth-input:focus {
+            border-color: #222;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .auth-remember {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #444;
+            margin: 8px 0 12px;
+            user-select: none;
+        }
+
+        .auth-remember input {
+            width: 16px;
+            height: 16px;
+            accent-color: #222;
+        }
+
+        .auth-error {
+            min-height: 18px;
+            margin: 6px 0 10px;
+            color: #c81d4d;
+            font-size: 13px;
+        }
+
+        .auth-btn {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .auth-btn.primary {
+            border-color: #222;
+            background: #222;
+            color: #fff;
+        }
+
+        .auth-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        /* Legal disclaimer modal (shown after authentication) */
+        #disclaimer-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: 2000;
+            padding: 24px;
+        }
+
+        #disclaimer-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .disclaimer-modal {
+            width: min(720px, 100%);
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+        }
+
+        .disclaimer-header {
+            padding: 18px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .disclaimer-header h3 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: #222;
+        }
+
+        .disclaimer-close {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .disclaimer-body {
+            padding: 18px 20px;
+            max-height: min(65vh, 520px);
+            overflow: auto;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .disclaimer-body p {
+            margin: 0 0 12px;
+        }
+
+        .disclaimer-footer {
+            padding: 14px 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .disclaimer-btn {
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .disclaimer-btn.primary {
+            border-color: #222;
+            background: #222;
+            color: #fff;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                flex-direction: column;
+                height: 100vh;
+                height: 100dvh;
+            }
+
+            #filters-backdrop {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.55);
+                z-index: 900;
+            }
+
+            #filters-backdrop.active {
+                display: block;
+            }
+
+            aside {
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: min(340px, 88vw);
+                border-right: 1px solid var(--border);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+                transform: translateX(-110%);
+                transition: transform 0.22s ease;
+                z-index: 950;
+            }
+
+            aside.active {
+                transform: translateX(0);
+            }
+
+            .filters-close {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .filters-toggle {
+                display: inline-block;
+            }
+
+            main {
+                padding: 16px;
+                overflow: hidden;
+            }
+
+            .controls {
+                flex-wrap: wrap;
+                gap: 10px;
+                align-items: stretch;
+                justify-content: flex-start;
+            }
+
+            .controls input {
+                width: 100%;
+                flex: 1 1 100%;
+            }
+
+            .controls select,
+            .lang-select,
+            .filters-toggle {
+                flex: 1 1 auto;
+            }
+
+            #stats {
+                padding: 0;
+                flex: 1 1 100%;
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                gap: 16px;
+                padding-right: 0;
+            }
+
+            body.filters-open .grid {
+                overflow: hidden;
+            }
+
+            .lb-content {
+                flex-direction: column;
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .lb-media {
+                height: 40vh;
+                flex: none;
+            }
+
+            .lb-details {
+                flex: 1;
+                min-width: 0;
+                padding: 20px;
+            }
+
+            .lb-header h1 {
+                font-size: 22px;
+            }
+
+            .lb-attr-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="filters-backdrop" onclick="closeFilters()"></div>
+    <aside id="filters">
+	        <div class="filters-top">
+	            <h2 id="app-title">Comunidad Patrón</h2>
+	            <button id="filters-close" class="filters-close" type="button" aria-label="Cerrar filtros" onclick="closeFilters()">&times;</button>
+	        </div>
+        <!-- Filters -->
+    </aside>
+
+    <main>
+        <div class="controls">
+            <button id="filters-toggle" class="filters-toggle" type="button" aria-label="Abrir filtros" onclick="openFilters()">Filtros</button>
+            <input type="text" id="searchInput" placeholder="Buscar..." oninput="render()">
+            <select id="sortSelect" onchange="render()">
+                <option value="newest">Más recientes</option>
+                <option value="price_asc">Precio menor a mayor</option>
+                <option value="price_desc">Precio mayor a menor</option>
+            </select>
+            <select id="langSelect" class="lang-select" onchange="setLanguage(this.value)" aria-label="Idioma">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+            <div id="stats"></div>
+        </div>
+        <div class="grid" id="grid"></div>
+    </main>
+
+    <!-- Modal -->
+	    <div id="lightbox" onclick="if(event.target===this) closeProfile()">
+	        <div class="lb-content">
+	            <div id="lb-close-global" onclick="closeProfile()">&times;</div>
+	            <div class="lb-media">
+	                <img id="lb-main-img" src="" style="display:none">
+	                <video id="lb-main-video" controls style="display:none" playsinline></video>
+                    <button id="lb-nav-left" class="lb-nav lb-nav-left" type="button" aria-label="Mover a la izquierda" onclick="cycleMedia(-1)">‹</button>
+                    <button id="lb-nav-right" class="lb-nav lb-nav-right" type="button" aria-label="Mover a la derecha" onclick="cycleMedia(1)">›</button>
+	                <div id="lb-thumbs" class="lb-thumbs"></div>
+	            </div>
+	            <div class="lb-details" id="lb-details-content">
+	                <!-- details -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Password gate (blocks catalog load until authenticated) -->
+    <div id="auth-overlay" role="dialog" aria-modal="true" aria-label="Autenticación requerida">
+        <div class="auth-modal" onclick="event.stopPropagation()">
+            <div class="auth-header">
+                <h3 id="auth-title">Acceso</h3>
+                <select id="auth-lang-select" class="lang-select" onchange="setLanguage(this.value)" aria-label="Idioma">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div class="auth-body">
+                <p class="auth-subtitle" id="auth-subtitle">Ingrese la contraseña para ver el catálogo.</p>
+                <form id="auth-form">
+                    <input id="auth-password" class="auth-input" type="password" autocomplete="current-password" placeholder="Contraseña" required>
+                    <label class="auth-remember">
+                        <input id="auth-remember" type="checkbox">
+                        <span id="auth-remember-label">Recordar en este dispositivo</span>
+                    </label>
+                    <div id="auth-error" class="auth-error" aria-live="polite"></div>
+                    <button id="auth-submit" class="auth-btn primary" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal disclaimer (shown after authentication) -->
+    <div id="disclaimer-overlay" role="dialog" aria-modal="true" aria-label="Aviso legal">
+        <div class="disclaimer-modal" onclick="event.stopPropagation()">
+            <div class="disclaimer-header">
+                <h3 id="disclaimer-title">Aviso legal</h3>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <select id="disclaimer-lang-select" class="lang-select" onchange="setLanguage(this.value)" aria-label="Idioma">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <button class="disclaimer-close" id="disclaimer-close" type="button" aria-label="Cerrar">&times;</button>
+                </div>
+            </div>
+            <div class="disclaimer-body">
+                <p id="disclaimer-p1">La comunidad y red social denominada "Club Patrón" confirma que todas las personas participantes en la red son mayores de 18 años, actúan de manera voluntaria y están en pleno uso de sus facultades. El operador de este correo electrónico no participa, no media y no obtiene beneficios de los acuerdos realizados por las participantes. Nos oponemos firmemente a la trata de personas, la pornografía infantil y la pedofilia.</p>
+                <p id="disclaimer-p2">Se advierte a los miembros y destinatarios de este correo que toda comunicación transmitida mediante este medio está protegida bajo el secreto de las comunicaciones según el artículo 24 de la Constitución. La divulgación, exposición, reenvío o compartición de esta comunicación a terceros sin el debido consentimiento constituye un delito de violación de correspondencia o comunicaciones, tipificado en el artículo 196 del Código Penal.</p>
+                <p id="disclaimer-p3">Asimismo, todas las imágenes, actualizaciones o documentos adjuntos a los correos enviados por "Club Patrón" están protegidos bajo derechos reservados de imagen. Cualquier divulgación o uso indebido de estos materiales sin autorización previa puede resultar en un delito de violación de datos personales, conforme al artículo 196 bis del Código Penal.</p>
+            </div>
+            <div class="disclaimer-footer">
+                <button class="disclaimer-btn primary" id="disclaimer-accept" type="button">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let catalog = [];
+        let filters = {};
+        let activeFilters = {};
+        let dataLoaded = false;
+        const ENRICHED_DATA_PATH = "catalog.json";
+        const MEDIA_BASE_PATH = "";
+        const AUTH_SHA256_B64 = "bnU6awo3zRAyyZG6FnzuWW25rcozFi6p5IoLqGxNrtM=";
+        const AUTH_STORAGE_KEY = "patron_auth_sha256_b64_v1";
+        const LANG_STORAGE_KEY = "patron_lang_v1";
+        const ASK_CONTACT_WHATSAPP_E164 = "50684098222";
+        let currentLang = "es";
+        const CATEGORY_FILTER_VALUES = {
+            nuevos_ingresos: "Solo nuevos ingresos",
+            sin_experiencia: "Solo sin experiencia",
+            cortesia: "Solo cortesía",
+            nuevas_fotos_videos: "Solo nuevas fotos/videos",
+        };
+
+        const I18N = {
+            es: {
+                page: { title: "Catálogo Patrón" },
+                app: { title: "Comunidad Patrón" },
+                lang: { aria: "Idioma" },
+                controls: {
+                    searchPlaceholder: "Buscar...",
+                    sortNewest: "Más recientes",
+                    sortPriceAsc: "Precio menor a mayor",
+                    sortPriceDesc: "Precio mayor a menor",
+                    statsFound: "{count} encontrados",
+                },
+                nav: {
+                    left: "Mover a la izquierda",
+                    right: "Mover a la derecha",
+                },
+                common: {
+                    unknown: "Desconocido",
+                    yes: "Sí",
+                    no: "No",
+                },
+                ui: {
+                    filters: "Filtros",
+                    openFiltersAria: "Abrir filtros",
+                    closeFiltersAria: "Cerrar filtros",
+                },
+                filters: {
+                    location: "Ubicación",
+                    age: "Edad",
+                    newArrivals: "Nuevos ingresos",
+                    noExperience: "Sin experiencia",
+                    courtesy: "Perfiles de cortesía",
+                    newMedia: "Perfiles con nuevas fotos - videos",
+                    categories: "Categorías",
+                    categoryNewArrivalsOnly: "Solo nuevos ingresos",
+                    categoryNoExperienceOnly: "Solo sin experiencia",
+                    categoryCourtesyOnly: "Solo cortesía",
+                    categoryNewMediaOnly: "Solo nuevas fotos/videos",
+                },
+                edad_labels: {
+                    "7 - Perfiles - 18 - 19 - 20 años": "18 - 20 años",
+                    "8 - Perfiles - 21- 30 años": "21 - 30 años",
+                    "9 - Perfiles - 31 - 40 años": "31 - 40 años",
+                },
+                media: {
+                    photos: "Fotos",
+                    videos: "Videos",
+                },
+                profile: {
+                    ageCard: "{age} años",
+                    ageSubtitle: "{age} años",
+                },
+                sections: {
+                    extraction: "Perfil",
+                    attributes: "Atributos",
+                    rates: "Tarifas",
+                    services: "Servicios",
+                    contact: "Contacto",
+                    reviews: "Reseñas",
+                },
+                table: {
+                    service: "Servicio",
+                    amount: "Monto",
+                },
+                contact: {
+                    whatsapp: "WhatsApp",
+                    phone: "Tel",
+                    email: "Email",
+                    social: "Redes",
+                    notes: "Notas",
+                    whatsappCta: "Abrir WhatsApp",
+                    askForContactCta: "Solicitar contacto",
+                    whatsappMessage: "Hola, vi tu perfil en {app}. ¿Podemos coordinar?",
+                    whatsappMessageWithName: "Hola {name}, vi tu perfil en {app}. ¿Podemos coordinar?",
+                    askForContactMessage: "Hola Patron, quiero contactar a {profile}.\n- Me llamo # \n-el celular desde donde le escribire es: \n-Fecha aproximada de la cita es: ",
+                    call: "Llamar {phone}",
+                },
+                extraction_labels: {
+                    name: "Nombre",
+                    age: "Edad",
+                    height: "Altura",
+                    weight: "Peso",
+                    measurements: "Medidas",
+                    hair_color: "Color de cabello",
+                    eye_color: "Color de ojos",
+                    location: "Ubicación",
+                    availability: "Disponibilidad",
+                    contact: "Contacto",
+                    prices: "Tarifas",
+                    implants: "Implantes",
+                    uber: "Uber",
+                    cosmetic_surgeries: "Cirugías cosméticas",
+                    other_attributes: "Otros atributos",
+                },
+                price_slots: {
+                    one_hour: "1 hora",
+                    two_hours: "2 horas",
+                    three_hours: "3 horas",
+                    overnight: "Toda la noche",
+                },
+                durations: {
+                    one_hour: { label: "1 hora", short: "1h" },
+                    two_hours: { label: "2 horas", short: "2h" },
+                    three_hours: { label: "3 horas", short: "3h" },
+                    overnight: { label: "Toda la noche", short: "Noche" },
+                },
+                auth: {
+                    ariaLabel: "Autenticación requerida",
+                    title: "Acceso",
+                    subtitle: "Ingrese la contraseña para ver el catálogo.",
+                    passwordPlaceholder: "Contraseña",
+                    remember: "Recordar en este dispositivo",
+                    unlock: "Entrar",
+                    required: "Ingrese la contraseña.",
+                    wrong: "Contraseña incorrecta.",
+                    error: "Error de autenticación.",
+                    webcryptoUnavailable: "WebCrypto no disponible. Abra con https o http://localhost.",
+                },
+                disclaimer: {
+                    ariaLabel: "Aviso legal",
+                    title: "AVISO LEGAL",
+                    closeAria: "Cerrar",
+                    p1: "La comunidad y red social denominada \"Club Patrón\" confirma que todas las personas participantes en la red son mayores de 18 años, actúan de manera voluntaria y están en pleno uso de sus facultades. El operador de este correo electrónico no participa, no media y no obtiene beneficios de los acuerdos realizados por las participantes. Nos oponemos firmemente a la trata de personas, la pornografía infantil y la pedofilia.",
+                    p2: "Se advierte a los miembros y destinatarios de este correo que toda comunicación transmitida mediante este medio está protegida bajo el secreto de las comunicaciones según el artículo 24 de la Constitución. La divulgación, exposición, reenvío o compartición de esta comunicación a terceros sin el debido consentimiento constituye un delito de violación de correspondencia o comunicaciones, tipificado en el artículo 196 del Código Penal.",
+                    p3: "Asimismo, todas las imágenes, actualizaciones o documentos adjuntos a los correos enviados por \"Club Patrón\" están protegidos bajo derechos reservados de imagen. Cualquier divulgación o uso indebido de estos materiales sin autorización previa puede resultar en un delito de violación de datos personales, conforme al artículo 196 bis del Código Penal.",
+                    accept: "Entendido",
+                },
+            },
+            en: {
+                page: { title: "Patron Catalog" },
+                app: { title: "Patrón Community" },
+                lang: { aria: "Language" },
+                controls: {
+                    searchPlaceholder: "Search...",
+                    sortNewest: "Newest",
+                    sortPriceAsc: "Price Low-High",
+                    sortPriceDesc: "Price High-Low",
+                    statsFound: "{count} found",
+                },
+                nav: {
+                    left: "Move left",
+                    right: "Move right",
+                },
+                common: {
+                    unknown: "Unknown",
+                    yes: "Yes",
+                    no: "No",
+                },
+                ui: {
+                    filters: "Filters",
+                    openFiltersAria: "Open filters",
+                    closeFiltersAria: "Close filters",
+                },
+                filters: {
+                    location: "Location",
+                    age: "Age",
+                    newArrivals: "New arrivals",
+                    noExperience: "No experience",
+                    courtesy: "Courtesy profiles",
+                    newMedia: "New photos/videos",
+                    categories: "Categories",
+                    categoryNewArrivalsOnly: "New arrivals only",
+                    categoryNoExperienceOnly: "No experience only",
+                    categoryCourtesyOnly: "Courtesy only",
+                    categoryNewMediaOnly: "New photos/videos only",
+                },
+                edad_labels: {
+                    "7 - Perfiles - 18 - 19 - 20 años": "18 - 20 yrs",
+                    "8 - Perfiles - 21- 30 años": "21 - 30 yrs",
+                    "9 - Perfiles - 31 - 40 años": "31 - 40 yrs",
+                },
+                media: {
+                    photos: "Photos",
+                    videos: "Videos",
+                },
+                profile: {
+                    ageCard: "{age} years old",
+                    ageSubtitle: "{age} years old",
+                },
+                sections: {
+                    extraction: "Extraction",
+                    attributes: "Attributes",
+                    rates: "Rates",
+                    services: "Services",
+                    contact: "Contact",
+                    reviews: "Reviews",
+                },
+                table: {
+                    service: "Service",
+                    amount: "Amount",
+                },
+                contact: {
+                    whatsapp: "WhatsApp",
+                    phone: "Phone",
+                    email: "Email",
+                    social: "Social",
+                    notes: "Notes",
+                    whatsappCta: "Contactela directamente por WhatsApp",
+                    askForContactCta: "Ask for contact",
+                    whatsappMessage: "Hi, I saw your profile on {app}. Can we coordinate?",
+                    whatsappMessageWithName: "Hi {name}, I saw your profile on {app}. Can we coordinate?",
+                    askForContactMessage: "I want to contact {profile}\n- my name is\n- the phone number I will write from is\n- approximate date of the appointment is",
+                    call: "Call {phone}",
+                },
+                extraction_labels: {
+                    name: "Name",
+                    age: "Age",
+                    height: "Height",
+                    weight: "Weight",
+                    measurements: "Measurements",
+                    hair_color: "Hair color",
+                    eye_color: "Eye color",
+                    location: "Location",
+                    availability: "Availability",
+                    contact: "Contact",
+                    prices: "Rates",
+                    implants: "Implants",
+                    uber: "Uber",
+                    cosmetic_surgeries: "Cosmetic surgeries",
+                    other_attributes: "Other attributes",
+                },
+                price_slots: {
+                    one_hour: "1 hour",
+                    two_hours: "2 hours",
+                    three_hours: "3 hours",
+                    overnight: "Overnight",
+                },
+                durations: {
+                    one_hour: { label: "1 hour", short: "1h" },
+                    two_hours: { label: "2 hours", short: "2h" },
+                    three_hours: { label: "3 hours", short: "3h" },
+                    overnight: { label: "Overnight", short: "Night" },
+                },
+                auth: {
+                    ariaLabel: "Authentication required",
+                    title: "Access",
+                    subtitle: "Enter the password to view the catalog.",
+                    passwordPlaceholder: "Password",
+                    remember: "Remember on this device",
+                    unlock: "Unlock",
+                    required: "Enter the password.",
+                    wrong: "Wrong password.",
+                    error: "Authentication error.",
+                    webcryptoUnavailable: "WebCrypto unavailable. Open over https or http://localhost.",
+                },
+                disclaimer: {
+                    ariaLabel: "Legal notice",
+                    title: "LEGAL NOTICE",
+                    closeAria: "Close",
+                    p1: "The community and social network known as \"Club Patrón\" confirms that all participants in the network are over 18 years of age, act voluntarily, and are in full possession of their faculties. The operator of this email does not participate, mediate, or obtain benefits from the agreements reached by the participants. We firmly oppose human trafficking, child pornography, and pedophilia.",
+                    p2: "Members and recipients of this email are advised that all communication transmitted through this medium is protected under the secrecy of communications pursuant to Article 24 of the Constitution. The disclosure, exposure, forwarding, or sharing of this communication with third parties without due consent constitutes the crime of violation of correspondence or communications, as defined in Article 196 of the Penal Code.",
+                    p3: "Likewise, all images, updates, or documents attached to emails sent by \"Club Patrón\" are protected under reserved image rights. Any disclosure or improper use of these materials without prior authorization may constitute the crime of violation of personal data, pursuant to Article 196 bis of the Penal Code.",
+                    accept: "I understand",
+                },
+            },
+        };
+
+        function normalizeLang(lang) {
+            const l = (lang || "").toString().toLowerCase();
+            if (l.startsWith("en")) return "en";
+            return "es";
+        }
+
+        function getTranslation(lang, key) {
+            const parts = key.split(".");
+            let cur = I18N[lang];
+            for (const p of parts) {
+                if (!cur || typeof cur !== "object") return null;
+                cur = cur[p];
+            }
+            return cur;
+        }
+
+        function t(key, vars = {}) {
+            const lang = currentLang in I18N ? currentLang : "es";
+            let value = getTranslation(lang, key);
+            if (value == null && lang !== "es") value = getTranslation("es", key);
+            if (value == null) return key;
+            if (typeof value !== "string") return value;
+            return value.replace(/\{(\w+)\}/g, (_, k) => (vars[k] ?? "").toString());
+        }
+
+        function getEdadLabel(folderName) {
+            const map = (I18N[currentLang]?.edad_labels) || I18N.es.edad_labels;
+            return map?.[folderName] || folderName;
+        }
+
+        function labelForExtractionKey(key) {
+            const map = (I18N[currentLang]?.extraction_labels) || I18N.es.extraction_labels;
+            return map?.[key] || key;
+        }
+
+        function labelForPriceSlot(key) {
+            const map = (I18N[currentLang]?.price_slots) || I18N.es.price_slots;
+            return map?.[key] || key;
+        }
+
+        function durationLabel(key) {
+            const durations = (I18N[currentLang]?.durations) || I18N.es.durations;
+            return durations?.[key]?.label || key;
+        }
+
+        function durationShort(key) {
+            const durations = (I18N[currentLang]?.durations) || I18N.es.durations;
+            return durations?.[key]?.short || key;
+        }
+
+        function applyTranslations() {
+            document.documentElement.lang = currentLang;
+            document.title = t("page.title");
+
+            const langAria = t("lang.aria");
+            ["langSelect", "auth-lang-select", "disclaimer-lang-select"].forEach(id => {
+                const sel = document.getElementById(id);
+                if (!sel) return;
+                sel.value = currentLang;
+                sel.setAttribute("aria-label", langAria);
+            });
+
+            const appTitle = document.getElementById("app-title");
+            if (appTitle) appTitle.textContent = t("app.title");
+
+            const filtersToggle = document.getElementById("filters-toggle");
+            if (filtersToggle) {
+                filtersToggle.textContent = t("ui.filters");
+                filtersToggle.setAttribute("aria-label", t("ui.openFiltersAria"));
+            }
+            const filtersClose = document.getElementById("filters-close");
+            if (filtersClose) filtersClose.setAttribute("aria-label", t("ui.closeFiltersAria"));
+
+            const search = document.getElementById("searchInput");
+            if (search) search.placeholder = t("controls.searchPlaceholder");
+
+            const sort = document.getElementById("sortSelect");
+            if (sort) {
+                const optNewest = sort.querySelector('option[value="newest"]');
+                const optAsc = sort.querySelector('option[value="price_asc"]');
+                const optDesc = sort.querySelector('option[value="price_desc"]');
+                if (optNewest) optNewest.textContent = t("controls.sortNewest");
+                if (optAsc) optAsc.textContent = t("controls.sortPriceAsc");
+                if (optDesc) optDesc.textContent = t("controls.sortPriceDesc");
+            }
+
+            const navLeft = document.getElementById("lb-nav-left");
+            const navRight = document.getElementById("lb-nav-right");
+            if (navLeft) navLeft.setAttribute("aria-label", t("nav.left"));
+            if (navRight) navRight.setAttribute("aria-label", t("nav.right"));
+
+            const authOverlay = document.getElementById("auth-overlay");
+            if (authOverlay) authOverlay.setAttribute("aria-label", t("auth.ariaLabel"));
+            const authTitle = document.getElementById("auth-title");
+            if (authTitle) authTitle.textContent = t("auth.title");
+            const authSubtitle = document.getElementById("auth-subtitle");
+            if (authSubtitle) authSubtitle.textContent = t("auth.subtitle");
+            const authPw = document.getElementById("auth-password");
+            if (authPw) authPw.setAttribute("placeholder", t("auth.passwordPlaceholder"));
+            const authRemember = document.getElementById("auth-remember-label");
+            if (authRemember) authRemember.textContent = t("auth.remember");
+            const authSubmit = document.getElementById("auth-submit");
+            if (authSubmit) authSubmit.textContent = t("auth.unlock");
+
+            const disclaimerOverlay = document.getElementById("disclaimer-overlay");
+            if (disclaimerOverlay) disclaimerOverlay.setAttribute("aria-label", t("disclaimer.ariaLabel"));
+            const disclaimerTitle = document.getElementById("disclaimer-title");
+            if (disclaimerTitle) disclaimerTitle.textContent = t("disclaimer.title");
+            const disclaimerClose = document.getElementById("disclaimer-close");
+            if (disclaimerClose) disclaimerClose.setAttribute("aria-label", t("disclaimer.closeAria"));
+            const p1 = document.getElementById("disclaimer-p1");
+            if (p1) p1.textContent = t("disclaimer.p1");
+            const p2 = document.getElementById("disclaimer-p2");
+            if (p2) p2.textContent = t("disclaimer.p2");
+            const p3 = document.getElementById("disclaimer-p3");
+            if (p3) p3.textContent = t("disclaimer.p3");
+            const accept = document.getElementById("disclaimer-accept");
+            if (accept) accept.textContent = t("disclaimer.accept");
+        }
+
+        function setLanguage(lang, { persist = true } = {}) {
+            currentLang = normalizeLang(lang);
+            if (persist) {
+                try { localStorage.setItem(LANG_STORAGE_KEY, currentLang); } catch (_) { /* ignore */ }
+            }
+            applyTranslations();
+            if (dataLoaded) {
+                buildFilters();
+                render();
+            }
+        }
+
+        window.setLanguage = setLanguage;
+
+        function initLanguage() {
+            let stored = null;
+            try { stored = localStorage.getItem(LANG_STORAGE_KEY); } catch (_) { /* ignore */ }
+            if (stored) {
+                setLanguage(stored, { persist: false });
+                return;
+            }
+            const nav = (navigator.language || "").toLowerCase();
+            const fallback = nav.startsWith("en") ? "en" : "es";
+            setLanguage(fallback, { persist: false });
+        }
+        const PROVINCIA_ROOT_FOLDER = "10 - Perfiles - por provincia";
+        const EDAD_FOLDERS = [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "8 - Perfiles - 21- 30 años",
+            "9 - Perfiles - 31 - 40 años",
+        ];
+        const NUEVOS_INGRESOS_FOLDER = "6 - Perfiles recientemente incorporados";
+        const SIN_EXPERIENCIA_FOLDER = "5 - Perfiles sin experiencia recien ingresados";
+        const CORTESIA_FOLDER = "12 - Perfiles - cortesía";
+        const NUEVAS_FOTOS_VIDEOS_FOLDER = "11 - Perfiles con nuevas fotos - videos";
+        const FILTER_SPECS = [
+            { key: "provincia", labelKey: "filters.location" },
+            { key: "edad", labelKey: "filters.age" },
+            { key: "nuevos_ingresos", labelKey: "filters.newArrivals" },
+            { key: "sin_experiencia", labelKey: "filters.noExperience" },
+            { key: "cortesia", labelKey: "filters.courtesy" },
+            { key: "nuevas_fotos_videos", labelKey: "filters.newMedia" },
+        ];
+        const LOCATION_MAP = {
+            "alajuela": "Alajuela",
+            "alajuela, palmares centro": "Alajuela, Palmares Centro",
+            "barrio mexico, san jose": "Barrio México, San José",
+            "cartago": "Cartago",
+            "cartago y san jose": "Cartago y San José",
+            "ciudad colon": "Ciudad Colón",
+            "coronado": "Coronado",
+            "desamparados san jose costa rica": "Desamparados, San José",
+            "escazu": "Escazú",
+            "guadalupe, san jose": "Guadalupe, San José",
+            "guapiles": "Guápiles",
+            "heredia": "Heredia",
+            "heredia santa barbara": "Heredia, Santa Bárbara",
+            "heredia, san pablo": "Heredia, San Pablo",
+            "los yoses san pedro": "Los Yoses, San Pedro",
+            "moravia": "Moravia",
+            "moravia, san jose": "Moravia, San José",
+            "purral": "Purral",
+            "sabanilla, san jose": "Sabanilla, San José",
+            "san jose": "San José",
+            "sabanilla o jaco": "Sabanilla o Jacó",
+            "san antonio de desamparados": "San Antonio de Desamparados",
+            "san francisco de dos rios": "San Francisco de Dos Ríos",
+            "san jose desamparados": "San José, Desamparados",
+            "san jose y jaco": "San José y Jacó",
+            "san jose, coronado": "San José, Coronado",
+            "san jose, coronado-moravia": "San José, Coronado-Moravia",
+            "san jose, desamparados": "San José, Desamparados",
+            "san jose, san sebastian": "San José, San Sebastián",
+            "san jose, santa ana": "San José, Santa Ana",
+            "san miguel desamparados": "San Miguel, Desamparados",
+            "san rafael de heredia": "San Rafael de Heredia",
+            "san ramon": "San Ramón",
+            "san sebastian": "San Sebastián",
+            "santa ana": "Santa Ana",
+            "tibas": "Tibás",
+            "la uruca san jose": "La Uruca, San José"
+        };
+
+        const AVAILABILITY_LABELS = [
+            "24/7",
+            "Amplia disponibilidad",
+            "Consultar disponibilidad porque trabajo",
+            "Coordinar con previo aviso",
+            "De 7:00 p. m. en adelante, Nocturno",
+            "De 7:00 p. m. en adelante, Viernes a domingo",
+            "De domingos a miércoles disponible todo el día",
+            "De lunes a Domingo cualquier hora",
+            "De lunes a viernes de 9 am a 9 pm máx. Fines de semana a convenir",
+            "De lunes a viernes luego de las 3:00 pm y sábados y domingos disponibles",
+            "Disponibilida en el día o la noche",
+            "Disponibilidad inmediata",
+            "Disponibilidad a convenir",
+            "Disponibilidad de horario",
+            "Disponibilidad negociable (horarios detallados)",
+            "Disponible lunes a viernes (tarde o noche)",
+            "Disponible todos los días",
+            "Disponible todos los días de 9:00 am a 8:00 pm",
+            "Disponible todos los días en el día y noche",
+            "Disponible todos los días, prefiere mañana y tarde",
+            "Domingos a miércoles",
+            "Facilidad para trasladarse",
+            "Horarios flexibles",
+            "Horario: Mañana/Tarde antes de las 4 pm; Noche después de las 8 pm",
+            "Jueves a domingo (horarios detallados)",
+            "Lunes, martes y miércoles disponibles",
+            "Lunes a Domingo",
+            "Lunes a viernes mañana y tarde",
+            "Lunes y martes horario diurno; viernes y fines de semana vespertino",
+            "Lunes a viernes (horarios específicos) y fines de semana",
+            "Coordinación flexible todo el día",
+            "Puedo a cualquier hora",
+            "Puedo todos los días (1, 2 y 3 horas)",
+            "Si, solo avisar",
+            "Amplia disponibilidad (general)",
+            "Tiempo completo de disponibilidad",
+            "Toda la semana después de la 1 pm",
+            "Todos los días",
+            "Todos los días con aviso previo (3 horas)",
+            "Todos los días cualquier hora",
+            "Todos los días de 12 pm a 12 am",
+            "Todos los días y cualquier horario",
+            "Todos los días a cualquier hora (coordinar)",
+            "Cualquier día de la semana",
+            "Cualquier día, evitar noches",
+            "Cualquier hora o día con un día de anticipación",
+            "De domingo a martes",
+            "De lunes a domingo (total disponibilidad)",
+            "De lunes a viernes",
+            "Depende de mis horarios de estudio",
+            "Disponibilidad completa",
+            "Disponibilidad completa de jueves a domingo; otros días en la tarde",
+            "Disponibilidad inmediata toda la semana",
+            "Disponible todos los días",
+            "Entre semana mañana y tarde",
+            "Inmediata",
+            "Inmediata; a convenir",
+            "Lunes a Domingo tardes y noches",
+            "Lunes a viernes de 2:00 pm a 9:00 pm; fines de semana negociables",
+            "Lunes a viernes después de las 4:00 pm; fines de semana todo el día",
+            "Martes a viernes mediodía hasta las 8 pm (coordinar con 1 día previo)",
+            "Preferible de 5 pm en adelante (coordinar)",
+            "Siempre a la comodidad del cliente",
+            "Tarde-noche a partir de las 5 pm",
+            "Tarde o noche",
+            "Todos los días",
+            "Todos los días de 10 am a 7 pm",
+            "Todos los días de 8 a 10",
+            "Todos los días de 11 am a 10 pm"
+        ];
+
+        function normalizeKey(value) {
+            if (!value) return null;
+            return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+        }
+
+        function normalizeLocation(value) {
+            if (!value) return null;
+            const key = normalizeKey(value);
+            return LOCATION_MAP[key] || value.trim();
+        }
+
+        const AVAILABILITY_MAP = AVAILABILITY_LABELS.reduce((acc, label) => {
+            const key = normalizeKey(label);
+            acc[key] = label;
+            return acc;
+        }, {});
+
+        function normalizeAvailability(value) {
+            if (!value) return null;
+            const key = normalizeKey(value);
+            return AVAILABILITY_MAP[key] || value.trim();
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch(ENRICHED_DATA_PATH);
+                const data = await res.json();
+                catalog = transformProfiles(data.profiles || []);
+                dataLoaded = true;
+                buildFilters();
+                render();
+            } catch (e) { console.error(e); }
+        }
+
+        function isProfileEnabled(profile) {
+            if (!profile || typeof profile !== "object") return false;
+            if (typeof profile.enabled === "boolean") return profile.enabled;
+            if (typeof profile.disabled === "boolean") return !profile.disabled;
+            return true;
+        }
+
+        function transformProfiles(profiles = []) {
+            return profiles.filter(isProfileEnabled).map((profile, idx) => {
+                const structured = mergeStructuredData(profile);
+                const pathMetadata = buildPathMetadata(profile);
+                const metadataLabels = buildMetadataLabels(profile);
+                const extraction = profile.extraction || {};
+                const filterTokens = buildFilterTokens(profile);
+                const media = resolveMediaAssets(profile);
+                const mediaEntries = [
+                    ...media.images.map(src => ({ type: "image", src })),
+                    ...media.videos.map(src => ({ type: "video", src })),
+                ];
+                return {
+                    id: profile.profile || `profile_${idx + 1}`,
+                    structured_data: structured,
+                    path_metadata: pathMetadata,
+                    images: media.images,
+                    videos: media.videos,
+                    media_entries: mediaEntries,
+                    raw_profile: profile,
+                    metadata_labels: metadataLabels,
+                    filter_tokens: filterTokens,
+                };
+            });
+        }
+
+        function mergeStructuredData(profile) {
+            const base = profile.merged_structured_data ? JSON.parse(JSON.stringify(profile.merged_structured_data)) : {};
+            const extraction = profile.extraction || {};
+            base.name = base.name || extraction.name || profile.profile || null;
+            base.age = base.age || extraction.age || null;
+            const mergedLocation = base.location || extraction.location || null;
+            base.location = normalizeLocation(mergedLocation);
+            base.raw_text = base.raw_text || (profile.raw_responses?.join("\n\n") || "");
+            if (!base.standard_prices) {
+                base.standard_prices = { one_hour: null, two_hours: null, three_hours: null, overnight: null };
+            }
+            if (!Array.isArray(base.prices)) base.prices = [];
+            const mergedAvailability = base.availability || extraction.availability || null;
+            base.availability = normalizeAvailability(mergedAvailability);
+            if (!base.contact) base.contact = {};
+            if (extraction.contact && !base.contact.notes) base.contact.notes = extraction.contact;
+            if (!base.attributes) base.attributes = {};
+            const attrMap = {
+                height: extraction.height,
+                weight: extraction.weight,
+                hair_color: extraction.hair_color,
+                eye_color: extraction.eye_color,
+            };
+            Object.entries(attrMap).forEach(([key, value]) => {
+                if (value && !base.attributes[key]) {
+                    base.attributes[key] = value;
+                }
+            });
+            if (base.attributes.implants == null && extraction.implants != null) {
+                base.attributes.implants = extraction.implants;
+            }
+            return base;
+        }
+
+        function formatExtractionValue(value) {
+            if (value === null || value === undefined) return "—";
+            if (typeof value === "boolean") return value ? t("common.yes") : t("common.no");
+            if (typeof value === "number") return value.toString();
+            if (typeof value === "string") return value.trim() ? value.trim() : "—";
+            if (typeof value === "object") {
+                const keys = Object.keys(value);
+                if (!keys.length) return "{}";
+                return JSON.stringify(value, null, 2);
+            }
+            return String(value);
+        }
+
+        function escapeHtml(text) {
+            return String(text)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/\"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        const DEFAULT_WHATSAPP_COUNTRY_CODE = "506"; // Costa Rica (used when contact has 8 digits without country code)
+        const PHONE_CANDIDATE_REGEX = /(\+?\d[\d\s\-().]{6,}\d)/g;
+
+        function normalizeWhatsAppE164Digits(digits) {
+            if (!digits) return null;
+            let clean = digits.toString().replace(/\D/g, "");
+            if (!clean) return null;
+            if (clean.startsWith("00")) clean = clean.slice(2);
+            if (clean.length === 8) clean = DEFAULT_WHATSAPP_COUNTRY_CODE + clean;
+            if (clean.length < 8 || clean.length > 15) return null;
+            return clean;
+        }
+
+        function extractWhatsAppInfo(text) {
+            if (!text) return null;
+            const raw = text.toString().trim();
+            if (!raw) return null;
+
+            const matches = raw.match(PHONE_CANDIDATE_REGEX) || [];
+            for (const match of matches) {
+                const e164 = normalizeWhatsAppE164Digits(match);
+                if (e164) return { e164, display: raw };
+            }
+
+            const fallback = normalizeWhatsAppE164Digits(raw);
+            if (fallback) return { e164: fallback, display: raw };
+            return null;
+        }
+
+        function stripWhatsAppPrefix(text) {
+            if (!text) return "";
+            return text.toString().replace(/^\s*whats?app\s*[:\-]?\s*/i, "").trim();
+        }
+
+        function buildWhatsAppPrefillMessage(profileName) {
+            const app = t("app.title");
+            const name = (profileName || "").toString().trim();
+            if (name && name !== t("common.unknown")) {
+                return t("contact.whatsappMessageWithName", { name, app });
+            }
+            return t("contact.whatsappMessage", { app });
+        }
+
+        function buildAskForContactPrefillMessage(profileLabel) {
+            const profile = (profileLabel || "").toString().trim() || t("common.unknown");
+            return t("contact.askForContactMessage", { profile });
+        }
+
+        function buildWhatsAppLink(e164Digits, message) {
+            const phone = normalizeWhatsAppE164Digits(e164Digits);
+            if (!phone) return null;
+            const text = (message || "").toString();
+            const qs = text ? `?text=${encodeURIComponent(text)}` : "";
+            return `https://wa.me/${phone}${qs}`;
+        }
+
+        function renderExtractionSection(extraction, context = {}) {
+            const ex = extraction || {};
+            const prices = (ex.prices && typeof ex.prices === "object") ? ex.prices : {};
+            const orderedKeys = [
+                "name",
+                "age",
+                "height",
+                "weight",
+                "hair_color",
+                "eye_color",
+                "location",
+                "availability",
+                "contact",
+                "prices",
+                "implants",
+                "uber",
+                "cosmetic_surgeries",
+                "other_attributes",
+            ];
+            const priceSlotKeys = ["one_hour", "two_hours", "three_hours", "overnight"];
+
+            function renderPriceSlots(slotObj) {
+                const rows = priceSlotKeys.map(key => {
+                    const value = slotObj?.[key] ?? null;
+                    return `<tr><td>${escapeHtml(labelForPriceSlot(key))}</td><td>${escapeHtml(formatExtractionValue(value))}</td></tr>`;
+                }).join("");
+                return `<table class="price-table" style="font-size:12px;"><tbody>${rows}</tbody></table>`;
+            }
+
+            function renderOtherAttributes(obj) {
+                if (!obj || typeof obj !== "object" || Array.isArray(obj)) {
+                    return escapeHtml(formatExtractionValue(obj));
+                }
+                const entries = Object.entries(obj).filter(([k, v]) => {
+                    if (!k) return false;
+                    if (v === null || v === undefined) return false;
+                    const txt = typeof v === "string" ? v.trim() : String(v).trim();
+                    return txt.length > 0;
+                });
+                if (!entries.length) return "—";
+                const rows = entries
+                    .sort(([a], [b]) => a.localeCompare(b, undefined, { sensitivity: "base" }))
+                    .map(([k, v]) => {
+                        const label = k.replace(/_/g, " ");
+                        const formatted = formatExtractionValue(v);
+                        const safe = escapeHtml(formatted);
+                        const isObj = typeof v === "object" && v !== null;
+                        const valueHtml = isObj ? `<pre style="margin:0; white-space:pre-wrap;">${safe}</pre>` : safe;
+                        return `<tr><td>${escapeHtml(label)}</td><td>${valueHtml}</td></tr>`;
+                    })
+                    .join("");
+                return `<table class="price-table kv-table" style="font-size:12px;"><tbody>${rows}</tbody></table>`;
+            }
+
+            const rows = orderedKeys.map(key => {
+                const label = escapeHtml(labelForExtractionKey(key));
+                let value = null;
+                if (key === "prices") {
+                    value = prices;
+                    return `<div class="lb-attr"><span class="k">${label}</span><span class="v">${renderPriceSlots(prices)}</span></div>`;
+                }
+                if (key === "contact") {
+                    value = ex?.[key] ?? null;
+                    if (typeof value === "string" && value.trim()) {
+                        const info = extractWhatsAppInfo(value);
+                        if (info) {
+                            const msg = buildWhatsAppPrefillMessage(context.profileName);
+                            const link = buildWhatsAppLink(info.e164, msg);
+                            if (link) {
+                                return `<div class="lb-attr"><span class="k">${label}</span><span class="v"><a href="${link}" target="_blank" rel="noopener noreferrer">${escapeHtml(value.trim())}</a></span></div>`;
+                            }
+                        }
+                    }
+                }
+                if (key === "other_attributes") {
+                    value = ex?.[key] ?? null;
+                    return `<div class="lb-attr"><span class="k">${label}</span><span class="v">${renderOtherAttributes(value)}</span></div>`;
+                }
+                value = ex?.[key] ?? null;
+                const formatted = formatExtractionValue(value);
+                const isObject = typeof value === "object" && value !== null;
+                const safeFormatted = escapeHtml(formatted);
+                return `<div class="lb-attr"><span class="k">${label}</span><span class="v">${isObject ? `<pre style="margin:0; white-space:pre-wrap;">${safeFormatted}</pre>` : safeFormatted}</span></div>`;
+            }).join("");
+
+            return `<div class="lb-section"><h3>${escapeHtml(t("sections.extraction"))}</h3><div class="lb-attr-grid">${rows}</div></div>`;
+        }
+
+        function buildPathMetadata(profile) {
+            const folders = [];
+            (profile.sources || []).forEach(src => {
+                (src.folders || []).forEach(folder => {
+                    if (folder) folders.push(folder);
+                });
+            });
+            return folders;
+        }
+
+        function buildMetadataLabels(rawProfile) {
+            if (!rawProfile || !rawProfile.merged_metadata) return [];
+            const entries = Object.entries(rawProfile.merged_metadata);
+            const labels = entries.map(([key, value]) => {
+                if (key && key.toString().trim() === PROVINCIA_ROOT_FOLDER) return null;
+                if (typeof value === "string") {
+                    const trimmed = value.trim();
+                    if (trimmed === PROVINCIA_ROOT_FOLDER) return null;
+                    if (!trimmed || trimmed.toLowerCase() === "true") {
+                        return key;
+                    }
+                    return trimmed;
+                }
+                if (value == null || value === false) {
+                    return key;
+                }
+                return String(value);
+            }).filter(Boolean);
+            const seen = new Set();
+            const deduped = [];
+            labels.forEach(label => {
+                const key = label.toLowerCase();
+                if (seen.has(key)) return;
+                seen.add(key);
+                deduped.push(label);
+            });
+            return deduped;
+        }
+
+        function buildFilterTokens(rawProfile) {
+            const provincias = new Set();
+            const edad = new Set();
+            let nuevosIngresos = false;
+            let sinExperiencia = false;
+            let cortesia = false;
+            let nuevasFotosVideos = false;
+
+            const sources = Array.isArray(rawProfile?.sources) ? rawProfile.sources : [];
+            sources.forEach(src => {
+                const folders = Array.isArray(src?.folders) ? src.folders : [];
+                const idx = folders.indexOf(PROVINCIA_ROOT_FOLDER);
+                if (idx !== -1 && idx + 1 < folders.length) {
+                    const provincia = folders[idx + 1];
+                    if (provincia) provincias.add(provincia);
+                }
+                EDAD_FOLDERS.forEach(group => {
+                    if (folders.includes(group)) edad.add(group);
+                });
+                if (folders.includes(NUEVOS_INGRESOS_FOLDER)) nuevosIngresos = true;
+                if (folders.includes(SIN_EXPERIENCIA_FOLDER)) sinExperiencia = true;
+                if (folders.includes(CORTESIA_FOLDER)) cortesia = true;
+                if (folders.includes(NUEVAS_FOTOS_VIDEOS_FOLDER)) nuevasFotosVideos = true;
+            });
+
+            return {
+                provincia: Array.from(provincias),
+                edad: Array.from(edad),
+                nuevos_ingresos: nuevosIngresos ? [CATEGORY_FILTER_VALUES.nuevos_ingresos] : [],
+                sin_experiencia: sinExperiencia ? [CATEGORY_FILTER_VALUES.sin_experiencia] : [],
+                cortesia: cortesia ? [CATEGORY_FILTER_VALUES.cortesia] : [],
+                nuevas_fotos_videos: nuevasFotosVideos ? [CATEGORY_FILTER_VALUES.nuevas_fotos_videos] : [],
+            };
+        }
+
+        const IMAGE_PATH_REGEX = /\.(jpe?g|png|webp|gif)$/i;
+        const VIDEO_PATH_REGEX = /\.(mp4|mov|m4v|webm)$/i;
+
+        function resolveMediaAssets(profile) {
+            let mediaList = Array.isArray(profile.media) && profile.media.length ? profile.media : [];
+            if (!mediaList.length && Array.isArray(profile.source_media)) {
+                mediaList = profile.source_media;
+            }
+            if (!mediaList.length && Array.isArray(profile.sources)) {
+                mediaList = profile.sources.flatMap(src => src.media || []);
+            }
+            const seen = new Set();
+            const images = [];
+            const videos = [];
+            mediaList.map(src => normalizeMediaPath(src)).filter(Boolean).forEach(path => {
+                if (seen.has(path)) return;
+                seen.add(path);
+                if (IMAGE_PATH_REGEX.test(path)) {
+                    images.push(path);
+                } else if (VIDEO_PATH_REGEX.test(path)) {
+                    videos.push(path);
+                }
+            });
+            return { images, videos };
+        }
+
+        function normalizeMediaPath(src) {
+            if (!src) return null;
+            if (/^https?:\/\//i.test(src)) return src;
+            if (src.startsWith("../") || src.startsWith("./")) return src;
+            const clean = src.replace(/^\/+/, "");
+            return MEDIA_BASE_PATH + clean;
+        }
+
+        function buildFilters() {
+            const filtersContainer = document.getElementById('filters');
+            filtersContainer.querySelectorAll('.filter-group').forEach(group => group.remove());
+
+            filters = {};
+            FILTER_SPECS.forEach(spec => {
+                filters[spec.key] = new Set();
+                if (!activeFilters[spec.key]) {
+                    activeFilters[spec.key] = new Set();
+                }
+            });
+
+            // Always show the curated folder-based filters even if a category has 0 matches.
+            filters.edad = new Set(EDAD_FOLDERS);
+            filters.nuevos_ingresos.add(CATEGORY_FILTER_VALUES.nuevos_ingresos);
+            filters.sin_experiencia.add(CATEGORY_FILTER_VALUES.sin_experiencia);
+            filters.cortesia.add(CATEGORY_FILTER_VALUES.cortesia);
+            filters.nuevas_fotos_videos.add(CATEGORY_FILTER_VALUES.nuevas_fotos_videos);
+
+            catalog.forEach(item => {
+                const tokens = item.filter_tokens || {};
+                FILTER_SPECS.forEach(spec => {
+                    (tokens[spec.key] || []).forEach(val => {
+                        filters[spec.key].add(val);
+                    });
+                });
+            });
+
+            const groupedCategoryKeys = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos"]);
+            FILTER_SPECS.forEach(spec => {
+                if (groupedCategoryKeys.has(spec.key)) return;
+                renderFilterUI(t(spec.labelKey), filters[spec.key], spec.key);
+            });
+            renderCategoryToggles();
+        }
+
+        function renderFilterUI(label, set, key) {
+            if (!set || set.size === 0) return;
+            const group = document.createElement('div');
+            group.className = 'filter-group';
+            const header = document.createElement('h3');
+            header.textContent = label;
+            group.appendChild(header);
+            Array.from(set).sort().forEach(val => {
+                const l = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = activeFilters[key]?.has(val);
+                checkbox.onchange = () => toggleFilter(key, val);
+                l.appendChild(checkbox);
+                const displayVal = (key === 'edad') ? getEdadLabel(val) : val;
+                l.appendChild(document.createTextNode(` ${displayVal}`));
+                group.appendChild(l);
+            });
+            document.getElementById('filters').appendChild(group);
+        }
+
+        function renderCategoryToggles() {
+            const group = document.createElement('div');
+            group.className = 'filter-group';
+            const header = document.createElement('h3');
+            header.textContent = t('filters.categories');
+            group.appendChild(header);
+
+            const items = [
+                { key: 'nuevos_ingresos', value: CATEGORY_FILTER_VALUES.nuevos_ingresos, labelKey: 'filters.categoryNewArrivalsOnly' },
+                { key: 'sin_experiencia', value: CATEGORY_FILTER_VALUES.sin_experiencia, labelKey: 'filters.categoryNoExperienceOnly' },
+                { key: 'cortesia', value: CATEGORY_FILTER_VALUES.cortesia, labelKey: 'filters.categoryCourtesyOnly' },
+                { key: 'nuevas_fotos_videos', value: CATEGORY_FILTER_VALUES.nuevas_fotos_videos, labelKey: 'filters.categoryNewMediaOnly' },
+            ];
+
+            items.forEach(({ key, value, labelKey }) => {
+                const l = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = activeFilters[key]?.has(value) || false;
+                checkbox.onchange = () => toggleFilter(key, value);
+                l.appendChild(checkbox);
+                l.appendChild(document.createTextNode(` ${t(labelKey)}`));
+                group.appendChild(l);
+            });
+
+            document.getElementById('filters').appendChild(group);
+        }
+
+        window.toggleFilter = (k, v) => {
+            if (!activeFilters[k]) activeFilters[k] = new Set();
+            if (activeFilters[k].has(v)) activeFilters[k].delete(v);
+            else activeFilters[k].add(v);
+            render();
+        };
+
+        function openFilters() {
+            const authActive = document.getElementById("auth-overlay")?.classList.contains("active");
+            const disclaimerActive = document.getElementById("disclaimer-overlay")?.classList.contains("active");
+            const lightboxActive = document.getElementById("lightbox")?.classList.contains("active");
+            if (authActive || disclaimerActive || lightboxActive) return;
+
+            document.getElementById("filters")?.classList.add("active");
+            document.getElementById("filters-backdrop")?.classList.add("active");
+            document.body.classList.add("filters-open");
+            document.getElementById("filters-toggle")?.setAttribute("aria-expanded", "true");
+        }
+
+        function closeFilters() {
+            document.getElementById("filters")?.classList.remove("active");
+            document.getElementById("filters-backdrop")?.classList.remove("active");
+            document.body.classList.remove("filters-open");
+            document.getElementById("filters-toggle")?.setAttribute("aria-expanded", "false");
+        }
+
+        window.openFilters = openFilters;
+        window.closeFilters = closeFilters;
+
+        function hideDisclaimer() {
+            const overlay = document.getElementById("disclaimer-overlay");
+            if (!overlay) return;
+            overlay.classList.remove("active");
+        }
+
+        function showDisclaimer() {
+            const overlay = document.getElementById("disclaimer-overlay");
+            if (!overlay) return;
+            overlay.classList.add("active");
+        }
+
+        function showAuthGate() {
+            const overlay = document.getElementById("auth-overlay");
+            if (!overlay) return;
+            overlay.classList.add("active");
+            const error = document.getElementById("auth-error");
+            if (error) error.textContent = "";
+            const input = document.getElementById("auth-password");
+            if (input) {
+                input.value = "";
+                setTimeout(() => input.focus(), 0);
+            }
+        }
+
+        function hideAuthGate() {
+            const overlay = document.getElementById("auth-overlay");
+            if (!overlay) return;
+            overlay.classList.remove("active");
+        }
+
+        function isAuthRemembered() {
+            try {
+                return localStorage.getItem(AUTH_STORAGE_KEY) === AUTH_SHA256_B64;
+            } catch (_) {
+                return false;
+            }
+        }
+
+        function setRememberedAuth(enabled) {
+            try {
+                if (enabled) localStorage.setItem(AUTH_STORAGE_KEY, AUTH_SHA256_B64);
+                else localStorage.removeItem(AUTH_STORAGE_KEY);
+            } catch (_) { /* ignore */ }
+        }
+
+        async function sha256Base64(text) {
+            if (!(window.crypto && window.crypto.subtle)) {
+                throw new Error(t("auth.webcryptoUnavailable"));
+            }
+            const bytes = new TextEncoder().encode(text);
+            const hashBuffer = await crypto.subtle.digest("SHA-256", bytes);
+            const hashBytes = new Uint8Array(hashBuffer);
+            let binary = "";
+            hashBytes.forEach(b => { binary += String.fromCharCode(b); });
+            return btoa(binary);
+        }
+
+        function startApp() {
+            showDisclaimer();
+            loadData();
+        }
+
+        function setAuthError(message) {
+            const el = document.getElementById("auth-error");
+            if (!el) return;
+            el.textContent = message || "";
+        }
+
+        function setAuthBusy(busy) {
+            const btn = document.getElementById("auth-submit");
+            if (btn) btn.disabled = !!busy;
+            const input = document.getElementById("auth-password");
+            if (input) input.disabled = !!busy;
+            const remember = document.getElementById("auth-remember");
+            if (remember) remember.disabled = !!busy;
+        }
+
+        function initAuthGate() {
+            const form = document.getElementById("auth-form");
+            const input = document.getElementById("auth-password");
+            const remember = document.getElementById("auth-remember");
+
+            if (!form || !input || !remember) {
+                // If the gate UI is missing, fail open to avoid breaking the page.
+                startApp();
+                return;
+            }
+
+            if (isAuthRemembered()) {
+                hideAuthGate();
+                startApp();
+                return;
+            }
+
+            showAuthGate();
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                setAuthError("");
+                const pw = (input.value || "").trim();
+                if (!pw) {
+                    setAuthError(t("auth.required"));
+                    input.focus();
+                    return;
+                }
+
+                setAuthBusy(true);
+                try {
+                    const computed = await sha256Base64(pw);
+                    if (computed !== AUTH_SHA256_B64) {
+                        setAuthError(t("auth.wrong"));
+                        input.focus();
+                        input.select?.();
+                        return;
+                    }
+                    setRememberedAuth(!!remember.checked);
+                    hideAuthGate();
+                    startApp();
+                } catch (err) {
+                    console.error(err);
+                    setAuthError(err?.message || t("auth.error"));
+                } finally {
+                    setAuthBusy(false);
+                }
+            });
+        }
+
+        const DURATION_SYNONYMS = {
+            "1 hora": ["1 hora", "1hr", "1 hr", "1h", "una hora"],
+            "2 horas": ["2 horas", "2hr", "2 hrs", "2h", "dos horas"],
+            "3 horas": ["3 horas", "3hr", "3 hrs", "3h", "tres horas"],
+            "Toda la noche": [
+                "toda la noche",
+                "noche completa",
+                "overnight",
+                "9:00 pm a 7:00 am",
+                "9 pm a 7 am",
+                "9pm a 7am",
+                "7 pm a 8 am",
+                "9 pm a 6 am"
+            ],
+        };
+
+        const STANDARD_DURATION_ORDER = [
+            { key: "one_hour", canonical: "1 hora" },
+            { key: "two_hours", canonical: "2 horas" },
+            { key: "three_hours", canonical: "3 horas" },
+            { key: "overnight", canonical: "Toda la noche" },
+        ];
+
+        function normalizeDurationLabel(label) {
+            if (!label) return "";
+            const normalized = label.toString().toLowerCase().replace(/\s+/g, " ");
+            for (const [canonical, patterns] of Object.entries(DURATION_SYNONYMS)) {
+                if (patterns.some(pattern => normalized.includes(pattern))) {
+                    return canonical;
+                }
+            }
+            return "";
+        }
+
+        function inferCurrency(prices) {
+            if (!Array.isArray(prices)) return "CRC";
+            for (const item of prices) {
+                if (item && typeof item === "object" && item.currency) {
+                    return item.currency;
+                }
+            }
+            return "CRC";
+        }
+
+        function formatVal(p) {
+            const c = (p.currency || '').toUpperCase();
+            const s = (c === 'CRC' || c === 'COLONES') ? '₡' : (c === 'USD' ? '$' : c);
+            return s + (p.amount ? Number(p.amount).toLocaleString() : '0');
+        }
+
+        function formatAmount(amount, currency) {
+            return formatVal({ amount, currency });
+        }
+
+        function buildStandardPriceEntries(profile) {
+            const prices = profile.prices || [];
+            const standard = profile.standard_prices || {};
+            const fallbackCurrency = inferCurrency(prices);
+
+            return STANDARD_DURATION_ORDER.map(def => {
+                const amount = standard[def.key];
+                if (amount == null) return null;
+                const matched = prices.find(p => normalizeDurationLabel(p.duration) === def.canonical);
+                const currency = matched?.currency || fallbackCurrency;
+                return {
+                    label: durationLabel(def.key),
+                    short: durationShort(def.key),
+                    value: formatAmount(amount, currency)
+                };
+            }).filter(Boolean);
+        }
+
+        function buildStandardSummary(profile) {
+            const entries = buildStandardPriceEntries(profile);
+            if (!entries.length) return "";
+            return entries.map(entry => `${entry.short} ${entry.value}`).join(' · ');
+        }
+
+        function formatRawText(text, prices) {
+            if (!text) return "";
+            let cleaned = text.replace(RAW_TEXT_DISCLAIMER_PATTERN, "").trim();
+            if (!prices || prices.length === 0) return cleaned;
+            const hasCRC = prices.some(p => (p.currency || '').toUpperCase() === 'CRC');
+            if (hasCRC) {
+                cleaned = cleaned.replace(/\$(\d)/g, '₡$1');
+            }
+            return cleaned;
+        }
+
+        const RAW_TEXT_DISCLAIMER_PATTERN = /INFORMACIÓN EMANADA[\s\S]*?proporcionarle el contacto\./gi;
+
+        let filteredItems_ = []; // Store references for index access
+        let currentItemIndex = -1;
+        let currentMediaIndex = 0;
+        let currentMediaEntries = [];
+
+	        function renderMediaCounter(images, videos) {
+	            const photoCount = Array.isArray(images) ? images.length : 0;
+	            const videoCount = Array.isArray(videos) ? videos.length : 0;
+	            if (!photoCount && !videoCount) return '';
+            const iconPhoto = `<svg class="mc-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>`;
+            const iconVideo = `<svg class="mc-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect><polygon points="23 7 16 12 23 17 23 7" fill="currentColor" stroke="none"></polygon></svg>`;
+            const parts = [];
+            if (photoCount) parts.push(`<span class="mc-item" title="${escapeHtml(t("media.photos"))}">${iconPhoto} ${photoCount}</span>`);
+            if (videoCount) parts.push(`<span class="mc-item" title="${escapeHtml(t("media.videos"))}">${iconVideo} ${videoCount}</span>`);
+	            return `<div class="media-counter">${parts.join('')}</div>`;
+	        }
+
+	        function normalizeText(text) {
+	            if (text === null || text === undefined) return '';
+	            return String(text)
+	                .normalize('NFD')
+	                .replace(/[\u0300-\u036f]/g, '')
+	                .toLowerCase()
+	                .replace(/[^a-z0-9]+/g, ' ')
+	                .replace(/\s+/g, ' ')
+	                .trim();
+	        }
+
+	        function render() {
+	            const queryRaw = document.getElementById('searchInput').value || '';
+	            const q = normalizeText(queryRaw);
+	            const qTokens = q ? q.split(' ').filter(Boolean) : [];
+	            const sort = document.getElementById('sortSelect').value;
+
+	            let filtered = catalog.filter(item => {
+	                const haystack = item.search_blob || (item.search_blob = normalizeText(JSON.stringify(item)));
+	                if (qTokens.length && !qTokens.every(token => haystack.includes(token))) return false;
+	                const tokens = item.filter_tokens || {};
+	                const groupedCategoryKeys = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos"]);
+	                let anyCategorySelected = false;
+	                let categoryMatches = false;
+                for (const spec of FILTER_SPECS) {
+                    const activeSet = activeFilters[spec.key];
+                    if (activeSet && activeSet.size) {
+                        const values = tokens[spec.key] || [];
+                        if (groupedCategoryKeys.has(spec.key)) {
+                            anyCategorySelected = true;
+                            if (values.some(val => activeSet.has(val))) categoryMatches = true;
+                            continue;
+                        }
+                        if (!values.some(val => activeSet.has(val))) return false;
+                    }
+                }
+                if (anyCategorySelected && !categoryMatches) return false;
+                return true;
+            });
+
+            // Sort
+            if (sort === 'price_asc') filtered.sort((a, b) => (a.structured_data?.prices?.[0]?.amount || 0) - (b.structured_data?.prices?.[0]?.amount || 0));
+            if (sort === 'price_desc') filtered.sort((a, b) => (b.structured_data?.prices?.[0]?.amount || 0) - (a.structured_data?.prices?.[0]?.amount || 0));
+
+            filteredItems_ = filtered;
+            document.getElementById('stats').innerText = t("controls.statsFound", { count: filtered.length });
+
+            document.getElementById('grid').innerHTML = filtered.map((item, idx) => {
+                const d = item.structured_data || {};
+                const m = item.path_metadata || [];
+                const primaryMedia = item.media_entries?.[0];
+                const counterHtml = renderMediaCounter(item.images, item.videos);
+                let mediaInner = '';
+                if (primaryMedia) {
+                    if (primaryMedia.type === "image") {
+                        mediaInner = `<img class="main-img" src="${primaryMedia.src}" loading="lazy">`;
+                    } else {
+                        mediaInner = `<video class="main-img" src="${primaryMedia.src}" muted loop playsinline></video>`;
+                    }
+                }
+                const mediaMarkup = `<div class="card-img-container">${mediaInner}${counterHtml}</div>`;
+
+                const name = d.name || m[m.length - 1] || t("common.unknown");
+                const loc = d.location || '';
+                const ageText = (d.age !== null && d.age !== undefined && d.age !== '') ? t("profile.ageCard", { age: d.age }) : '';
+                const stdSummary = buildStandardSummary(d);
+                const prices = stdSummary || (d.prices || []).map(formatVal).join(' · ');
+
+                const serviceTags = (d.services || []).slice(0, 3).map(s => `<span class="pill">${s}</span>`).join('');
+                const metadataLabelHtml = (item.metadata_labels || []).slice(0, 3).map(label => `<span class="pill" style="background:#ffecec;color:#c81d4d;">${label}</span>`).join('');
+
+                return `
+                <div class="card" onclick="openProfile(${idx})">
+                    ${mediaMarkup}
+                    <div class="card-details">
+                        <div class="name">${name}</div>
+                        ${ageText ? `<div class="age">${ageText}</div>` : ''}
+                        ${loc ? `<div class="location">${loc}</div>` : ''}
+                        ${prices ? `<div class="price">${prices}</div>` : ''}
+                        <div class="tags">${metadataLabelHtml}${serviceTags}</div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+	        window.openProfile = (idx) => {
+	            const item = filteredItems_[idx];
+	            const d = item.structured_data || {};
+	            const m = item.path_metadata || [];
+
+	            // Media
+	            const mediaEntries = item.media_entries || [];
+	            currentMediaEntries = mediaEntries;
+	            const mainImg = document.getElementById('lb-main-img');
+	            const mainVideo = document.getElementById('lb-main-video');
+	            const thumbs = document.getElementById('lb-thumbs');
+                const navLeft = document.getElementById('lb-nav-left');
+                const navRight = document.getElementById('lb-nav-right');
+                const showNav = mediaEntries.length > 1;
+	            thumbs.innerHTML = mediaEntries.length > 1 ? mediaEntries.map((entry, mediaIdx) =>
+	                entry.type === "image"
+	                    ? `<img src="${entry.src}" class="lb-thumb" onclick="switchMedia(${mediaIdx})">`
+	                    : `<video src="${entry.src}" class="lb-thumb" muted playsinline onclick="switchMedia(${mediaIdx})"></video>`
+	            ).join('') : '';
+                if (navLeft) navLeft.style.display = showNav ? 'flex' : 'none';
+                if (navRight) navRight.style.display = showNav ? 'flex' : 'none';
+	            currentItemIndex = idx;
+	            currentMediaIndex = 0;
+	            if (mediaEntries.length) {
+	                updateLightboxMedia();
+            } else {
+                mainImg.style.display = "none";
+                mainVideo.style.display = "none";
+                mainImg.src = "";
+                mainVideo.removeAttribute("src");
+            }
+
+            // Details
+            const name = d.name || m[m.length - 1] || t("common.unknown");
+            const ageText = (d.age !== null && d.age !== undefined && d.age !== '') ? t("profile.ageSubtitle", { age: d.age }) : '';
+            const loc = d.location || '';
+            const subtitleParts = [];
+            if (loc) subtitleParts.push(loc);
+            if (ageText) subtitleParts.push(ageText);
+            const subtitle = subtitleParts.join(' • ');
+
+            let html = `
+                <div class="lb-header">
+                    <h1>${name}</h1>
+                    ${subtitle ? `<p>${subtitle}</p>` : ''}
+                </div>
+            `;
+
+            const extraction = item.raw_profile?.extraction || {};
+            html += renderExtractionSection(extraction, { profileName: name });
+
+            // Attributes
+            const attrKeys = ['height', 'weight', 'measurements', 'hair_color', 'eye_color', 'implants'];
+            let attrHtml = '';
+            attrKeys.forEach(k => {
+                // Avoid repeating fields already shown in the extraction block.
+                if (extraction[k] !== undefined && extraction[k] !== null && extraction[k] !== '') return;
+                let v = d.attributes?.[k];
+                if (v === true) v = t("common.yes");
+                if (v === false) v = t("common.no");
+                const label = escapeHtml(labelForExtractionKey(k));
+                if (v) attrHtml += `<div class="lb-attr"><span class="k">${label}</span><span class="v">${v}</span></div>`;
+            });
+            if (attrHtml) html += `<div class="lb-section"><h3>${escapeHtml(t("sections.attributes"))}</h3><div class="lb-attr-grid">${attrHtml}</div></div>`;
+
+            const standardEntries = buildStandardPriceEntries(d);
+            const extraPrices = (d.prices || []).filter(p => {
+                const canonical = normalizeDurationLabel(p?.duration);
+                return !canonical || !STANDARD_DURATION_ORDER.some(def => def.canonical === canonical);
+            });
+
+            if (standardEntries.length || extraPrices.length) {
+                let tableRows = '';
+
+                standardEntries.forEach(entry => {
+                    tableRows += `<tr><td>${entry.label}</td><td>${entry.value}</td></tr>`;
+                });
+
+                extraPrices.forEach(p => {
+                    tableRows += `<tr><td>${p.duration || t("table.service")}</td><td>${formatVal(p)}</td></tr>`;
+                });
+
+                html += `
+                    <div class="lb-section">
+                        <h3>${escapeHtml(t("sections.rates"))}</h3>
+                        <table class="price-table">
+                            <thead>
+                                <tr><th>${escapeHtml(t("table.service"))}</th><th>${escapeHtml(t("table.amount"))}</th></tr>
+                            </thead>
+                            <tbody>
+                                ${tableRows}
+                            </tbody>
+                        </table>
+                    </div>`;
+            }
+
+            // Services
+            if (d.services?.length) {
+                html += `<div class="lb-section"><h3>${escapeHtml(t("sections.services"))}</h3>
+                <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                    ${d.services.map(s => `<span class="pill" style="font-size:12px; padding:6px 10px;">${s}</span>`).join('')}
+                </div></div>`;
+            }
+
+            // Reviews
+            const reviews = Array.isArray(item.raw_profile?.reviews) ? item.raw_profile.reviews : [];
+            const cleanReviews = reviews.filter(r => typeof r === "string" && r.trim());
+            const reviewItems = cleanReviews
+                .map(r => `<li><div class="review-text">${escapeHtml(r.trim())}</div></li>`)
+                .join("");
+            if (reviewItems) {
+                html += `<div class="lb-section"><h3>${escapeHtml(t("sections.reviews"))}<span class="reviews-count">${cleanReviews.length}</span></h3><ol class="reviews-list">${reviewItems}</ol></div>`;
+            }
+
+            // Contact
+            const contactRows = [];
+            const extractionContact = item.raw_profile?.extraction?.contact;
+            const notesValue = d.contact?.notes;
+            const waInfo =
+                extractWhatsAppInfo(d.contact?.whatsapp) ||
+                extractWhatsAppInfo(extractionContact) ||
+                extractWhatsAppInfo(notesValue);
+            const waMsg = waInfo ? buildWhatsAppPrefillMessage(name) : "";
+            const waLink = waInfo ? buildWhatsAppLink(waInfo.e164, waMsg) : null;
+            const waDisplay = waInfo ? (stripWhatsAppPrefix(waInfo.display) || waInfo.e164) : "";
+            const extractionObj = item.raw_profile?.extraction;
+            const isExplicitNullContact =
+                extractionObj &&
+                typeof extractionObj === "object" &&
+                ("contact" in extractionObj) &&
+                extractionObj.contact === null;
+            const profileRef = (item.raw_profile?.profile || "").toString().trim() || name;
+            const askForContactLink = (!waLink && isExplicitNullContact)
+                ? buildWhatsAppLink(ASK_CONTACT_WHATSAPP_E164, buildAskForContactPrefillMessage(profileRef))
+                : null;
+
+            if (waLink) {
+                contactRows.push(
+                    `<div><strong>${escapeHtml(t("contact.whatsapp"))}:</strong> <a href="${waLink}" target="_blank" rel="noopener noreferrer">${escapeHtml(waDisplay)}</a></div>`
+                );
+            }
+            if (d.contact?.phone) contactRows.push(`<div><strong>${escapeHtml(t("contact.phone"))}:</strong> ${escapeHtml(d.contact.phone)}</div>`);
+            if (d.contact?.email) contactRows.push(`<div><strong>${escapeHtml(t("contact.email"))}:</strong> ${escapeHtml(d.contact.email)}</div>`);
+            if (d.contact?.social) contactRows.push(`<div><strong>${escapeHtml(t("contact.social"))}:</strong> ${escapeHtml(d.contact.social)}</div>`);
+
+            const notesTrim = (typeof notesValue === "string") ? notesValue.trim() : "";
+            const extractionContactTrim = (typeof extractionContact === "string") ? extractionContact.trim() : "";
+            if (notesTrim && notesTrim !== extractionContactTrim && (!waInfo || notesTrim !== waInfo.display)) {
+                contactRows.push(`<div><strong>${escapeHtml(t("contact.notes"))}:</strong> ${escapeHtml(notesTrim)}</div>`);
+            }
+            if (contactRows.length) {
+                html += `<div class="lb-section"><h3>${escapeHtml(t("sections.contact"))}</h3>${contactRows.join("")}</div>`;
+            }
+            if (waLink) {
+                html += `<a href="${waLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${escapeHtml(t("contact.whatsappCta"))}</a>`;
+            } else if (askForContactLink) {
+                html += `<a href="${askForContactLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${escapeHtml(t("contact.askForContactCta"))}</a>`;
+            }
+            if (d.contact?.phone) {
+                html += `<a href="tel:${d.contact.phone}" style="display:block; text-align:center; margin-top:10px; color:#555; text-decoration:underline;">${escapeHtml(t("contact.call", { phone: d.contact.phone }))}</a>`;
+            }
+
+            document.getElementById('lb-details-content').innerHTML = html;
+            document.getElementById('lightbox').classList.add('active');
+        };
+
+        window.closeProfile = () => {
+            document.getElementById('lightbox').classList.remove('active');
+        };
+
+        function updateLightboxMedia() {
+            if (currentItemIndex < 0) return;
+            if (!currentMediaEntries.length) return;
+            const total = currentMediaEntries.length;
+            currentMediaIndex = (currentMediaIndex + total) % total;
+            const entry = currentMediaEntries[currentMediaIndex];
+            const mainImg = document.getElementById('lb-main-img');
+            const mainVideo = document.getElementById('lb-main-video');
+            if (entry.type === "image") {
+                mainVideo.pause();
+                mainVideo.style.display = "none";
+                mainImg.style.display = "block";
+                mainImg.src = entry.src;
+            } else {
+                mainImg.style.display = "none";
+                mainVideo.style.display = "block";
+                mainVideo.src = entry.src;
+                mainVideo.play().catch(() => {});
+            }
+            let activeEl = null;
+            document.querySelectorAll('#lb-thumbs .lb-thumb').forEach((el, idx) => {
+                const isActive = idx === currentMediaIndex;
+                el.classList.toggle('active', isActive);
+                if (isActive) activeEl = el;
+            });
+            if (activeEl) {
+                activeEl.scrollIntoView({ block: 'nearest', inline: 'center' });
+            }
+        }
+
+        window.switchMedia = (idx) => {
+            currentMediaIndex = idx;
+            updateLightboxMedia();
+        };
+
+        function cycleMedia(delta) {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox.classList.contains('active')) return;
+            if (!(currentMediaEntries && currentMediaEntries.length > 1)) return;
+            currentMediaIndex += delta;
+            updateLightboxMedia();
+        }
+
+        document.addEventListener('keydown', e => {
+            const authActive = document.getElementById('auth-overlay')?.classList.contains('active');
+            if (authActive) return;
+            if (e.key === "Escape" && document.body.classList.contains("filters-open")) {
+                closeFilters();
+                return;
+            }
+            const disclaimerActive = document.getElementById('disclaimer-overlay')?.classList.contains('active');
+            if (e.key === "Escape") {
+                if (disclaimerActive) {
+                    hideDisclaimer();
+                    return;
+                }
+                closeProfile();
+            }
+            if (disclaimerActive) return;
+            if (e.key === "ArrowRight") {
+                e.preventDefault();
+                cycleMedia(1);
+            } else if (e.key === "ArrowLeft") {
+                e.preventDefault();
+                cycleMedia(-1);
+            }
+        });
+
+        // Disclaimer controls
+        document.getElementById("disclaimer-overlay")?.addEventListener("click", () => hideDisclaimer());
+        document.getElementById("disclaimer-close")?.addEventListener("click", () => hideDisclaimer());
+        document.getElementById("disclaimer-accept")?.addEventListener("click", () => hideDisclaimer());
+
+        initLanguage();
+        initAuthGate();
+    </script>
+</body>
+
+</html>

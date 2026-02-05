@@ -1,0 +1,29 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+dist/
+build/
+
+# Local env
+.env
+.env.*
+
+# Generated outputs / caches
+output*/
+pipeline.db
+*.db
+geo_cache.json
+
+# Large/private assets (do not publish by default)
+web/media_profiles/
+web/catalog.json
+newapp/PATRON/
+newapp/[0-9][0-9][0-9]/
+newapp/**/*.json
