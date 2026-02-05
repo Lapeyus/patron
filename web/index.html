@@ -955,6 +955,29 @@
                 padding: 20px;
             }
 
+            /* Tap image to toggle full-screen media on mobile */
+            #lightbox.media-fullscreen .lb-details {
+                display: none;
+            }
+
+            #lightbox.media-fullscreen .lb-media {
+                height: 100vh;
+                height: 100dvh;
+            }
+
+            #lightbox.media-fullscreen #lb-thumbs {
+                display: none;
+            }
+
+            #lightbox.media-fullscreen #lb-close-global {
+                background: rgba(0, 0, 0, 0.45);
+                color: #fff;
+            }
+
+            #lightbox.media-fullscreen #lb-close-global:hover {
+                background: rgba(0, 0, 0, 0.6);
+            }
+
             .lb-header h1 {
                 font-size: 22px;
             }
@@ -2421,8 +2444,35 @@
             }).join('');
         }
 
+        function isMobileLightboxViewport() {
+            try {
+                return window.matchMedia("(max-width: 800px)").matches;
+            } catch (_) {
+                return (window.innerWidth || 0) <= 800;
+            }
+        }
+
+        function setLightboxMediaFullscreen(enabled) {
+            const lightbox = document.getElementById("lightbox");
+            if (!lightbox) return;
+            lightbox.classList.toggle("media-fullscreen", !!enabled);
+        }
+
+        function toggleLightboxMediaFullscreen() {
+            if (!isMobileLightboxViewport()) return;
+            const lightbox = document.getElementById("lightbox");
+            if (!lightbox || !lightbox.classList.contains("active")) return;
+            lightbox.classList.toggle("media-fullscreen");
+        }
+
+        function exitLightboxMediaFullscreen() {
+            setLightboxMediaFullscreen(false);
+        }
+
 	        window.openProfile = (idx) => {
 	            const item = filteredItems_[idx];
+	            if (!item) return;
+                exitLightboxMediaFullscreen();
 	            const d = item.structured_data || {};
 	            const m = item.path_metadata || [];
 
@@ -2585,11 +2635,12 @@
 
             document.getElementById('lb-details-content').innerHTML = html;
             document.getElementById('lightbox').classList.add('active');
-        };
+	        };
 
-        window.closeProfile = () => {
-            document.getElementById('lightbox').classList.remove('active');
-        };
+	        window.closeProfile = () => {
+                exitLightboxMediaFullscreen();
+	            document.getElementById('lightbox').classList.remove('active');
+	        };
 
         function updateLightboxMedia() {
             if (currentItemIndex < 0) return;
@@ -2647,6 +2698,11 @@
                     hideDisclaimer();
                     return;
                 }
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox?.classList.contains('active') && lightbox.classList.contains('media-fullscreen')) {
+                    exitLightboxMediaFullscreen();
+                    return;
+                }
                 closeProfile();
             }
             if (disclaimerActive) return;
@@ -2658,6 +2714,9 @@
                 cycleMedia(-1);
             }
         });
+
+        // Tap main image to go full-screen on mobile.
+        document.getElementById('lb-main-img')?.addEventListener('click', () => toggleLightboxMediaFullscreen());
 
         // Disclaimer controls
         document.getElementById("disclaimer-overlay")?.addEventListener("click", () => hideDisclaimer());
