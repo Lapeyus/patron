@@ -3,7 +3,8 @@
 
 	<head>
 	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#e51d53">
 	    <!-- Inline favicon (avoids extra requests / 404). -->
 	    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%23e51d53%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2743%27%20font-size%3D%2736%27%20font-family%3D%27Arial%2C%20sans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%20fill%3D%27%23ffffff%27%3EP%3C/text%3E%3C/svg%3E">
 	    <title>Catálogo Patrón</title>
@@ -15,6 +16,23 @@
             --bg: #fff;
             --card-bg: #fff;
             --border: #dddddd;
+        }
+
+        html {
+            height: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        button,
+        input,
+        select {
+            font: inherit;
         }
 
         body {
@@ -37,12 +55,23 @@
             background: #fff;
             border-right: 1px solid var(--border);
             padding: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 10;
+        }
+
+        .filters-content {
+            flex: 1 1 auto;
+            min-height: 0;
             overflow-y: auto;
             display: flex;
             flex-direction: column;
             gap: 24px;
-            z-index: 10;
             scrollbar-width: thin;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
         }
 
         .filters-top {
@@ -153,6 +182,7 @@
             flex-direction: column;
             padding: 24px 40px;
             overflow: hidden;
+            min-height: 0;
         }
 
         .controls {
@@ -208,8 +238,61 @@
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
             padding-right: 10px;
             padding-bottom: 40px;
+            min-height: 0;
+        }
+
+        .loading-state,
+        .load-error {
+            grid-column: 1 / -1;
+            padding: 44px 0;
+            text-align: center;
+            color: #666;
+        }
+
+        .loading-spinner {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 3px solid #eee;
+            border-top-color: var(--accent);
+            margin: 0 auto 10px;
+            animation: spin 0.9s linear infinite;
+        }
+
+        .retry-btn {
+            margin-top: 12px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .retry-btn:hover {
+            background: #f4f4f4;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .loading-spinner {
+                animation: none;
+            }
+
+            .reviews-track {
+                transition: none;
+            }
+
+            .card-img-container img.main-img {
+                transition: none;
+            }
         }
 
         /* Modern Card */
@@ -219,6 +302,8 @@
             flex-direction: column;
             border-radius: 12px;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
         }
 
         .card-img-container {
@@ -383,6 +468,8 @@
             padding: 32px;
             overflow-y: auto;
             position: relative;
+            -webkit-overflow-scrolling: touch;
+            min-height: 0;
         }
 
         .lb-close {
@@ -949,6 +1036,7 @@
             color: #333;
             font-size: 14px;
             line-height: 1.5;
+            -webkit-overflow-scrolling: touch;
         }
 
         .disclaimer-body p {
@@ -982,8 +1070,13 @@
         @media (max-width: 800px) {
             body {
                 flex-direction: column;
-                height: 100vh;
-                height: 100dvh;
+                height: auto;
+                min-height: 100vh;
+                min-height: 100dvh;
+            }
+
+            body.overlay-open {
+                overflow: hidden;
             }
 
             #filters-backdrop {
@@ -991,6 +1084,8 @@
                 inset: 0;
                 background: rgba(0, 0, 0, 0.55);
                 z-index: 900;
+                -webkit-backdrop-filter: blur(3px);
+                backdrop-filter: blur(3px);
             }
 
             #filters-backdrop.active {
@@ -1003,21 +1098,60 @@
                 left: 0;
                 bottom: 0;
                 width: min(340px, 88vw);
+                padding: calc(16px + env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom));
                 border-right: 1px solid var(--border);
                 box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
                 transform: translateX(-110%);
                 transition: transform 0.22s ease;
                 z-index: 950;
+                -webkit-overflow-scrolling: touch;
+                overscroll-behavior: contain;
+                gap: 18px;
             }
 
             aside.active {
                 transform: translateX(0);
             }
 
+            .filters-top {
+                position: sticky;
+                top: 0;
+                z-index: 2;
+                background: rgba(255, 255, 255, 0.92);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                padding-bottom: 12px;
+            }
+
+            .filters-footer {
+                position: sticky;
+                bottom: 0;
+                z-index: 2;
+                background: rgba(255, 255, 255, 0.92);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                padding-bottom: 12px;
+                margin-top: 8px;
+            }
+
+            .filter-group label {
+                padding: 6px 0;
+            }
+
+            .filter-group input {
+                width: 18px;
+                height: 18px;
+            }
+
             .filters-close {
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                width: 44px;
+                height: 44px;
+                line-height: 42px;
+                border-radius: 14px;
+                font-size: 26px;
             }
 
             .filters-toggle {
@@ -1025,11 +1159,20 @@
             }
 
             main {
-                padding: 16px;
-                overflow: hidden;
+                padding: 0 16px calc(16px + env(safe-area-inset-bottom));
+                overflow: visible;
             }
 
             .controls {
+                position: sticky;
+                top: 0;
+                z-index: 40;
+                background: rgba(255, 255, 255, 0.92);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                border-bottom: 1px solid var(--border);
+                margin: 0 -16px 14px;
+                padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
                 flex-wrap: wrap;
                 gap: 10px;
                 align-items: stretch;
@@ -1039,27 +1182,37 @@
             .controls input {
                 width: 100%;
                 flex: 1 1 100%;
-            }
-
-            .controls select,
-            .lang-select,
-            .filters-toggle {
-                flex: 1 1 auto;
+                font-size: 16px;
             }
 
             #stats {
                 padding: 0;
                 flex: 1 1 100%;
+                font-size: 12px;
+                color: #777;
             }
 
             .grid {
                 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
                 gap: 16px;
                 padding-right: 0;
+                overflow: visible;
+            }
+            
+            .lang-select,
+            #langSelect {
+                font-size: 16px;
             }
 
-            body.filters-open .grid {
-                overflow: hidden;
+            .auth-input {
+                font-size: 16px;
+            }
+
+            #auth-overlay,
+            #disclaimer-overlay {
+                padding: 16px;
+                padding-top: calc(16px + env(safe-area-inset-top));
+                padding-bottom: calc(16px + env(safe-area-inset-bottom));
             }
 
             .lb-content {
@@ -1071,14 +1224,65 @@
             }
 
             .lb-media {
-                height: 40vh;
+                height: 44vh;
                 flex: none;
+                touch-action: pan-y;
             }
 
             .lb-details {
                 flex: 1;
                 min-width: 0;
                 padding: 20px;
+                -webkit-overflow-scrolling: touch;
+                font-size: 15px;
+            }
+
+            #lb-close-global {
+                top: calc(12px + env(safe-area-inset-top));
+                right: calc(12px + env(safe-area-inset-right));
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                font-size: 28px;
+            }
+
+            .lb-nav {
+                width: 50px;
+                height: 50px;
+                font-size: 28px;
+            }
+
+            .lb-nav-left {
+                left: calc(12px + env(safe-area-inset-left));
+            }
+
+            .lb-nav-right {
+                right: calc(12px + env(safe-area-inset-right));
+            }
+
+            .lb-thumbs {
+                left: calc(12px + env(safe-area-inset-left));
+                right: calc(12px + env(safe-area-inset-right));
+                bottom: calc(12px + env(safe-area-inset-bottom));
+                padding: 10px 12px;
+            }
+
+            .lb-thumb {
+                width: 48px;
+                height: 48px;
+                border-radius: 10px;
+            }
+
+            .reviews-nav-btn {
+                width: 44px;
+                height: 44px;
+                line-height: 42px;
+                font-size: 26px;
+                border-radius: 14px;
+            }
+
+            .reviews-indicator {
+                font-size: 13px;
             }
 
             /* Tap image to toggle full-screen media on mobile */
@@ -1122,6 +1326,7 @@
 	            <h2 id="app-title">Comunidad Patrón</h2>
 	            <button id="filters-close" class="filters-close" type="button" aria-label="Cerrar filtros" onclick="closeFilters()">&times;</button>
 	        </div>
+            <div id="filters-content" class="filters-content"></div>
             <div id="filters-footer" class="filters-footer">
                 <span class="filters-footer-label" id="filters-lang-label">Idioma</span>
                 <select id="langSelect" onchange="setLanguage(this.value)" aria-label="Idioma">
@@ -1129,13 +1334,12 @@
                     <option value="en">EN</option>
                 </select>
             </div>
-        <!-- Filters -->
     </aside>
 
     <main>
         <div class="controls">
             <button id="filters-toggle" class="filters-toggle" type="button" aria-label="Abrir filtros" onclick="openFilters()">Filtros</button>
-            <input type="text" id="searchInput" placeholder="Buscar..." oninput="render()">
+            <input type="search" id="searchInput" placeholder="Buscar..." oninput="render()" inputmode="search" enterkeyhint="search" autocapitalize="none" autocomplete="off">
             <div id="stats"></div>
         </div>
         <div class="grid" id="grid"></div>
@@ -1212,6 +1416,8 @@
         let filters = {};
         let activeFilters = {};
         let dataLoaded = false;
+        let scrollLockActive = false;
+        let scrollLockY = 0;
         const ENRICHED_DATA_PATH = "catalog.json";
         const MEDIA_BASE_PATH = "";
         const AUTH_SHA256_B64 = "bnU6awo3zRAyyZG6FnzuWW25rcozFi6p5IoLqGxNrtM=";
@@ -1237,6 +1443,9 @@
                     sortPriceAsc: "Precio menor a mayor",
                     sortPriceDesc: "Precio mayor a menor",
                     statsFound: "{count} encontrados",
+                    loading: "Cargando…",
+                    loadError: "No se pudo cargar el catálogo.",
+                    retry: "Reintentar",
                 },
                 nav: {
                     left: "Mover a la izquierda",
@@ -1370,6 +1579,9 @@
                     sortPriceAsc: "Price Low-High",
                     sortPriceDesc: "Price High-Low",
                     statsFound: "{count} found",
+                    loading: "Loading…",
+                    loadError: "Failed to load the catalog.",
+                    retry: "Retry",
                 },
                 nav: {
                     left: "Move left",
@@ -1785,14 +1997,30 @@
         }
 
         async function loadData() {
+            const statsEl = document.getElementById("stats");
+            const gridEl = document.getElementById("grid");
+            if (statsEl) statsEl.textContent = t("controls.loading");
+            if (gridEl) {
+                gridEl.innerHTML = `<div class="loading-state"><div class="loading-spinner"></div><div>${escapeHtml(t("controls.loading"))}</div></div>`;
+            }
+
             try {
                 const res = await fetch(ENRICHED_DATA_PATH);
+                if (!res.ok) {
+                    throw new Error(`HTTP ${res.status}`);
+                }
                 const data = await res.json();
                 catalog = transformProfiles(data.profiles || []);
                 dataLoaded = true;
                 buildFilters();
                 render();
-            } catch (e) { console.error(e); }
+            } catch (e) {
+                console.error(e);
+                if (statsEl) statsEl.textContent = t("controls.loadError");
+                if (gridEl) {
+                    gridEl.innerHTML = `<div class="load-error"><div>${escapeHtml(t("controls.loadError"))}</div><button class="retry-btn" type="button" onclick="loadData()">${escapeHtml(t("controls.retry"))}</button></div>`;
+                }
+            }
         }
 
         function isProfileEnabled(profile) {
@@ -2136,8 +2364,13 @@
             return MEDIA_BASE_PATH + clean;
         }
 
+        function getFiltersMountEl() {
+            return document.getElementById('filters-content') || document.getElementById('filters');
+        }
+
         function buildFilters() {
-            const filtersContainer = document.getElementById('filters');
+            const filtersContainer = getFiltersMountEl();
+            if (!filtersContainer) return;
             filtersContainer.querySelectorAll('.filter-group').forEach(group => group.remove());
 
             filters = {};
@@ -2170,9 +2403,6 @@
                 renderFilterUI(t(spec.labelKey), filters[spec.key], spec.key);
             });
             renderCategoryToggles();
-
-            const footer = document.getElementById("filters-footer");
-            if (footer) filtersContainer.appendChild(footer);
         }
 
         function renderFilterUI(label, set, key) {
@@ -2193,7 +2423,7 @@
                 l.appendChild(document.createTextNode(` ${displayVal}`));
                 group.appendChild(l);
             });
-            document.getElementById('filters').appendChild(group);
+            getFiltersMountEl()?.appendChild(group);
         }
 
         function renderCategoryToggles() {
@@ -2221,7 +2451,7 @@
                 group.appendChild(l);
             });
 
-            document.getElementById('filters').appendChild(group);
+            getFiltersMountEl()?.appendChild(group);
         }
 
         window.toggleFilter = (k, v) => {
@@ -2230,6 +2460,47 @@
             else activeFilters[k].add(v);
             render();
         };
+
+        function syncOverlayLock() {
+            const authActive = document.getElementById("auth-overlay")?.classList.contains("active");
+            const disclaimerActive = document.getElementById("disclaimer-overlay")?.classList.contains("active");
+            const lightboxActive = document.getElementById("lightbox")?.classList.contains("active");
+            const filtersActive = document.getElementById("filters")?.classList.contains("active");
+            const shouldLock = !!(authActive || disclaimerActive || lightboxActive || filtersActive);
+            document.body.classList.toggle("overlay-open", shouldLock);
+
+            const mobile = isMobileLightboxViewport();
+            if (!mobile) {
+                if (scrollLockActive) {
+                    document.body.style.position = "";
+                    document.body.style.top = "";
+                    document.body.style.left = "";
+                    document.body.style.right = "";
+                    document.body.style.width = "";
+                    window.scrollTo(0, scrollLockY);
+                    scrollLockActive = false;
+                }
+                return;
+            }
+
+            if (shouldLock && !scrollLockActive) {
+                scrollLockY = window.scrollY || 0;
+                document.body.style.position = "fixed";
+                document.body.style.top = `-${scrollLockY}px`;
+                document.body.style.left = "0";
+                document.body.style.right = "0";
+                document.body.style.width = "100%";
+                scrollLockActive = true;
+            } else if (!shouldLock && scrollLockActive) {
+                document.body.style.position = "";
+                document.body.style.top = "";
+                document.body.style.left = "";
+                document.body.style.right = "";
+                document.body.style.width = "";
+                window.scrollTo(0, scrollLockY);
+                scrollLockActive = false;
+            }
+        }
 
         function openFilters() {
             const authActive = document.getElementById("auth-overlay")?.classList.contains("active");
@@ -2241,6 +2512,7 @@
             document.getElementById("filters-backdrop")?.classList.add("active");
             document.body.classList.add("filters-open");
             document.getElementById("filters-toggle")?.setAttribute("aria-expanded", "true");
+            syncOverlayLock();
         }
 
         function closeFilters() {
@@ -2248,6 +2520,7 @@
             document.getElementById("filters-backdrop")?.classList.remove("active");
             document.body.classList.remove("filters-open");
             document.getElementById("filters-toggle")?.setAttribute("aria-expanded", "false");
+            syncOverlayLock();
         }
 
         window.openFilters = openFilters;
@@ -2257,12 +2530,14 @@
             const overlay = document.getElementById("disclaimer-overlay");
             if (!overlay) return;
             overlay.classList.remove("active");
+            syncOverlayLock();
         }
 
         function showDisclaimer() {
             const overlay = document.getElementById("disclaimer-overlay");
             if (!overlay) return;
             overlay.classList.add("active");
+            syncOverlayLock();
         }
 
         function showAuthGate() {
@@ -2276,12 +2551,14 @@
                 input.value = "";
                 setTimeout(() => input.focus(), 0);
             }
+            syncOverlayLock();
         }
 
         function hideAuthGate() {
             const overlay = document.getElementById("auth-overlay");
             if (!overlay) return;
             overlay.classList.remove("active");
+            syncOverlayLock();
         }
 
         function isAuthRemembered() {
@@ -2910,11 +3187,13 @@
             document.getElementById('lb-details-content').innerHTML = html;
             initReviewsCarousel();
             document.getElementById('lightbox').classList.add('active');
+            syncOverlayLock();
 	        };
 
 	        window.closeProfile = () => {
                 exitLightboxMediaFullscreen();
 	            document.getElementById('lightbox').classList.remove('active');
+                syncOverlayLock();
 	        };
 
         function updateLightboxMedia() {
@@ -2990,13 +3269,59 @@
             }
         });
 
-        // Tap main image to go full-screen on mobile.
-        document.getElementById('lb-main-img')?.addEventListener('click', () => toggleLightboxMediaFullscreen());
+        let lastLightboxSwipeAt = 0;
+
+        // Swipe media left/right to cycle on mobile.
+        (() => {
+            const media = document.querySelector('.lb-media');
+            if (!media) return;
+            let startX = null;
+            let startY = null;
+            let pointerId = null;
+
+            media.addEventListener('pointerdown', (e) => {
+                if (!isMobileLightboxViewport()) return;
+                const lightbox = document.getElementById('lightbox');
+                if (!lightbox?.classList.contains('active')) return;
+                if (!(currentMediaEntries && currentMediaEntries.length > 1)) return;
+                pointerId = e.pointerId;
+                startX = e.clientX;
+                startY = e.clientY;
+                try { media.setPointerCapture(pointerId); } catch (_) { /* ignore */ }
+            });
+
+            media.addEventListener('pointerup', (e) => {
+                if (pointerId == null || e.pointerId !== pointerId) return;
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                pointerId = null;
+                startX = null;
+                startY = null;
+                if (Math.abs(dx) < 50) return;
+                if (Math.abs(dx) <= Math.abs(dy)) return;
+                lastLightboxSwipeAt = Date.now();
+                cycleMedia(dx < 0 ? 1 : -1);
+            });
+
+            media.addEventListener('pointercancel', () => {
+                pointerId = null;
+                startX = null;
+                startY = null;
+            });
+        })();
+
+        // Tap main image to go full-screen on mobile (ignore if it was a swipe).
+        document.getElementById('lb-main-img')?.addEventListener('click', () => {
+            if (Date.now() - lastLightboxSwipeAt < 400) return;
+            toggleLightboxMediaFullscreen();
+        });
 
         // Disclaimer controls
         document.getElementById("disclaimer-overlay")?.addEventListener("click", () => hideDisclaimer());
         document.getElementById("disclaimer-close")?.addEventListener("click", () => hideDisclaimer());
         document.getElementById("disclaimer-accept")?.addEventListener("click", () => hideDisclaimer());
+
+        window.addEventListener("resize", () => syncOverlayLock());
 
         initLanguage();
         initAuthGate();
