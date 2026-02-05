@@ -1,0 +1,5316 @@
+{
+  "profiles": [
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "011"
+          ]
+        },
+        {
+          "folders": [
+            "9 - Perfiles - 31 - 40 años",
+            "011"
+          ]
+        }
+      ],
+      "profile": "011",
+      "media": [
+        "media_profiles/011/IMG-20250731-WA0103.jpg",
+        "media_profiles/011/IMG-20250731-WA0104.jpg",
+        "media_profiles/011/IMG-20250731-WA0105.jpg",
+        "media_profiles/011/IMG-20250731-WA0106.jpg",
+        "media_profiles/011/IMG-20250910-WA0143(1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "ALAJUELA",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": "$350 USD",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles con nuevas fotos - videos": "Perfiles con nuevas fotos - videos",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "035"
+          ]
+        },
+        {
+          "folders": [
+            "11 - Perfiles con nuevas fotos - videos",
+            "035"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "035"
+          ]
+        }
+      ],
+      "profile": "035",
+      "media": [
+        "media_profiles/035/IMG-20251229-WA0196.jpg",
+        "media_profiles/035/IMG-20251229-WA0198.jpg",
+        "media_profiles/035/IMG-20251229-WA0200.jpg",
+        "media_profiles/035/IMG-20251229-WA0202.jpg",
+        "media_profiles/035/IMG-20251229-WA0204.jpg",
+        "media_profiles/035/IMG-20260105-WA0117.jpg",
+        "media_profiles/035/IMG-20260105-WA0118.jpg",
+        "media_profiles/035/IMG-20260115-WA0042.jpg",
+        "media_profiles/035/IMG-20260115-WA0043.jpg",
+        "media_profiles/035/IMG-20260126-WA0091.jpg",
+        "media_profiles/035/IMG-20260126-WA0093.jpg",
+        "media_profiles/035/IMG-20260126-WA0095.jpg",
+        "media_profiles/035/IMG-20260202-WA0013.jpg",
+        "media_profiles/035/IMG-20260202-WA0014.jpg",
+        "media_profiles/035/IMG-20260202-WA0015.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000 CRC",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "Transporte": "Tiene Vehiculo",
+          "Resenas": "Las reseñas son espectaculares..."
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - cortesía": "Perfiles - cortesía"
+      },
+      "sources": [
+        {
+          "folders": [
+            "12 - Perfiles - cortesía",
+            "055"
+          ]
+        }
+      ],
+      "profile": "055",
+      "media": [
+        "media_profiles/055/IMG-20251022-WA0087.jpg",
+        "media_profiles/055/IMG-20251022-WA0088.jpg",
+        "media_profiles/055/IMG-20251022-WA0089.jpg",
+        "media_profiles/055/IMG-20251111-WA0085.jpg",
+        "media_profiles/055/IMG-20251111-WA0086.jpg",
+        "media_profiles/055/IMG-20251111-WA0087.jpg",
+        "media_profiles/055/IMG-20251111-WA0088.jpg",
+        "media_profiles/055/IMG-20251112-WA0050.jpg",
+        "media_profiles/055/IMG-20251112-WA0057.jpg",
+        "media_profiles/055/IMG-20251128-WA0000.jpg",
+        "media_profiles/055/IMG-20251128-WA0001.jpg",
+        "media_profiles/055/IMG-20251202-WA0002.jpg",
+        "media_profiles/055/IMG-20251202-WA0003.jpg",
+        "media_profiles/055/IMG-20251202-WA0004.jpg",
+        "media_profiles/055/VID-20251022-WA0126.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 30,
+        "height": "1.50",
+        "weight": "54",
+        "hair_color": "castaño",
+        "eye_color": "cafe oscuro",
+        "location": null,
+        "availability": "siempre a la comodidad del cliente. Contáctela WhatsApp 62 40 45 12",
+        "contact": "WhatsApp 62 40 45 12",
+        "prices": {
+          "one_hour": "₡100,000",
+          "two_hours": "₡160,000",
+          "three_hours": null,
+          "overnight": "₡350,000"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": "Natural sin cirugía",
+        "other_attributes": {
+          "Transporte": "Tiene Vehiculo",
+          "Resenas": "Las reseñas son excelentes"
+        }
+      },
+      "reviews": [
+        "Amor de mujer, esta bellisima, es una diosa de la seducción\ny quedas con ganas de repetir en la misma cita.\nLástima que fui corto ese día de dinero porque el cobro es por round y no por hora.\nPero es una sensualidad de dama.",
+        "Fue súper dulce y demasiado atenta,\ncero relojera y el servicio demasiado bueno!!",
+        "Es una cita con final feliz garantizado!\nSabe complacer, no es relojera, se ocupa de vos, como cliente.\nTe hace sentir especial. Una profesional. Es una milf.\nTiene boobs operadas, perfectas a su talle. Recomendadisima",
+        "Me atendí con la 055 y es una de las mejores experiencias que he tenido,\nes una dama en todo el sentido de la palabra, inteligente, sexy, simpática…\nno hay palabras de verdad, ya quiero repetir.",
+        "Es una dama que le gusta complacer en todo sentido,\nalegre, disfruta, puntual, viste bien y lo disfruta.",
+        "Es una mujer muy guapa, de buen vestir; agradable,\ninteresante, cero relojera, se acomoda a los horarios de uno;\nllega donde la citen; muy buena en la xxxx. Repetiré."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "VENEZOLANA": "VENEZOLANA"
+      },
+      "sources": [
+        {
+          "folders": [
+            "VENEZOLANA",
+            "071"
+          ]
+        }
+      ],
+      "profile": "071",
+      "media": [
+        "media_profiles/071/Copia de 1000872865 (1).mp4",
+        "media_profiles/071/VID-20250612-WA0029.mp4",
+        "media_profiles/071/VID-20250612-WA0030.mp4",
+        "media_profiles/071/VID-20250704-WA0067.mp4",
+        "media_profiles/071/VID-20250704-WA0068.mp4",
+        "media_profiles/071/VID-20250704-WA0071.mp4",
+        "media_profiles/071/VID-20250704-WA0074.mp4",
+        "media_profiles/071/VID-20250807-WA0229.mp4",
+        "media_profiles/071/VID-20250807-WA0230.mp4",
+        "media_profiles/071/VID-20250807-WA0376.mp4",
+        "media_profiles/071/VID-20250807-WA0378.mp4",
+        "media_profiles/071/VID-20250807-WA0388.mp4",
+        "media_profiles/071/VID-20250807-WA0389.mp4",
+        "media_profiles/071/VID-20250807-WA0390.mp4",
+        "media_profiles/071/VID-20250807-WA0398.mp4",
+        "media_profiles/071/VID-20250807-WA0399.mp4",
+        "media_profiles/071/VID-20250807-WA0405.mp4",
+        "media_profiles/071/VID-20250807-WA0406.mp4",
+        "media_profiles/071/VID-20250807-WA0407.mp4",
+        "media_profiles/071/scg0_IMG20250225WA0307 (1).jpg",
+        "media_profiles/071/scg0_IMG20250225WA0308 (1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "Escazú",
+        "availability": "Coordinar con previo aviso",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡80,000 CRC",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "origin": "Venezuela",
+          "exotica": "La unica venezolana en la comunidad",
+          "Recomendada":"De los mejores contactos. Bella, carismatica y sensual"
+        }
+        
+      },
+      "reviews": [
+        "La 071 es una de las chicas de esta comunidad del Patron\nque nos recuerdan a las más hermosas concubinas\npor las que este caballero ha sido ampliamente reconocido\nen nuestro medio.\nElla es dulce, cariñosa, físicamente atractiva y\nen la intimidad intensa y complaciente, no es relojera.\nSu acento venezolano la vuelve más deliciosa cuando\nal oído te susurra cariño mientras están juntos\ncon entusiasmo adolescente. Voy a repetir.",
+        "Increíble mujer, inteligente, conversadora,\napasionada y da el 100 %. Súper recomendada.",
+        "Invito a todos los que tengan la oportunidad\nde atenderse con ella no lo duden,\nes bonita, se puede conversar de todo con ella,\ny en la cama ufff insaciable,\nla recomiendo al 100% y un cuerpazo delicioso."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - cortesía": "Perfiles - cortesía"
+      },
+      "sources": [
+        {
+          "folders": [
+            "12 - Perfiles - cortesía",
+            "072"
+          ]
+        }
+      ],
+      "profile": "072",
+      "media": [
+        "media_profiles/072/IMG-20251206-WA0155.jpg",
+        "media_profiles/072/IMG-20251206-WA0156.jpg",
+        "media_profiles/072/IMG-20251206-WA0157.jpg",
+        "media_profiles/072/IMG-20251206-WA0158.jpg",
+        "media_profiles/072/IMG-20251206-WA0159.jpg",
+        "media_profiles/072/VID-20251206-WA0160.mp4"
+      ],
+      "extraction": {
+        "name": "Sophie",
+        "age": 25,
+        "height": "1.65",
+        "weight": "68 kilos",
+        "hair_color": "negro",
+        "eye_color": "miel con verde",
+        "location": "Heredia",
+        "availability": "Disponibilidad Inmediata.",
+        "contact": "cortesía",
+        "prices": {
+          "one_hour": "100 mil CRC",
+          "two_hours": "200mil CRC",
+          "three_hours": "300 mil CRC",
+          "overnight": "550 mil CRC"
+        },
+        "implants": true,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "073"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "073"
+          ]
+        }
+      ],
+      "profile": "073",
+      "media": [
+        "media_profiles/073/IMG-20250528-WA0315.jpg",
+        "media_profiles/073/IMG-20250528-WA0316.jpg",
+        "media_profiles/073/IMG-20250528-WA0317.jpg",
+        "media_profiles/073/IMG-20250528-WA0318.jpg",
+        "media_profiles/073/IMG-20250530-WA0246.jpg",
+        "media_profiles/073/IMG-20250615-WA0175.jpg",
+        "media_profiles/073/IMG-20250615-WA0176.jpg",
+        "media_profiles/073/IMG-20250615-WA0177.jpg",
+        "media_profiles/073/IMG-20250710-WA0198(1).jpg",
+        "media_profiles/073/IMG-20250710-WA0199(1).jpg",
+        "media_profiles/073/IMG-20250710-WA0200(1).jpg",
+        "media_profiles/073/IMG-20250710-WA0201(1).jpg",
+        "media_profiles/073/IMG-20250710-WA0203(1).jpg",
+        "media_profiles/073/VID-20250530-WA0247.mp4",
+        "media_profiles/073/scg0_unnamed--138 (1).jpg",
+        "media_profiles/073/scg0_unnamed1--121 (1).jpg",
+        "media_profiles/073/scg0_unnamed2--117 (1).jpg",
+        "media_profiles/073/scg0_unnamed3--93 (1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "ALAJUELA",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [
+        "Una de las mejores, en la cama en la personalidad,\nes única y además una mulota, presencialmente,\nya se he atendido varias veces,\nhay que conocerla se puede hablar de cualquier tema con ella.",
+        "Ella es un espectáculo de mujer, guapísima, un cuerpazo.\nEn la cama es increíble. Es un contacto q hay que vivirlo si o si."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "080"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "080"
+          ]
+        }
+      ],
+      "profile": "080",
+      "media": [
+        "media_profiles/080/IMG-20260114-WA0045.jpg",
+        "media_profiles/080/IMG-20260114-WA0047.jpg",
+        "media_profiles/080/IMG-20260114-WA0049.jpg",
+        "media_profiles/080/IMG-20260114-WA0051.jpg",
+        "media_profiles/080/IMG-20260114-WA0054.jpg",
+        "media_profiles/080/IMG-20260114-WA0056.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "1.70",
+        "weight": "55 kg",
+        "hair_color": "negro",
+        "eye_color": "claros",
+        "location": "Heredia",
+        "availability": "De lunes a viernes de 9 am a 9pm max.\nFines de semana a convertir según mi disponibilidad.",
+        "contact": null,
+        "prices": {
+          "one_hour": "100,000 CRC",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "reviews": [
+        "Saludos! Me gustaría confirmarles que sí concreté el encuentro con la dama\ny es una mujer increíble,\nno solo por su belleza física, que de igual manera es espectacular,\nsino que también es muy simpática y brinda un trato único!",
+        "La sensualidad, compañía y conversación que ella tiene\nson de otro planeta... es para no olvidar",
+        "Buena experiencia, me queda lejos por eso\nno he vuelto a repetir pero lo haría apenas pueda",
+	        "Me atiendo seguido con 080, una mujer increíble, divertida,\nbellísima y con un trato excepcional.\nLa mejor experiencia. Aparte inteligente y super creativa.\nMás que recomendada.",
+	        "Ella en general es muy linda de físico,\nviste muy elegante y simpática\ny a la hora de la cita se implica totalmente, se asegura\nde que la estés pasando bien y disfruta mucho también.",
+		        "Vengo a decirle que la 080 se voló todas las expectativas que\nyo pude haber tenido porque es simplemente\nuna mujer excepcional en todos los aspectos,\nuna presencia encantadora y una forma de ser hermosa, un cuerpazo\ny súper inteligente, va para el TOP, voy a repetir!!!!",
+			        "Es para confirmar que tuve el encuentro con la muchacha del perfil 080!\nDe fijo repetiré con ella, es una muchacha muy amena, y físicamente me encantó.\nCoordinar con ella fue súper sencillo.",
+			        "Ayer me atendí con ella y físicamente es preciosa, igual o más que en las fotos,\npero su personalidad aún más, quedé encantado con su trato de inicio a fin.\nPor mucho la mejor atención que he recibido. Planeo repetir con ella apenas pueda."
+			      ],
+			      "enabled": true
+			    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "123"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "123"
+          ]
+        }
+      ],
+      "profile": "123",
+      "media": [
+        "media_profiles/123/IMG-20251119-WA0035.jpg",
+        "media_profiles/123/IMG-20251119-WA0036.jpg",
+        "media_profiles/123/IMG-20251119-WA0037.jpg",
+        "media_profiles/123/IMG-20251119-WA0038.jpg",
+        "media_profiles/123/IMG-20251119-WA0039.jpg",
+        "media_profiles/123/IMG-20251124-WA0188.jpg",
+        "media_profiles/123/IMG-20251124-WA0189.jpg",
+        "media_profiles/123/IMG-20251215-WA0019.jpg",
+        "media_profiles/123/IMG-20251215-WA0020.jpg",
+        "media_profiles/123/IMG-20260127-WA0103.jpg",
+        "media_profiles/123/VID-20251119-WA0040.mp4",
+        "media_profiles/123/VID-20251215-WA0018.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 27,
+        "height": "1.63",
+        "weight": "60 kilos",
+        "hair_color": "negro",
+        "eye_color": "café",
+        "location": "San Antonio de desamparados",
+        "availability": "Puedo a cualquier hora",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$400",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "129"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "129"
+          ]
+        }
+      ],
+      "profile": "129",
+      "media": [
+        "media_profiles/129/IMG-20250607-WA0195.jpg",
+        "media_profiles/129/IMG-20250614-WA0095.jpg",
+        "media_profiles/129/IMG-20250614-WA0097.jpg",
+        "media_profiles/129/IMG-20260104-WA0108.jpg",
+        "media_profiles/129/IMG-20260104-WA0109.jpg",
+        "media_profiles/129/IMG-20260104-WA0110.jpg",
+        "media_profiles/129/IMG-20260104-WA0114.jpg",
+        "media_profiles/129/VID-20250525-WA0043 (1).mp4",
+        "media_profiles/129/VID-20250525-WA0079 (1).mp4",
+        "media_profiles/129/VID-20250607-WA0188.mp4",
+        "media_profiles/129/VID-20260104-WA0111.mp4",
+        "media_profiles/129/VID-20260104-WA0112.mp4",
+        "media_profiles/129/scg0_scg0IMG20250318WA0003 (1).jpg",
+        "media_profiles/129/scg0_scg0IMG20250318WA0004 (1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "1.65 mts",
+        "weight": "55 kilos",
+        "hair_color": "negro y colores fantasía",
+        "eye_color": "marrón",
+        "location": "San José",
+        "availability": "Disponibilidad a convenir",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡120,000 + transporte",
+          "two_hours": "₡220,000 + transporte",
+          "three_hours": null,
+          "overnight": "Noche completa ₡500,000 + transporte"
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "139"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "139"
+          ]
+        }
+      ],
+      "profile": "139",
+      "media": [
+        "media_profiles/139/IMG-20250715-WA0142.jpg",
+        "media_profiles/139/IMG-20250720-WA0043.jpg",
+        "media_profiles/139/IMG-20250720-WA0044.jpg",
+        "media_profiles/139/IMG-20250720-WA0045.jpg",
+        "media_profiles/139/IMG-20250808-WA0075.jpg",
+        "media_profiles/139/IMG-20250808-WA0076.jpg",
+        "media_profiles/139/IMG-20250808-WA0077.jpg",
+        "media_profiles/139/IMG-20251221-WA0065.jpg",
+        "media_profiles/139/IMG-20251221-WA0066.jpg",
+        "media_profiles/139/IMG-20251221-WA0067.jpg",
+        "media_profiles/139/Screenshot_20250725_085958_WhatsApp.jpg",
+        "media_profiles/139/Screenshot_20250725_090001_WhatsApp.jpg",
+        "media_profiles/139/Screenshot_20250725_090007_WhatsApp.jpg",
+        "media_profiles/139/Screenshot_20251130_081421_Gmail.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 27,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "San José",
+        "availability": "De 7 pm a 8 am $800. Disponibilidad de lunes a viernes de 2:00 pm a 9:00 pm. Fines de semana negociables.",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": "$400",
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "153"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "153"
+          ]
+        }
+      ],
+      "profile": "153",
+      "media": [
+        "media_profiles/153/IMG-20250524-WA0284 (1).jpg",
+        "media_profiles/153/IMG-20250524-WA0285 (1).jpg",
+        "media_profiles/153/IMG-20250524-WA0286 (1).jpg",
+        "media_profiles/153/IMG-20250524-WA0287 (1).jpg",
+        "media_profiles/153/IMG-20250730-WA0235.jpg",
+        "media_profiles/153/IMG-20250730-WA0236.jpg",
+        "media_profiles/153/IMG-20250730-WA0237.jpg",
+        "media_profiles/153/IMG-20250730-WA0238.jpg",
+        "media_profiles/153/IMG-20251001-WA0164.jpg",
+        "media_profiles/153/IMG-20251001-WA0165.jpg",
+        "media_profiles/153/scg0_scg0scg0IMG20250120WA0402 (1).jpg",
+        "media_profiles/153/scg0_scg0scg0IMG20250120WA0406 (1).jpg",
+        "media_profiles/153/scg0_unnamed6--55 (1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 153,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SABANILLA, SAN JOSE",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$150",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [
+        "Espectacular el trato, espectacular la forma de ser, espectacular la manera en que se desenvuelve,\nespectacular en la cama y espectacular físicamente..\n10 de 10 para ella en todo aspecto, no está atenta al tiempo,\nsiempre estuvo atenta a mi.."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "CARTAGO": "CARTAGO",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "CARTAGO",
+            "190"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "190"
+          ]
+        }
+      ],
+      "profile": "190",
+      "media": [
+        "media_profiles/190/IMG-20251014-WA0001.jpg",
+        "media_profiles/190/IMG-20251014-WA0002.jpg",
+        "media_profiles/190/IMG-20251014-WA0003.jpg",
+        "media_profiles/190/IMG-20251014-WA0004.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 24,
+        "height": "1.63",
+        "weight": "68",
+        "hair_color": "negro",
+        "eye_color": "café oscuro",
+        "location": "Cartago",
+        "availability": "Podríamos coordinar el día ya sea entre semana o fines de semana y horarios a cualquier hora del día y en la noche depende de la hora",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡70,000",
+          "two_hours": "₡130,000",
+          "three_hours": "₡180,000",
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "221"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "221"
+          ]
+        }
+      ],
+      "profile": "221",
+      "media": [
+        "media_profiles/221/IMG-20250604-WA0162.jpg",
+        "media_profiles/221/IMG-20250604-WA0164.jpg",
+        "media_profiles/221/IMG-20250604-WA0166.jpg",
+        "media_profiles/221/IMG-20250604-WA0168.jpg",
+        "media_profiles/221/IMG-20250628-WA0001.jpg",
+        "media_profiles/221/IMG-20250628-WA0007.jpg",
+        "media_profiles/221/IMG-20250822-WA0158.jpg",
+        "media_profiles/221/IMG-20251105-WA0128.jpg",
+        "media_profiles/221/IMG-20251105-WA0129.jpg",
+        "media_profiles/221/IMG-20251105-WA0130.jpg",
+        "media_profiles/221/IMG-20251105-WA0131.jpg",
+        "media_profiles/221/IMG-20251105-WA0132.jpg",
+        "media_profiles/221/IMG-20251105-WA0133.jpg",
+        "media_profiles/221/IMG-20251105-WA0134.jpg",
+        "media_profiles/221/IMG-20251105-WA0135.jpg",
+        "media_profiles/221/IMG-20251105-WA0136.jpg",
+        "media_profiles/221/IMG-20251105-WA0137.jpg",
+        "media_profiles/221/IMG-20251105-WA0138.jpg",
+        "media_profiles/221/IMG-20251105-WA0139.jpg",
+        "media_profiles/221/IMG-20251105-WA0140.jpg",
+        "media_profiles/221/IMG-20251105-WA0141.jpg",
+        "media_profiles/221/IMG-20251105-WA0142.jpg",
+        "media_profiles/221/scg0_IMG20250312WA0124 (1).jpg",
+        "media_profiles/221/scg0_IMG20250312WA0125 (1).jpg",
+        "media_profiles/221/scg0_IMG20250312WA0127 (1).jpg",
+        "media_profiles/221/scg0_IMG20250312WA0135 (1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 19,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "La Uruca San José",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "238"
+          ]
+        },
+        {
+          "folders": [
+            "9 - Perfiles - 31 - 40 años",
+            "238"
+          ]
+        }
+      ],
+      "profile": "238",
+      "media": [
+        "media_profiles/238/IMG-20251213-WA0112.jpg",
+        "media_profiles/238/IMG-20251213-WA0113.jpg",
+        "media_profiles/238/IMG-20251213-WA0114.jpg",
+        "media_profiles/238/IMG-20251213-WA0115.jpg",
+        "media_profiles/238/IMG-20251213-WA0116.jpg",
+        "media_profiles/238/IMG-20251213-WA0117.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "242"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "242"
+          ]
+        }
+      ],
+      "profile": "242",
+      "media": [
+        "media_profiles/242/IMG-20250610-WA0183.jpg",
+        "media_profiles/242/IMG-20250610-WA0184.jpg",
+        "media_profiles/242/IMG-20250918-WA0106.jpg",
+        "media_profiles/242/IMG-20250918-WA0108.jpg",
+        "media_profiles/242/IMG-20250918-WA0110.jpg",
+        "media_profiles/242/IMG-20250918-WA0113.jpg",
+        "media_profiles/242/IMG-20251024-WA0207.jpg",
+        "media_profiles/242/IMG-20251024-WA0210.jpg",
+        "media_profiles/242/IMG-20251112-WA0125.jpg",
+        "media_profiles/242/IMG-20251112-WA0126.jpg",
+        "media_profiles/242/IMG-20251112-WA0127.jpg",
+        "media_profiles/242/IMG-20251112-WA0128.jpg",
+        "media_profiles/242/IMG-20251112-WA0129.jpg",
+        "media_profiles/242/IMG-20251112-WA0130.jpg",
+        "media_profiles/242/IMG-20251112-WA0143.jpg",
+        "media_profiles/242/IMG-20251124-WA0392.jpg",
+        "media_profiles/242/IMG-20251124-WA0393.jpg",
+        "media_profiles/242/IMG-20251124-WA0394.jpg",
+        "media_profiles/242/IMG-20251203-WA0034.jpg",
+        "media_profiles/242/IMG-20251203-WA0035.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "Heredia",
+        "availability": "todos los días",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "251"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "251"
+          ]
+        }
+      ],
+      "profile": "251",
+      "media": [
+        "media_profiles/251/IMG-20260108-WA0268.jpg",
+        "media_profiles/251/VID-20260108-WA0265.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 24,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "ALAJUELA",
+        "availability": "Facilidad para transladarse",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [
+        "Ella es espectacular. El trato es 10/10 y es una Diosa en la cama."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "255"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "255"
+          ]
+        }
+      ],
+      "profile": "255",
+      "media": [
+        "media_profiles/255/IMG-20250930-WA0328.jpg",
+        "media_profiles/255/IMG-20250930-WA0329.jpg",
+        "media_profiles/255/IMG-20250930-WA0330.jpg",
+        "media_profiles/255/IMG-20250930-WA0331.jpg",
+        "media_profiles/255/IMG-20250930-WA0332.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 24,
+        "height": "1.55",
+        "weight": "64",
+        "hair_color": "Negro",
+        "eye_color": "cafe oscuro",
+        "location": "Tibás",
+        "availability": "inmediata",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡130,000 mil colones",
+          "two_hours": "₡160,000 mil",
+          "three_hours": "₡180,000 mil",
+          "overnight": "₡250,000 mil"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {
+          "lipotransferencia_count": 3
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "258"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "258"
+          ]
+        }
+      ],
+      "profile": "258",
+      "media": [
+        "media_profiles/258/IMG-20251221-WA0194.jpg",
+        "media_profiles/258/IMG-20251221-WA0195.jpg",
+        "media_profiles/258/IMG-20251221-WA0197.jpg",
+        "media_profiles/258/IMG-20251221-WA0201(1).jpg",
+        "media_profiles/258/VID-20251221-WA0200.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": "1.55",
+        "weight": "50 kg",
+        "hair_color": "castaño",
+        "eye_color": "cafés",
+        "location": "San José",
+        "availability": "Todos los días",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$290",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": true,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "297"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "297"
+          ]
+        }
+      ],
+      "profile": "297",
+      "media": [
+        "media_profiles/297/IMG-20260106-WA0183.jpg",
+        "media_profiles/297/IMG-20260106-WA0184.jpg",
+        "media_profiles/297/IMG-20260106-WA0185.jpg",
+        "media_profiles/297/IMG-20260106-WA0186.jpg",
+        "media_profiles/297/IMG-20260106-WA0187.jpg",
+        "media_profiles/297/IMG-20260106-WA0191.jpg",
+        "media_profiles/297/IMG-20260106-WA0192.jpg",
+        "media_profiles/297/IMG-20260106-WA0193.jpg",
+        "media_profiles/297/IMG-20260106-WA0194.jpg",
+        "media_profiles/297/IMG-20260106-WA0195.jpg",
+        "media_profiles/297/IMG-20260106-WA0196.jpg",
+        "media_profiles/297/VID-20260106-WA0188.mp4",
+        "media_profiles/297/VID-20260106-WA0189.mp4",
+        "media_profiles/297/VID-20260106-WA0201.mp4",
+        "media_profiles/297/VID-20260106-WA0202.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.60",
+        "weight": "54kg",
+        "hair_color": "negro",
+        "eye_color": "cafés",
+        "location": "San Miguel desamparados",
+        "availability": "entre semana en la mañana y en la tarde (noche no)",
+        "contact": null,
+        "prices": {
+          "one_hour": "150mil CRC",
+          "two_hours": "200mil CRC",
+          "three_hours": "300mil CRC",
+          "overnight": "500mil CRC"
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "324"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "324"
+          ]
+        }
+      ],
+      "profile": "324",
+      "media": [
+        "media_profiles/324/IMG-20260105-WA0045.jpg",
+        "media_profiles/324/IMG-20260105-WA0046.jpg",
+        "media_profiles/324/IMG-20260105-WA0047.jpg",
+        "media_profiles/324/IMG-20260105-WA0048.jpg",
+        "media_profiles/324/IMG-20260105-WA0050.jpg",
+        "media_profiles/324/VID-20260105-WA0044.mp4",
+        "media_profiles/324/motion_photo_5025876829678822502.jpg",
+        "media_profiles/324/motion_photo_5025876829678822502_1.jpg",
+        "media_profiles/324/motion_photo_8515008984146239232_1.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.58",
+        "weight": "50k",
+        "hair_color": "negros",
+        "eye_color": "cafés",
+        "location": "San Francisco de dos Ríos",
+        "availability": "a convenir",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250 USD",
+          "two_hours": "$350",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "327"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "327"
+          ]
+        }
+      ],
+      "profile": "327",
+      "media": [
+        "media_profiles/327/IMG-20251206-WA0000.jpg",
+        "media_profiles/327/IMG-20251206-WA0001.jpg",
+        "media_profiles/327/IMG-20251206-WA0002.jpg",
+        "media_profiles/327/IMG-20251206-WA0003.jpg",
+        "media_profiles/327/IMG-20251206-WA0004.jpg",
+        "media_profiles/327/IMG-20251206-WA0005.jpg",
+        "media_profiles/327/IMG-20251206-WA0007.jpg",
+        "media_profiles/327/IMG-20251206-WA0008.jpg",
+        "media_profiles/327/IMG-20251206-WA0009.jpg",
+        "media_profiles/327/IMG-20251206-WA0010.jpg",
+        "media_profiles/327/IMG-20260102-WA0300.jpg",
+        "media_profiles/327/IMG-20260105-WA0078.jpg",
+        "media_profiles/327/IMG-20260105-WA0084.jpg",
+        "media_profiles/327/IMG-20260110-WA0006.jpg",
+        "media_profiles/327/IMG-20260111-WA0089.jpg",
+        "media_profiles/327/IMG-20260111-WA0090.jpg",
+        "media_profiles/327/IMG-20260114-WA0149.jpg",
+        "media_profiles/327/IMG-20260117-WA0084.jpg",
+        "media_profiles/327/VID-20251206-WA0006.mp4",
+        "media_profiles/327/VID-20251219-WA0013.mp4",
+        "media_profiles/327/VID-20260102-WA0301.mp4",
+        "media_profiles/327/VID-20260105-WA0082.mp4",
+        "media_profiles/327/VID-20260110-WA0117.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 19,
+        "height": "1.70",
+        "weight": "55kg",
+        "hair_color": "castaño",
+        "eye_color": "verde",
+        "location": "Heredia",
+        "availability": "24/7",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250",
+          "two_hours": "$500",
+          "three_hours": "$650",
+          "overnight": "$960"
+        },
+        "implants": true,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "376"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "376"
+          ]
+        }
+      ],
+      "profile": "376",
+      "media": [
+        "media_profiles/376/IMG-20260125-WA0118.jpg",
+        "media_profiles/376/IMG-20260125-WA0120.jpg",
+        "media_profiles/376/IMG-20260125-WA0121.jpg",
+        "media_profiles/376/IMG-20260125-WA0125.jpg",
+        "media_profiles/376/IMG-20260125-WA0126.jpg",
+        "media_profiles/376/IMG-20260125-WA0128.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 23,
+        "height": "1.64",
+        "weight": "67",
+        "hair_color": "negro",
+        "eye_color": "cafe",
+        "location": "Santa Ana",
+        "availability": "de lunes a viernes",
+        "contact": null,
+        "prices": {
+          "one_hour": "$160",
+          "two_hours": "$260",
+          "three_hours": "$450",
+          "overnight": "$600"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "380"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "380"
+          ]
+        }
+      ],
+      "profile": "380",
+      "media": [
+        "media_profiles/380/IMG-20250524-WA0279 (1).jpg",
+        "media_profiles/380/IMG-20250524-WA0281 (1).jpg",
+        "media_profiles/380/IMG-20250524-WA0283 (1).jpg",
+        "media_profiles/380/IMG-20250820-WA0014.jpg",
+        "media_profiles/380/IMG-20250820-WA0016.jpg",
+        "media_profiles/380/IMG-20250820-WA0018.jpg",
+        "media_profiles/380/IMG-20250820-WA0020.jpg",
+        "media_profiles/380/IMG-20250917-WA0089.jpg",
+        "media_profiles/380/IMG-20250917-WA0090.jpg",
+        "media_profiles/380/IMG-20250917-WA0091.jpg",
+        "media_profiles/380/IMG-20250917-WA0092.jpg",
+        "media_profiles/380/IMG-20250917-WA0094.jpg",
+        "media_profiles/380/scg0_IMG20250317WA0002 (1).jpg",
+        "media_profiles/380/scg0_IMG20250317WA0003 (1).jpg",
+        "media_profiles/380/scg0_IMG20250317WA0004 (1).jpg",
+        "media_profiles/380/scg0_IMG20250317WA0005 (1).jpg",
+        "media_profiles/380/scg0_IMG20250317WA0006 (1).jpg",
+        "media_profiles/380/scg0_IMG20250317WA0007 (1).jpg",
+        "media_profiles/380/scg0_IMG20250317WA0008 (1).jpg",
+        "media_profiles/380/scg0_unnamed3--101 (1).jpg",
+        "media_profiles/380/scg0_unnamed4--91 (1).jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.55",
+        "weight": "46 kg",
+        "hair_color": "Cafe claro",
+        "eye_color": "Cafés",
+        "location": "HEREDIA",
+        "availability": "jueves a domingo y de lunes,martes y miércoles solamente en la tarde",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": true,
+        "uber": false,
+        "cosmetic_surgeries": true,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "382"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "382"
+          ]
+        }
+      ],
+      "profile": "382",
+      "media": [
+        "media_profiles/382/IMG-20260127-WA0199.jpg",
+        "media_profiles/382/IMG-20260127-WA0200.jpg",
+        "media_profiles/382/IMG-20260127-WA0201.jpg",
+        "media_profiles/382/IMG-20260127-WA0202.jpg",
+        "media_profiles/382/IMG-20260127-WA0203.jpg",
+        "media_profiles/382/IMG-20260127-WA0204.jpg",
+        "media_profiles/382/IMG-20260127-WA0205.jpg",
+        "media_profiles/382/IMG-20260127-WA0206.jpg",
+        "media_profiles/382/IMG-20260127-WA0207.jpg"
+      ],
+      "extraction": {
+        "name": "ISan",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": "Consultar disponibilidad porque trabajo",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "393"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "393"
+          ]
+        }
+      ],
+      "profile": "393",
+      "media": [
+        "media_profiles/393/IMG-20251018-WA0058.jpg",
+        "media_profiles/393/IMG-20251018-WA0059.jpg",
+        "media_profiles/393/IMG-20251210-WA0147.jpg",
+        "media_profiles/393/IMG-20260129-WA0087.jpg",
+        "media_profiles/393/IMG-20260129-WA0089.jpg",
+        "media_profiles/393/VID-20251018-WA0061.mp4",
+        "media_profiles/393/VID-20251018-WA0062.mp4",
+        "media_profiles/393/VID-20260129-WA0088.mp4",
+        "media_profiles/393/scg0_IMG20250407WA0396 (1).jpg",
+        "media_profiles/393/scg0_IMG20250407WA0397 (1).jpg"
+      ],
+      "extraction": {
+        "name": "393",
+        "age": 25,
+        "height": "1.69 cm",
+        "weight": "67 kilos",
+        "hair_color": "Rubia",
+        "eye_color": "Cafés",
+        "location": "Heredia",
+        "availability": "martes a viernes medio dia hasta las 8 pm\nSábados y domingos no realizo citas\nPor favor coordinar con 1 dia previo",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "409"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "409"
+          ]
+        }
+      ],
+      "profile": "409",
+      "media": [
+        "media_profiles/409/IMG-20251204-WA0216.jpg",
+        "media_profiles/409/IMG-20251204-WA0217.jpg",
+        "media_profiles/409/IMG-20251204-WA0218.jpg",
+        "media_profiles/409/IMG-20251204-WA0219.jpg",
+        "media_profiles/409/IMG-20251204-WA0220.jpg",
+        "media_profiles/409/IMG-20251204-WA0221.jpg",
+        "media_profiles/409/IMG-20251204-WA0222.jpg",
+        "media_profiles/409/IMG-20251204-WA0223.jpg",
+        "media_profiles/409/IMG-20251221-WA0173.jpg",
+        "media_profiles/409/IMG-20251221-WA0176.jpg",
+        "media_profiles/409/IMG-20260119-WA0000.jpg",
+        "media_profiles/409/IMG-20260119-WA0001.jpg",
+        "media_profiles/409/IMG-20260119-WA0002.jpg",
+        "media_profiles/409/IMG-20260119-WA0003.jpg",
+        "media_profiles/409/IMG-20260129-WA0073.jpg",
+        "media_profiles/409/IMG-20260129-WA0074.jpg",
+        "media_profiles/409/IMG-20260129-WA0075.jpg",
+        "media_profiles/409/IMG-20260129-WA0076.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.57cm",
+        "weight": "66kg",
+        "hair_color": "negro",
+        "eye_color": "café oscuro",
+        "location": "SAN JOSE",
+        "availability": "Lunes a Domingo",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": "$400",
+          "three_hours": null,
+          "overnight": "$600"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "412"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "412"
+          ]
+        }
+      ],
+      "profile": "412",
+      "media": [
+        "media_profiles/412/IMG-20260126-WA0110.jpg",
+        "media_profiles/412/IMG-20260126-WA0111.jpg",
+        "media_profiles/412/IMG-20260126-WA0112.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 27,
+        "height": "1.53",
+        "weight": "55 Kg",
+        "hair_color": "Café",
+        "eye_color": "café",
+        "location": "Alajuela",
+        "availability": "lunes a Domingo en las tardes y noches.",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "414"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "414"
+          ]
+        }
+      ],
+      "profile": "414",
+      "media": [
+        "media_profiles/414/IMG-20260111-WA0144.jpg",
+        "media_profiles/414/IMG-20260111-WA0145.jpg",
+        "media_profiles/414/IMG-20260111-WA0146.jpg",
+        "media_profiles/414/IMG-20260111-WA0147.jpg",
+        "media_profiles/414/IMG-20260111-WA0148.jpg",
+        "media_profiles/414/IMG-20260111-WA0149.jpg",
+        "media_profiles/414/IMG-20260111-WA0150.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 27,
+        "height": "157 cm",
+        "weight": "57 kg",
+        "hair_color": "Castaño",
+        "eye_color": "Negros",
+        "location": "Sabanilla o Jacó",
+        "availability": "Flexibles",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200 USD",
+          "two_hours": "$300 USD",
+          "three_hours": "$450 USD",
+          "overnight": "$900 USD"
+        },
+        "implants": true,
+        "uber": true,
+        "cosmetic_surgeries": true,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "417"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "417"
+          ]
+        }
+      ],
+      "profile": "417",
+      "media": [
+        "media_profiles/417/IMG-20251204-WA0001.jpg",
+        "media_profiles/417/IMG-20251204-WA0002.jpg",
+        "media_profiles/417/IMG-20251204-WA0003.jpg",
+        "media_profiles/417/IMG-20251204-WA0004.jpg",
+        "media_profiles/417/IMG-20251204-WA0005.jpg",
+        "media_profiles/417/IMG-20251204-WA0006.jpg",
+        "media_profiles/417/IMG-20251204-WA0007.jpg",
+        "media_profiles/417/IMG-20251204-WA0008.jpg",
+        "media_profiles/417/IMG-20251204-WA0009.jpg",
+        "media_profiles/417/IMG-20251204-WA0010.jpg",
+        "media_profiles/417/IMG-20251204-WA0011.jpg",
+        "media_profiles/417/IMG-20251204-WA0012.jpg",
+        "media_profiles/417/IMG-20251204-WA0013.jpg",
+        "media_profiles/417/IMG-20251204-WA0014.jpg",
+        "media_profiles/417/IMG-20251204-WA0015.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "1.51",
+        "weight": "57",
+        "hair_color": "Rubio",
+        "eye_color": "café",
+        "location": "San José",
+        "availability": "Todos los días y cualquier horario.",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": true,
+        "other_attributes": {
+          "Abdominoplastia": true
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "428"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "428"
+          ]
+        }
+      ],
+      "profile": "428",
+      "media": [
+        "media_profiles/428/IMG-20251117-WA0215.jpg",
+        "media_profiles/428/IMG-20251117-WA0216.jpg",
+        "media_profiles/428/IMG-20251117-WA0217.jpg",
+        "media_profiles/428/IMG-20251117-WA0218.jpg",
+        "media_profiles/428/IMG-20251117-WA0219.jpg",
+        "media_profiles/428/IMG-20251117-WA0224.jpg",
+        "media_profiles/428/IMG-20251124-WA0017.jpg",
+        "media_profiles/428/IMG-20251124-WA0018.jpg",
+        "media_profiles/428/IMG-20251124-WA0024.jpg",
+        "media_profiles/428/VID-20251117-WA0225.mp4",
+        "media_profiles/428/VID-20251117-WA0242.mp4",
+        "media_profiles/428/VID-20251124-WA0019.mp4",
+        "media_profiles/428/VID-20251124-WA0020.mp4",
+        "media_profiles/428/VID-20251124-WA0021.mp4",
+        "media_profiles/428/VID-20251124-WA0023.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "Moravia, San José",
+        "availability": "Amplia disponibilidad",
+        "contact": null,
+        "prices": {
+          "one_hour": "180 USD + transporte",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "432"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "432"
+          ]
+        }
+      ],
+      "profile": "432",
+      "media": [
+        "media_profiles/432/IMG-20251016-WA0077.jpg",
+        "media_profiles/432/IMG-20251016-WA0078.jpg",
+        "media_profiles/432/IMG-20251016-WA0079.jpg",
+        "media_profiles/432/IMG-20251016-WA0080.jpg",
+        "media_profiles/432/IMG-20251016-WA0081.jpg",
+        "media_profiles/432/IMG-20251016-WA0082.jpg",
+        "media_profiles/432/IMG-20251016-WA0083.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.62cm",
+        "weight": "62 kg",
+        "hair_color": " Negra ",
+        "eye_color": " Café ",
+        "location": " San José ",
+        "availability": "De domingos a miércoles disponible todo el día.",
+        "contact": null,
+        "prices": {
+          "one_hour": "$160",
+          "two_hours": "$250",
+          "three_hours": "$300",
+          "overnight": "$500"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "444"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "444"
+          ]
+        }
+      ],
+      "profile": "444",
+      "media": [
+        "media_profiles/444/IMG-20250603-WA0079.jpg",
+        "media_profiles/444/IMG-20250603-WA0080.jpg",
+        "media_profiles/444/IMG-20250603-WA0081.jpg",
+        "media_profiles/444/IMG-20250603-WA0082.jpg",
+        "media_profiles/444/IMG-20250616-WA0342.jpg",
+        "media_profiles/444/IMG-20250616-WA0343.jpg",
+        "media_profiles/444/IMG-20250616-WA0344.jpg",
+        "media_profiles/444/IMG-20250812-WA0148.jpg",
+        "media_profiles/444/IMG-20251230-WA0087.jpg",
+        "media_profiles/444/IMG-20260112-WA0092.jpg",
+        "media_profiles/444/VID-20250605-WA0306.mp4",
+        "media_profiles/444/VID-20260112-WA0187.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "300 USD",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "448"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "448"
+          ]
+        }
+      ],
+      "profile": "448",
+      "media": [
+        "media_profiles/448/IMG-20251204-WA0161.jpg",
+        "media_profiles/448/IMG-20251204-WA0162.jpg",
+        "media_profiles/448/IMG-20251204-WA0163.jpg",
+        "media_profiles/448/IMG-20251204-WA0164.jpg",
+        "media_profiles/448/IMG-20251204-WA0165.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 27,
+        "height": "163 cm",
+        "weight": "59 kg",
+        "hair_color": "castaño oscuro",
+        "eye_color": "café claro",
+        "location": "San José",
+        "availability": "preferible de 5pm en adelante. Podría en el dia con 1 dia previo de anticipación.",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡125000 CRC",
+          "two_hours": "₡250000 CRC",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "465"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "465"
+          ]
+        }
+      ],
+      "profile": "465",
+      "media": [
+        "media_profiles/465/IMG-20251011-WA0054.jpg",
+        "media_profiles/465/IMG-20251011-WA0055.jpg",
+        "media_profiles/465/IMG-20251011-WA0056.jpg",
+        "media_profiles/465/IMG-20251011-WA0057.jpg",
+        "media_profiles/465/IMG-20251011-WA0058.jpg",
+        "media_profiles/465/IMG-20251011-WA0060.jpg",
+        "media_profiles/465/IMG-20251011-WA0061.jpg",
+        "media_profiles/465/IMG-20251231-WA0015.jpg",
+        "media_profiles/465/IMG-20251231-WA0016.jpg",
+        "media_profiles/465/IMG-20251231-WA0017.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 21,
+        "height": "1.50",
+        "weight": "42kg",
+        "hair_color": "rubio",
+        "eye_color": "café avellana",
+        "location": "San José",
+        "availability": "L a D",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250 + transporte",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "484"
+          ]
+        }
+      ],
+      "profile": "484",
+      "media": [
+        "media_profiles/484/IMG-20251103-WA0225.jpg",
+        "media_profiles/484/IMG-20251103-WA0226.jpg",
+        "media_profiles/484/IMG-20251103-WA0227.jpg",
+        "media_profiles/484/IMG-20251103-WA0228.jpg",
+        "media_profiles/484/IMG-20251103-WA0229.jpg",
+        "media_profiles/484/IMG-20251103-WA0230.jpg",
+        "media_profiles/484/IMG-20251103-WA0231.jpg",
+        "media_profiles/484/IMG-20251103-WA0232.jpg",
+        "media_profiles/484/IMG-20251103-WA0233.jpg",
+        "media_profiles/484/IMG-20251103-WA0235.jpg",
+        "media_profiles/484/IMG-20251103-WA0236.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "486"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "486"
+          ]
+        }
+      ],
+      "profile": "486",
+      "media": [
+        "media_profiles/486/IMG-20251029-WA0071.jpg",
+        "media_profiles/486/IMG-20251029-WA0072.jpg",
+        "media_profiles/486/IMG-20251029-WA0073.jpg",
+        "media_profiles/486/IMG-20251029-WA0074.jpg",
+        "media_profiles/486/IMG-20251029-WA0075.jpg",
+        "media_profiles/486/IMG-20251029-WA0076.jpg",
+        "media_profiles/486/IMG-20251029-WA0077.jpg",
+        "media_profiles/486/IMG-20251029-WA0078.jpg",
+        "media_profiles/486/IMG-20251029-WA0079.jpg",
+        "media_profiles/486/IMG-20260128-WA0175.jpg",
+        "media_profiles/486/IMG-20260128-WA0176.jpg",
+        "media_profiles/486/IMG-20260128-WA0177.jpg",
+        "media_profiles/486/IMG-20260128-WA0178.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.75",
+        "weight": "54kg",
+        "hair_color": "negro",
+        "eye_color": "café",
+        "location": "Los Yoses San Pedro",
+        "availability": "Lunes- 12:00 medio dia -12:00 am Martes-en la noche Miércoles- en la noche Jueves-en la mañana Viernes- en la tarde Sábado y domingo disponible",
+        "contact": null,
+        "prices": {
+          "one_hour": "¢150,000",
+          "two_hours": "¢2210,000",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "disponibilidad": "negociable"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "489"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "489"
+          ]
+        }
+      ],
+      "profile": "489",
+      "media": [
+        "media_profiles/489/IMG-20250721-WA0204.jpg",
+        "media_profiles/489/IMG-20250721-WA0205.jpg",
+        "media_profiles/489/IMG-20250721-WA0206.jpg",
+        "media_profiles/489/IMG-20250721-WA0207.jpg",
+        "media_profiles/489/IMG-20250721-WA0208.jpg",
+        "media_profiles/489/IMG-20250721-WA0209.jpg",
+        "media_profiles/489/IMG-20250721-WA0210.jpg",
+        "media_profiles/489/IMG-20250721-WA0211.jpg",
+        "media_profiles/489/IMG-20250721-WA0212.jpg",
+        "media_profiles/489/IMG-20250721-WA0214.jpg",
+        "media_profiles/489/IMG-20250729-WA0112.jpg",
+        "media_profiles/489/IMG-20250804-WA0002.jpg",
+        "media_profiles/489/IMG-20250804-WA0003.jpg",
+        "media_profiles/489/IMG-20251116-WA0039.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 19,
+        "height": "1.50",
+        "weight": "50kg",
+        "hair_color": "castillo muy oscuro",
+        "eye_color": "cafés muy oscuros",
+        "location": "*SAN JOSE",
+        "availability": "LUNES MARTES Y MIERCOLES A CUALQUIER COSA\nDEPENDE DE DISPONIBILIDAD DE AMBOS",
+        "contact": null,
+        "prices": {
+          "one_hour": "$160",
+          "two_hours": "$250",
+          "three_hours": "$300",
+          "overnight": "$500"
+        },
+        "implants": true,
+        "uber": false,
+        "cosmetic_surgeries": true,
+        "other_attributes": {
+          "*SI, TENGO PECHOS PERO PEQUENOS": null
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "494"
+          ]
+        },
+        {
+          "folders": [
+            "9 - Perfiles - 31 - 40 años",
+            "494"
+          ]
+        }
+      ],
+      "profile": "494",
+      "media": [
+        "media_profiles/494/IMG-20260114-WA0037.jpg",
+        "media_profiles/494/IMG-20260114-WA0038.jpg",
+        "media_profiles/494/IMG-20260114-WA0039.jpg",
+        "media_profiles/494/IMG-20260114-WA0040.jpg",
+        "media_profiles/494/VID-20260114-WA0036.mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "495"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "495"
+          ]
+        }
+      ],
+      "profile": "495",
+      "media": [
+        "media_profiles/495/IMG-20251210-WA0159.jpg",
+        "media_profiles/495/IMG-20251210-WA0160.jpg",
+        "media_profiles/495/IMG-20251210-WA0161.jpg",
+        "media_profiles/495/IMG-20251210-WA0162.jpg",
+        "media_profiles/495/IMG-20251210-WA0163.jpg",
+        "media_profiles/495/IMG-20251210-WA0169.jpg",
+        "media_profiles/495/IMG-20251210-WA0172.jpg",
+        "media_profiles/495/IMG-20251210-WA0173.jpg",
+        "media_profiles/495/IMG-20251231-WA0055.jpg",
+        "media_profiles/495/IMG-20251231-WA0056.jpg",
+        "media_profiles/495/IMG-20251231-WA0057.jpg",
+        "media_profiles/495/IMG-20251231-WA0058.jpg",
+        "media_profiles/495/IMG-20260124-WA0006.jpg",
+        "media_profiles/495/IMG-20260124-WA0007.jpg",
+        "media_profiles/495/IMG-20260124-WA0008.jpg",
+        "media_profiles/495/IMG-20260124-WA0009.jpg",
+        "media_profiles/495/IMG-20260124-WA0012.jpg",
+        "media_profiles/495/VID-20251210-WA0167.mp4",
+        "media_profiles/495/VID-20260124-WA0017.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "ESCAZU",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "504"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "504"
+          ]
+        }
+      ],
+      "profile": "504",
+      "media": [
+        "media_profiles/504/IMG-20251210-WA0126.jpg",
+        "media_profiles/504/IMG-20251210-WA0127.jpg",
+        "media_profiles/504/IMG-20251210-WA0128.jpg",
+        "media_profiles/504/IMG-20251210-WA0129.jpg",
+        "media_profiles/504/IMG-20251210-WA0134.jpg",
+        "media_profiles/504/IMG-20251210-WA0136.jpg",
+        "media_profiles/504/IMG-20251210-WA0138.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.70",
+        "weight": "60kg",
+        "hair_color": "negro",
+        "eye_color": "café",
+        "location": "San José, Desamparados",
+        "availability": "Todos los días, a cualquier hora, solamente consultarme si tengo la disponibilidad en el día y la fecha que requieran.",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200 + uber",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "506"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "506"
+          ]
+        }
+      ],
+      "profile": "506",
+      "media": [
+        "media_profiles/506/IMG-20250821-WA0068.jpg",
+        "media_profiles/506/IMG-20250821-WA0070.jpg",
+        "media_profiles/506/IMG-20250821-WA0071.jpg",
+        "media_profiles/506/IMG-20250821-WA0072.jpg",
+        "media_profiles/506/IMG-20250821-WA0073.jpg",
+        "media_profiles/506/IMG-20250821-WA0074.jpg",
+        "media_profiles/506/IMG-20250930-WA0187.jpg",
+        "media_profiles/506/IMG-20250930-WA0188.jpg",
+        "media_profiles/506/IMG-20260122-WA0132.jpg",
+        "media_profiles/506/IMG-20260122-WA0133.jpg",
+        "media_profiles/506/IMG-20260122-WA0134.jpg",
+        "media_profiles/506/IMG-20260122-WA0135.jpg",
+        "media_profiles/506/VID-20250821-WA0075.mp4",
+        "media_profiles/506/VID-20250821-WA0076.mp4",
+        "media_profiles/506/VID-20250821-WA0077.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.60",
+        "weight": "56 kg",
+        "hair_color": "negro",
+        "eye_color": "café",
+        "location": "San José, San Sebastián",
+        "availability": "disponibilidad inmediata toda la semana",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250",
+          "two_hours": "$500",
+          "three_hours": "$750",
+          "overnight": "$850"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "511"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "511"
+          ]
+        }
+      ],
+      "profile": "511",
+      "media": [
+        "media_profiles/511/IMG-20250827-WA0301.jpg",
+        "media_profiles/511/IMG-20250827-WA0302.jpg",
+        "media_profiles/511/IMG-20250827-WA0304.jpg",
+        "media_profiles/511/IMG-20250827-WA0305.jpg",
+        "media_profiles/511/IMG-20250827-WA0306.jpg",
+        "media_profiles/511/IMG-20250827-WA0307.jpg",
+        "media_profiles/511/IMG-20250827-WA0309.jpg",
+        "media_profiles/511/IMG-20250827-WA0310.jpg",
+        "media_profiles/511/IMG-20260105-WA0058.jpg",
+        "media_profiles/511/IMG-20260105-WA0059.jpg",
+        "media_profiles/511/IMG-20260105-WA0062.jpg",
+        "media_profiles/511/IMG-20260105-WA0063.jpg",
+        "media_profiles/511/VID-20250827-WA0303.mp4",
+        "media_profiles/511/VID-20250827-WA0308.mp4",
+        "media_profiles/511/VID-20260105-WA0060.mp4",
+        "media_profiles/511/VID-20260105-WA0061.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.65",
+        "weight": "53 kilos",
+        "hair_color": "castaño",
+        "eye_color": "café",
+        "location": "Ciudad Colón",
+        "availability": "de lunes a domingo total disponibilidad",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300 + uber",
+          "two_hours": "$400 + uber",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "AFROCARIBEÑAS": "AFROCARIBEÑAS"
+      },
+      "sources": [
+        {
+          "folders": [
+            "AFROCARIBEÑAS",
+            "513"
+          ]
+        }
+      ],
+      "profile": "513",
+      "media": [
+        "media_profiles/513/IMG-20260109-WA0044.jpg",
+        "media_profiles/513/IMG-20260109-WA0045.jpg",
+        "media_profiles/513/IMG-20260109-WA0046.jpg",
+        "media_profiles/513/IMG-20260109-WA0053.jpg",
+        "media_profiles/513/IMG-20260109-WA0090.jpg",
+        "media_profiles/513/IMG-20260109-WA0091.jpg",
+        "media_profiles/513/VID-20260109-WA0067.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 21,
+        "height": "1.68 m",
+        "weight": "57 kg",
+        "hair_color": "Castaño oscuro",
+        "eye_color": "Marrón",
+        "location": "San José",
+        "availability": "Jueves: 7:00 pm – 12:00 am\nViernes: 1:00 pm – 8:00 pm\nDomingo: 8:00 pm – 10:00 pm\nMartes: 6:00 pm – 10:00 pm",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250",
+          "two_hours": "$350",
+          "three_hours": "$550",
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "518"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "518"
+          ]
+        }
+      ],
+      "profile": "518",
+      "media": [
+        "media_profiles/518/IMG-20260127-WA0110.jpg",
+        "media_profiles/518/IMG-20260127-WA0111.jpg",
+        "media_profiles/518/IMG-20260127-WA0112.jpg",
+        "media_profiles/518/IMG-20260127-WA0113.jpg",
+        "media_profiles/518/IMG-20260127-WA0115.jpg",
+        "media_profiles/518/IMG-20260129-WA0145.jpg",
+        "media_profiles/518/IMG-20260129-WA0146.jpg",
+        "media_profiles/518/VID-20260127-WA0114.mp4",
+        "media_profiles/518/VID-20260127-WA0116.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.50",
+        "weight": null,
+        "hair_color": "negro",
+        "eye_color": "negros",
+        "location": "San José desamparados",
+        "availability": "Todos los días de 10 am a 7pm",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$260",
+          "three_hours": "$380",
+          "overnight": "$600"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "Metadatos de carpetas": "Perfiles - por provincia: Perfiles - por provincia, SAN JOSE: SAN JOSE, Perfiles - 18 - 19 - 20 años: Perfiles - 18 - 19 - 20 años"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "533"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "533"
+          ]
+        }
+      ],
+      "profile": "533",
+      "media": [
+        "media_profiles/533/IMG-20250926-WA0065.jpg",
+        "media_profiles/533/IMG-20250926-WA0066.jpg",
+        "media_profiles/533/IMG-20250926-WA0067.jpg",
+        "media_profiles/533/IMG-20250926-WA0068.jpg",
+        "media_profiles/533/IMG-20250926-WA0069.jpg",
+        "media_profiles/533/IMG-20250926-WA0070.jpg",
+        "media_profiles/533/IMG-20250926-WA0071.jpg",
+        "media_profiles/533/IMG-20250926-WA0072.jpg",
+        "media_profiles/533/IMG-20250926-WA0073.jpg",
+        "media_profiles/533/IMG-20250926-WA0074.jpg",
+        "media_profiles/533/IMG-20260115-WA0309.jpg",
+        "media_profiles/533/VID-20250926-WA0075.mp4",
+        "media_profiles/533/VID-20260115-WA0312.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.54",
+        "weight": "51",
+        "hair_color": "Rubio",
+        "eye_color": "cafés claros",
+        "location": "San José desamparados",
+        "availability": "Disponible Todos los días, me sirve muchísimo más en la mañana y tarde, pero también puedo coordinar para las noches!!",
+        "contact": null,
+        "prices": {
+          "one_hour": "60.000 + transporte",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "534"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "534"
+          ]
+        }
+      ],
+      "profile": "534",
+      "media": [
+        "media_profiles/534/IMG-20251124-WA0124.jpg",
+        "media_profiles/534/IMG-20251124-WA0125.jpg",
+        "media_profiles/534/IMG-20251124-WA0126.jpg",
+        "media_profiles/534/IMG-20251230-WA0114.jpg",
+        "media_profiles/534/IMG-20251230-WA0115.jpg",
+        "media_profiles/534/IMG-20251230-WA0117.jpg",
+        "media_profiles/534/IMG-20251230-WA0119.jpg",
+        "media_profiles/534/IMG-20251230-WA0120.jpg",
+        "media_profiles/534/IMG-20260124-WA0195.jpg",
+        "media_profiles/534/IMG-20260124-WA0196.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.65",
+        "weight": null,
+        "hair_color": "negro",
+        "eye_color": "cafés",
+        "location": "SAN JOSE",
+        "availability": "depende de mis horarios de Estudio.",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡90,000 mil",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "skin_color": "blanca"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "537"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "537"
+          ]
+        }
+      ],
+      "profile": "537",
+      "media": [
+        "media_profiles/537/IMG-20250929-WA0132.jpg",
+        "media_profiles/537/IMG-20250929-WA0135.jpg",
+        "media_profiles/537/IMG-20250929-WA0136.jpg",
+        "media_profiles/537/IMG-20250929-WA0137.jpg",
+        "media_profiles/537/IMG-20250929-WA0138.jpg",
+        "media_profiles/537/IMG-20250929-WA0139.jpg",
+        "media_profiles/537/IMG-20250929-WA0140.jpg",
+        "media_profiles/537/IMG-20250929-WA0141.jpg",
+        "media_profiles/537/IMG-20250929-WA0142.jpg",
+        "media_profiles/537/IMG-20250929-WA0143.jpg",
+        "media_profiles/537/IMG-20250929-WA0144.jpg",
+        "media_profiles/537/IMG-20250929-WA0145.jpg",
+        "media_profiles/537/IMG-20250929-WA0146.jpg",
+        "media_profiles/537/IMG-20250929-WA0147.jpg",
+        "media_profiles/537/IMG-20250929-WA0148.jpg",
+        "media_profiles/537/IMG-20250929-WA0149.jpg",
+        "media_profiles/537/IMG-20250929-WA0150.jpg",
+        "media_profiles/537/IMG-20250929-WA0151.jpg",
+        "media_profiles/537/IMG-20250929-WA0152.jpg",
+        "media_profiles/537/IMG-20250929-WA0153.jpg",
+        "media_profiles/537/IMG-20250929-WA0162.jpg",
+        "media_profiles/537/IMG-20250929-WA0164.jpg",
+        "media_profiles/537/IMG-20250929-WA0166.jpg",
+        "media_profiles/537/IMG-20250929-WA0169.jpg",
+        "media_profiles/537/IMG-20250929-WA0170.jpg",
+        "media_profiles/537/IMG-20250929-WA0172.jpg",
+        "media_profiles/537/IMG-20250929-WA0173.jpg",
+        "media_profiles/537/IMG-20251015-WA0092.jpg",
+        "media_profiles/537/IMG-20251015-WA0093.jpg",
+        "media_profiles/537/IMG-20251015-WA0095.jpg",
+        "media_profiles/537/IMG-20251015-WA0096.jpg",
+        "media_profiles/537/IMG-20251105-WA0082.jpg",
+        "media_profiles/537/IMG-20251105-WA0084.jpg",
+        "media_profiles/537/IMG-20251105-WA0085.jpg",
+        "media_profiles/537/IMG-20251105-WA0086.jpg",
+        "media_profiles/537/IMG-20251105-WA0087.jpg",
+        "media_profiles/537/IMG-20251105-WA0088.jpg",
+        "media_profiles/537/IMG-20251105-WA0089.jpg",
+        "media_profiles/537/IMG-20251105-WA0090.jpg",
+        "media_profiles/537/VID-20250929-WA0177.mp4"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "539"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "539"
+          ]
+        }
+      ],
+      "profile": "539",
+      "media": [
+        "media_profiles/539/IMG-20251003-WA0270.jpg",
+        "media_profiles/539/IMG-20251003-WA0272.jpg",
+        "media_profiles/539/IMG-20251004-WA0102.jpg",
+        "media_profiles/539/IMG-20251006-WA0116.jpg",
+        "media_profiles/539/IMG-20251006-WA0117.jpg",
+        "media_profiles/539/IMG-20251108-WA0003.jpg",
+        "media_profiles/539/VID-20250930-WA0134(1).mp4",
+        "media_profiles/539/VID-20251003-WA0287.mp4",
+        "media_profiles/539/VID-20251006-WA0171.mp4",
+        "media_profiles/539/VID-20251108-WA0001.mp4",
+        "media_profiles/539/VID-20251108-WA0002.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.62",
+        "weight": "52,5",
+        "hair_color": "negro",
+        "eye_color": "café oscuro",
+        "location": "San José",
+        "availability": "todos los días horario de 11a.m a 10p.m",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡90,000 + transporte",
+          "two_hours": "₡150,000 + transporte",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "541"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "541"
+          ]
+        }
+      ],
+      "profile": "541",
+      "media": [
+        "media_profiles/541/IMG-20251023-WA0111.jpg",
+        "media_profiles/541/IMG-20251023-WA0112.jpg",
+        "media_profiles/541/IMG-20251023-WA0113.jpg",
+        "media_profiles/541/IMG-20251023-WA0114.jpg",
+        "media_profiles/541/IMG-20251023-WA0116.jpg",
+        "media_profiles/541/IMG-20251023-WA0119.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.50",
+        "weight": "53k",
+        "hair_color": "avellana",
+        "eye_color": "color avellana",
+        "location": "la uruca San José",
+        "availability": "todos los días de 8 a 10",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡130.000",
+          "two_hours": "₡170.000",
+          "three_hours": "₡250.000",
+          "overnight": "₡400.000"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "breast_size": "grandes naturales"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "554"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "554"
+          ]
+        }
+      ],
+      "profile": "554",
+      "media": [
+        "media_profiles/554/VID-20251111-WA0152.mp4",
+        "media_profiles/554/VID-20251111-WA0153.mp4",
+        "media_profiles/554/VID-20251111-WA0154.mp4",
+        "media_profiles/554/VID-20251111-WA0155.mp4",
+        "media_profiles/554/VID-20251111-WA0156.mp4",
+        "media_profiles/554/VID-20251111-WA0157.mp4",
+        "media_profiles/554/VID-20251111-WA0158.mp4",
+        "media_profiles/554/VID-20251111-WA0159.mp4",
+        "media_profiles/554/VID-20251111-WA0160.mp4",
+        "media_profiles/554/VID-20251111-WA0161.mp4",
+        "media_profiles/554/VID-20251111-WA0162.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 24,
+        "height": "1.65",
+        "weight": "70 k",
+        "hair_color": "negro",
+        "eye_color": "cafes",
+        "location": "Moravia",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$250",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": true,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "558"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "558"
+          ]
+        }
+      ],
+      "profile": "558",
+      "media": [
+        "media_profiles/558/IMG-20251031-WA0099.jpg",
+        "media_profiles/558/IMG-20251031-WA0100.jpg",
+        "media_profiles/558/IMG-20251031-WA0101.jpg",
+        "media_profiles/558/IMG-20251031-WA0102.jpg",
+        "media_profiles/558/IMG-20251031-WA0103.jpg",
+        "media_profiles/558/IMG-20251031-WA0104.jpg",
+        "media_profiles/558/IMG-20251031-WA0105.jpg",
+        "media_profiles/558/VID-20251031-WA0106.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.59",
+        "weight": null,
+        "hair_color": "castaño oscuro",
+        "eye_color": "café oscuros",
+        "location": "Barrio México, San José",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000",
+          "two_hours": "₡160,000",
+          "three_hours": "₡210,000",
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "additional_info": "No tengo implantes y si me gustaría implantes Ningún cirugía y si me gustarían cirugías"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "560"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "560"
+          ]
+        }
+      ],
+      "profile": "560",
+      "media": [
+        "media_profiles/560/IMG-20251103-WA0096.jpg",
+        "media_profiles/560/IMG-20251103-WA0097.jpg",
+        "media_profiles/560/IMG-20251103-WA0098.jpg",
+        "media_profiles/560/IMG-20251103-WA0099.jpg",
+        "media_profiles/560/IMG-20251103-WA0100.jpg",
+        "media_profiles/560/IMG-20251103-WA0101.jpg",
+        "media_profiles/560/IMG-20251103-WA0102.jpg",
+        "media_profiles/560/IMG-20251103-WA0104.jpg",
+        "media_profiles/560/IMG-20251104-WA0173.jpg",
+        "media_profiles/560/IMG-20251104-WA0174.jpg",
+        "media_profiles/560/IMG-20251104-WA0175.jpg",
+        "media_profiles/560/IMG-20251104-WA0176.jpg",
+        "media_profiles/560/IMG-20251104-WA0177.jpg",
+        "media_profiles/560/IMG-20251104-WA0178.jpg",
+        "media_profiles/560/IMG-20251104-WA0206.jpg",
+        "media_profiles/560/IMG-20260122-WA0240.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 30,
+        "height": "1.67",
+        "weight": "72 kg",
+        "hair_color": null,
+        "eye_color": "Cafés",
+        "location": "Alajuela, Palmares centro",
+        "availability": "tarde noche . Apartir de las 5pm",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000 + transporte",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": true,
+        "uber": false,
+        "cosmetic_surgeries": true,
+        "other_attributes": {
+          "lipomarcaje": true,
+          "transferencia_de_gluteos": true,
+          "labios_inyectados": true
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "564"
+          ]
+        }
+      ],
+      "profile": "564",
+      "media": [
+        "media_profiles/564/IMG-20251204-WA0145.jpg",
+        "media_profiles/564/IMG-20251204-WA0147.jpg",
+        "media_profiles/564/VID-20251204-WA0167.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 23,
+        "height": "1.54",
+        "weight": "45",
+        "hair_color": "castaño oscuro",
+        "eye_color": "cafés oscuros",
+        "location": "Purral",
+        "availability": "lunes a viernes después de las 4:00pm sábados y domingos todo el día y la noche",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000 + transporte",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "570"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "570"
+          ]
+        }
+      ],
+      "profile": "570",
+      "media": [
+        "media_profiles/570/IMG-20251119-WA0101.jpg",
+        "media_profiles/570/IMG-20251119-WA0102.jpg",
+        "media_profiles/570/IMG-20251119-WA0103.jpg",
+        "media_profiles/570/IMG-20251119-WA0104.jpg",
+        "media_profiles/570/IMG-20251119-WA0105.jpg",
+        "media_profiles/570/IMG-20251119-WA0107.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 21,
+        "height": "1.57",
+        "weight": "50 kg",
+        "hair_color": "Castaño",
+        "eye_color": "Café",
+        "location": "Escazú",
+        "availability": "Toda la semana horarios preferiblemente después de la 1 pm\nEstudio sábados de 12 md a 3 pm y martes y jueves de 6 pm a 9 pm",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "language": "inglés",
+          "level": "básico medio"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "571"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "571"
+          ]
+        }
+      ],
+      "profile": "571",
+      "media": [
+        "media_profiles/571/IMG-20251119-WA0047.jpg",
+        "media_profiles/571/IMG-20251119-WA0048.jpg",
+        "media_profiles/571/IMG-20251119-WA0049.jpg",
+        "media_profiles/571/IMG-20251119-WA0050.jpg",
+        "media_profiles/571/IMG-20251119-WA0051.jpg",
+        "media_profiles/571/IMG-20251119-WA0052.jpg",
+        "media_profiles/571/IMG-20251119-WA0053.jpg",
+        "media_profiles/571/IMG-20251119-WA0054.jpg",
+        "media_profiles/571/IMG-20251119-WA0055.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 28,
+        "height": "1.68",
+        "weight": "60",
+        "hair_color": "negro",
+        "eye_color": "negros",
+        "location": "San Jose",
+        "availability": "disponibilidad completa",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": "$500",
+          "overnight": "$1000"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "572"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "572"
+          ]
+        }
+      ],
+      "profile": "572",
+      "media": [
+        "media_profiles/572/IMG-20251120-WA0192.jpg",
+        "media_profiles/572/IMG-20251120-WA0193.jpg",
+        "media_profiles/572/IMG-20251120-WA0194.jpg",
+        "media_profiles/572/IMG-20251120-WA0195.jpg",
+        "media_profiles/572/VID-20251120-WA0191.mp4",
+        "media_profiles/572/VID-20251120-WA0196.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 24,
+        "height": "1.63",
+        "weight": "62 kilos",
+        "hair_color": "cafés y color de cabello castaño natural",
+        "eye_color": null,
+        "location": "San Francisco de Dos Rios",
+        "availability": "lunes a viernes, preferiblemente en la tarde o noche",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "lipo_transferencia": true
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "582"
+          ]
+        },
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "582"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "582"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "582"
+          ]
+        }
+      ],
+      "profile": "582",
+      "media": [
+        "media_profiles/582/IMG-20251203-WA0060.jpg",
+        "media_profiles/582/IMG-20251203-WA0063.jpg",
+        "media_profiles/582/IMG-20251203-WA0067.jpg",
+        "media_profiles/582/IMG-20251203-WA0071.jpg",
+        "media_profiles/582/IMG-20251203-WA0081.jpg",
+        "media_profiles/582/IMG-20251203-WA0084.jpg",
+        "media_profiles/582/Screenshot_20251203_112016_WhatsApp.jpg",
+        "media_profiles/582/Screenshot_20251203_123023_Gmail.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 23,
+        "height": "1.66",
+        "weight": "65 kg",
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "585"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "585"
+          ]
+        }
+      ],
+      "profile": "585",
+      "media": [
+        "media_profiles/585/IMG-20251218-WA0118.jpg",
+        "media_profiles/585/IMG-20251218-WA0119.jpg",
+        "media_profiles/585/IMG-20251218-WA0120.jpg",
+        "media_profiles/585/IMG-20251218-WA0121.jpg",
+        "media_profiles/585/IMG-20251218-WA0123.jpg",
+        "media_profiles/585/IMG-20251218-WA0124.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 19,
+        "height": "1.60",
+        "weight": "50 kg",
+        "hair_color": "Café",
+        "eye_color": "Café",
+        "location": "San José, Coronado-Moravia",
+        "availability": "- Lunes\n- Martes: antes de las 6:30 pm o después de las 9pm\n- Miércoles: antes de las 4\n- Jueves: antes de las 4 o después de las 6:30\n- Viernes: antes de las 4 o después de las 6:30\n- Fines de semana",
+        "contact": null,
+        "prices": {
+          "one_hour": "110,000 CRC",
+          "two_hours": "210,000 CRC",
+          "three_hours": "310,000 CRC",
+          "overnight": "600,000 CRC"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "589"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "589"
+          ]
+        }
+      ],
+      "profile": "589",
+      "media": [
+        "media_profiles/589/IMG-20260106-WA0092.jpg",
+        "media_profiles/589/IMG-20260106-WA0097.jpg",
+        "media_profiles/589/IMG-20260106-WA0098.jpg",
+        "media_profiles/589/IMG-20260106-WA0099.jpg",
+        "media_profiles/589/IMG-20260106-WA0100.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "1.56m",
+        "weight": "60kg",
+        "hair_color": "castaño claro",
+        "eye_color": "verdes",
+        "location": "Heredia Santa Bárbara",
+        "availability": "tarde o noche",
+        "contact": null,
+        "prices": {
+          "one_hour": "90mil CRC + Uber",
+          "two_hours": "130mil CRC + Uber",
+          "three_hours": "160mil CRC + Uber",
+          "overnight": null
+        },
+        "implants": true,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "592"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "592"
+          ]
+        }
+      ],
+      "profile": "592",
+      "media": [
+        "media_profiles/592/IMG-20260113-WA0056.jpg",
+        "media_profiles/592/IMG-20260113-WA0057.jpg",
+        "media_profiles/592/IMG-20260113-WA0058.jpg",
+        "media_profiles/592/IMG-20260113-WA0059.jpg",
+        "media_profiles/592/IMG-20260113-WA0060.jpg",
+        "media_profiles/592/IMG-20260113-WA0061.jpg",
+        "media_profiles/592/IMG-20260113-WA0062.jpg",
+        "media_profiles/592/IMG-20260113-WA0063.jpg",
+        "media_profiles/592/IMG-20260113-WA0064.jpg",
+        "media_profiles/592/IMG-20260113-WA0065.jpg",
+        "media_profiles/592/IMG-20260113-WA0066.jpg",
+        "media_profiles/592/IMG-20260113-WA0067.jpg",
+        "media_profiles/592/IMG-20260113-WA0090.jpg",
+        "media_profiles/592/IMG-20260113-WA0091.jpg",
+        "media_profiles/592/IMG-20260113-WA0092.jpg",
+        "media_profiles/592/IMG-20260130-WA0051.jpg",
+        "media_profiles/592/IMG-20260130-WA0052.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "1.53",
+        "weight": "50k",
+        "hair_color": "café",
+        "eye_color": "cafés",
+        "location": "San José",
+        "availability": "de domingo a martes",
+        "contact": null,
+        "prices": {
+          "one_hour": "$250",
+          "two_hours": "$350",
+          "three_hours": "$450",
+          "overnight": "$800"
+        },
+        "implants": true,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {
+          "implantes de senos": null,
+          "lipo transferencia": null
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      },
+      "sources": [
+        {
+          "folders": [
+            "6 - Perfiles recientemente incorporados",
+            "593"
+          ]
+        }
+      ],
+      "profile": "593",
+      "media": [
+        "media_profiles/593/IMG-20260202-WA0191.jpg",
+        "media_profiles/593/IMG-20260202-WA0192.jpg",
+        "media_profiles/593/IMG-20260202-WA0193.jpg",
+        "media_profiles/593/IMG-20260202-WA0194.jpg",
+        "media_profiles/593/IMG-20260202-WA0195.jpg",
+        "media_profiles/593/IMG-20260202-WA0196.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.59",
+        "weight": "59kg",
+        "hair_color": "rubio",
+        "eye_color": "verdes",
+        "location": "San José y Jaco",
+        "availability": "Todos los días",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": "$380",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "594"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "594"
+          ]
+        }
+      ],
+      "profile": "594",
+      "media": [
+        "media_profiles/594/IMG-20260117-WA0024.jpg",
+        "media_profiles/594/IMG-20260117-WA0169.jpg",
+        "media_profiles/594/IMG-20260126-WA0200.jpg",
+        "media_profiles/594/IMG-20260126-WA0201.jpg",
+        "media_profiles/594/IMG-20260126-WA0202.jpg",
+        "media_profiles/594/IMG-20260126-WA0203.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.46",
+        "weight": "57",
+        "hair_color": "negro",
+        "eye_color": "café",
+        "location": "Heredia, San Pablo",
+        "availability": "Lunes y martes de 9:00 a. m. a 12:40 Viernes de 12:00 a. m. a 5:00 a. m. Sábados y domingos de 4:00 p. m. a 11:00 p. m.",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100.000",
+          "two_hours": "₡150.000",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "AFROCARIBEÑAS": "AFROCARIBEÑAS"
+      },
+      "sources": [
+        {
+          "folders": [
+            "AFROCARIBEÑAS",
+            "595"
+          ]
+        }
+      ],
+      "profile": "595",
+      "media": [
+        "media_profiles/595/IMG-20260119-WA0095.jpg",
+        "media_profiles/595/IMG-20260119-WA0096.jpg",
+        "media_profiles/595/IMG-20260119-WA0097.jpg",
+        "media_profiles/595/IMG-20260119-WA0098.jpg",
+        "media_profiles/595/IMG-20260119-WA0099.jpg",
+        "media_profiles/595/IMG-20260119-WA0100.jpg",
+        "media_profiles/595/IMG-20260119-WA0103.jpg",
+        "media_profiles/595/IMG-20260119-WA0104.jpg",
+        "media_profiles/595/IMG-20260119-WA0105.jpg",
+        "media_profiles/595/IMG-20260119-WA0106.jpg",
+        "media_profiles/595/IMG-20260119-WA0107.jpg",
+        "media_profiles/595/IMG-20260119-WA0108.jpg",
+        "media_profiles/595/IMG-20260119-WA0109.jpg",
+        "media_profiles/595/IMG-20260119-WA0110.jpg",
+        "media_profiles/595/IMG-20260119-WA0112.jpg",
+        "media_profiles/595/IMG-20260119-WA0113.jpg",
+        "media_profiles/595/IMG-20260119-WA0114.jpg",
+        "media_profiles/595/IMG-20260119-WA0115.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 19,
+        "height": "1.67 cm",
+        "weight": "57 k",
+        "hair_color": "Negro",
+        "eye_color": "Café oscuro",
+        "location": "San José, Coronado",
+        "availability": "Puedo todos los días, 1,2 y 3 horas",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡140,000",
+          "two_hours": "₡220,000",
+          "three_hours": "₡300,000",
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "desire_for_implants": true,
+          "desire_for_cosmetic_surgeries": true
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "596"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "596"
+          ]
+        }
+      ],
+      "profile": "596",
+      "media": [
+        "media_profiles/596/IMG-20260124-WA0002.jpg",
+        "media_profiles/596/IMG-20260124-WA0003.jpg",
+        "media_profiles/596/IMG-20260124-WA0004.jpg",
+        "media_profiles/596/IMG-20260124-WA0005.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.58",
+        "weight": "58.2",
+        "hair_color": "Negro",
+        "eye_color": "café",
+        "location": "San Rafael de Heredia",
+        "availability": "Todos los días de 12 pm a 12 am",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000 (más el transporte)",
+          "two_hours": "₡160,000 ( más el transporte)",
+          "three_hours": "₡240,000 ( más el transporte)",
+          "overnight": "₡400,000 ( más el transporte)"
+        },
+        "implants": true,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "GUAPILES": "GUAPILES",
+        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "GUAPILES",
+            "597"
+          ]
+        },
+        {
+          "folders": [
+            "9 - Perfiles - 31 - 40 años",
+            "597"
+          ]
+        }
+      ],
+      "profile": "597",
+      "media": [
+        "media_profiles/597/IMG-20260125-WA0137.jpg",
+        "media_profiles/597/IMG-20260125-WA0138.jpg",
+        "media_profiles/597/IMG-20260125-WA0139.jpg",
+        "media_profiles/597/IMG-20260125-WA0140.jpg",
+        "media_profiles/597/IMG-20260125-WA0141.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "598"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "598"
+          ]
+        }
+      ],
+      "profile": "598",
+      "media": [
+        "media_profiles/598/IMG-20260128-WA0070.jpg",
+        "media_profiles/598/IMG-20260128-WA0071.jpg",
+        "media_profiles/598/IMG-20260128-WA0072.jpg",
+        "media_profiles/598/IMG-20260128-WA0073.jpg",
+        "media_profiles/598/IMG-20260128-WA0074.jpg",
+        "media_profiles/598/IMG-20260128-WA0075.jpg",
+        "media_profiles/598/IMG-20260128-WA0076.jpg",
+        "media_profiles/598/IMG-20260128-WA0077.jpg",
+        "media_profiles/598/IMG-20260128-WA0078.jpg",
+        "media_profiles/598/IMG-20260128-WA0079.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": "1.60",
+        "weight": "68",
+        "hair_color": "negro y lacio",
+        "eye_color": "cafes",
+        "location": "moravia",
+        "availability": "cualquier dia de la semana",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": "$400",
+          "overnight": "$600"
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      },
+      "sources": [
+        {
+          "folders": [
+            "6 - Perfiles recientemente incorporados",
+            "599"
+          ]
+        }
+      ],
+      "profile": "599",
+      "media": [
+        "media_profiles/599/IMG-20260129-WA0183.jpg",
+        "media_profiles/599/IMG-20260129-WA0184.jpg",
+        "media_profiles/599/IMG-20260129-WA0190.jpg",
+        "media_profiles/599/IMG-20260129-WA0198.jpg",
+        "media_profiles/599/IMG-20260129-WA0199.jpg",
+        "media_profiles/599/IMG-20260129-WA0201.jpg",
+        "media_profiles/599/IMG-20260129-WA0203.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "160 cm",
+        "weight": "56 kg",
+        "hair_color": "negro",
+        "eye_color": "cafés",
+        "location": "Heredia",
+        "availability": "Disponible todos los días",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": "$500",
+          "three_hours": "$600",
+          "overnight": "1000"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      },
+      "sources": [
+        {
+          "folders": [
+            "6 - Perfiles recientemente incorporados",
+            "600"
+          ]
+        }
+      ],
+      "profile": "600",
+      "media": [
+        "media_profiles/600/IMG-20260130-WA0322.jpg",
+        "media_profiles/600/IMG-20260130-WA0333.jpg",
+        "media_profiles/600/IMG-20260130-WA0335.jpg",
+        "media_profiles/600/VID-20260130-WA0318.mp4",
+        "media_profiles/600/VID-20260130-WA0319.mp4",
+        "media_profiles/600/VID-20260130-WA0320.mp4",
+        "media_profiles/600/VID-20260130-WA0321.mp4",
+        "media_profiles/600/VID-20260130-WA0324.mp4",
+        "media_profiles/600/VID-20260130-WA0325.mp4",
+        "media_profiles/600/VID-20260130-WA0326.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": "1.53",
+        "weight": "48.5 kg",
+        "hair_color": "negro",
+        "eye_color": "cafés",
+        "location": "San Sebastián",
+        "availability": "Domingos a miércoles",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": "$400",
+          "three_hours": "$500",
+          "overnight": "$600"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      },
+      "sources": [
+        {
+          "folders": [
+            "6 - Perfiles recientemente incorporados",
+            "601"
+          ]
+        }
+      ],
+      "profile": "601",
+      "media": [
+        "media_profiles/601/IMG-20260130-WA0309.jpg",
+        "media_profiles/601/IMG-20260130-WA0310.jpg",
+        "media_profiles/601/IMG-20260130-WA0312.jpg",
+        "media_profiles/601/IMG-20260130-WA0313.jpg",
+        "media_profiles/601/IMG-20260130-WA0314.jpg",
+        "media_profiles/601/VID-20260130-WA0311.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 24,
+        "height": "1.57",
+        "weight": "57 kg",
+        "hair_color": "negro lacio",
+        "eye_color": "negros",
+        "location": "Heredia",
+        "availability": "De 7:00 p. m. en adelante. Horario: Nocturno",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": "$400",
+          "three_hours": "$500",
+          "overnight": "$600"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": true,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "602"
+          ]
+        },
+        {
+          "folders": [
+            "6 - Perfiles recientemente incorporados",
+            "602"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "602"
+          ]
+        }
+      ],
+      "profile": "602",
+      "media": [
+        "media_profiles/602/IMG-20260131-WA0140.jpg",
+        "media_profiles/602/IMG-20260131-WA0141.jpg",
+        "media_profiles/602/IMG-20260131-WA0143.jpg",
+        "media_profiles/602/VID-20260131-WA0142.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.53 metros",
+        "weight": "57 kg",
+        "hair_color": "rubio",
+        "eye_color": "verdes",
+        "location": "Heredia",
+        "availability": "Horario: De 7:00 p. m. en adelante, Días: Viernes a domingo",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "CARTAGO": "CARTAGO",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "CARTAGO",
+            "ANA"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "ANA"
+          ]
+        }
+      ],
+      "profile": "ANA",
+      "media": [
+        "media_profiles/ANA/IMG-20251225-WA0066.jpg",
+        "media_profiles/ANA/IMG-20251225-WA0067.jpg",
+        "media_profiles/ANA/IMG-20251226-WA0103.jpg",
+        "media_profiles/ANA/IMG-20251226-WA0104.jpg",
+        "media_profiles/ANA/VID-20251225-WA0060.mp4",
+        "media_profiles/ANA/VID-20251225-WA0061.mp4",
+        "media_profiles/ANA/VID-20251225-WA0062.mp4",
+        "media_profiles/ANA/VID-20251225-WA0063.mp4",
+        "media_profiles/ANA/VID-20251225-WA0065.mp4",
+        "media_profiles/ANA/VID-20251225-WA0070.mp4"
+      ],
+      "extraction": {
+        "name": "Ana",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "Cartago",
+        "availability": "Disponibilidad a convenir",
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": "₡150,000",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Recomendacion": "true"
+      },
+      "sources": [
+        {
+          "folders": [
+            "3 - ANGEL"
+          ]
+        }
+      ],
+      "profile": "ANGEL",
+      "media": [
+        "media_profiles/ANGEL/IMG-20250917-WA0055.jpg",
+        "media_profiles/ANGEL/IMG-20250917-WA0056.jpg",
+        "media_profiles/ANGEL/IMG-20250917-WA0057.jpg",
+        "media_profiles/ANGEL/IMG-20250917-WA0058.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0027.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0028.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0029.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0030.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0031.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0032.jpg",
+        "media_profiles/ANGEL/IMG-20260127-WA0050.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "Angelica"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "Angelica"
+          ]
+        }
+      ],
+      "profile": "Angelica",
+      "media": [
+        "media_profiles/Angelica/IMG-20250629-WA0001.jpg",
+        "media_profiles/Angelica/IMG-20250629-WA0002.jpg",
+        "media_profiles/Angelica/IMG-20250629-WA0004.jpg",
+        "media_profiles/Angelica/IMG-20250816-WA0056.jpg",
+        "media_profiles/Angelica/IMG-20250826-WA0249.jpg",
+        "media_profiles/Angelica/IMG-20250826-WA0250.jpg",
+        "media_profiles/Angelica/IMG-20250826-WA0251.jpg",
+        "media_profiles/Angelica/IMG-20250924-WA0075.jpg",
+        "media_profiles/Angelica/IMG-20250924-WA0076.jpg",
+        "media_profiles/Angelica/IMG-20251102-WA0146.jpg",
+        "media_profiles/Angelica/IMG-20251102-WA0150.jpg",
+        "media_profiles/Angelica/IMG-20251102-WA0152.jpg",
+        "media_profiles/Angelica/IMG-20251102-WA0153.jpg",
+        "media_profiles/Angelica/IMG-20251102-WA0155.jpg",
+        "media_profiles/Angelica/IMG-20260102-WA0257.jpg",
+        "media_profiles/Angelica/IMG-20260102-WA0258.jpg",
+        "media_profiles/Angelica/IMG-20260102-WA0259.jpg",
+        "media_profiles/Angelica/VID-20250629-WA0003.mp4",
+        "media_profiles/Angelica/VID-20250826-WA0252.mp4",
+        "media_profiles/Angelica/VID-20250826-WA0253.mp4",
+        "media_profiles/Angelica/VID-20250924-WA0078.mp4",
+        "media_profiles/Angelica/VID-20250924-WA0079.mp4",
+        "media_profiles/Angelica/scg0_scg0IMG20241129WA0271 (1).jpg",
+        "media_profiles/Angelica/scg0_scg0IMG20241129WA0280 (1).jpg",
+        "media_profiles/Angelica/scg0_scg0IMG20241129WA0281 (1).jpg",
+        "media_profiles/Angelica/scg0_scg0IMG20241129WA0282 (1).jpg",
+        "media_profiles/Angelica/scg0_scg0IMG20250204WA0094 (1).jpg",
+        "media_profiles/Angelica/scg0_scg0IMG20250204WA0095 (1).jpg",
+        "media_profiles/Angelica/scg0_scg0IMG20250204WA0096 (1).jpg"
+      ],
+      "extraction": {
+        "name": "IAngelica",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$500",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "categories": [
+            "Perfiles - por provincia",
+            "ALAJUELA",
+            "Perfiles - 21- 30 años"
+          ]
+        }
+      },
+      "reviews": [
+        "Angelica es un monumento, así como una persona muy amigable e interesante.",
+        "Guapa, dulce, inteligente y complaciente, las fotos no le hacen justicia a la belleza\nque uno ve entrar por la puerta, el servicio es súper bueno."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - cortesía": "Perfiles - cortesía"
+      },
+      "sources": [
+        {
+          "folders": [
+            "12 - Perfiles - cortesía",
+            "Angie"
+          ]
+        }
+      ],
+      "profile": "Angie",
+      "media": [
+        "media_profiles/Angie/IMG-20251013-WA0054.jpg",
+        "media_profiles/Angie/IMG-20251013-WA0059.jpg",
+        "media_profiles/Angie/IMG-20251013-WA0060.jpg",
+        "media_profiles/Angie/IMG-20251013-WA0061.jpg",
+        "media_profiles/Angie/IMG-20251013-WA0062.jpg",
+        "media_profiles/Angie/IMG-20251127-WA0139(1).jpg",
+        "media_profiles/Angie/IMG-20251127-WA0141.jpg",
+        "media_profiles/Angie/IMG-20251127-WA0142.jpg",
+        "media_profiles/Angie/IMG-20251127-WA0144.jpg",
+        "media_profiles/Angie/VID-20251013-WA0055.mp4",
+        "media_profiles/Angie/VID-20251127-WA0140.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": "Todos los días de 9:00 am a 8:00 pm",
+        "contact": "WhatsApp 6342-0283",
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "Anny"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "Anny"
+          ]
+        }
+      ],
+      "profile": "Anny",
+      "media": [
+        "media_profiles/Anny/IMG-20251127-WA0230.jpg",
+        "media_profiles/Anny/IMG-20251127-WA0231.jpg",
+        "media_profiles/Anny/IMG-20251127-WA0232.jpg",
+        "media_profiles/Anny/IMG-20251127-WA0233.jpg",
+        "media_profiles/Anny/IMG-20251127-WA0234.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": "Disponibilidad a convenir",
+        "contact": "CLUB PATRÓN se limita a proporcionarle el contacto.",
+        "prices": {
+          "one_hour": null,
+          "two_hours": "₡80,000",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles con nuevas fotos - videos": "Perfiles con nuevas fotos - videos"
+      },
+      "sources": [
+        {
+          "folders": [
+            "11 - Perfiles con nuevas fotos - videos",
+            "BARBARA"
+          ]
+        }
+      ],
+      "profile": "BARBARA",
+      "media": [
+        "media_profiles/BARBARA/IMG-20260203-WA0037.jpg",
+        "media_profiles/BARBARA/IMG-20260203-WA0038.jpg",
+        "media_profiles/BARBARA/IMG-20260203-WA0039.jpg",
+        "media_profiles/BARBARA/IMG-20260203-WA0040.jpg",
+        "media_profiles/BARBARA/IMG-20260203-WA0041.jpg",
+        "media_profiles/BARBARA/IMG-20260203-WA0043.jpg",
+        "media_profiles/BARBARA/IMG-20260203-WA0044.jpg",
+        "media_profiles/BARBARA/VID-20260203-WA0042.mp4"
+      ],
+      "extraction": {
+        "name": "ISan José",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": "+ transporte",
+        "prices": {
+          "one_hour": "200 USD",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Recomendacion": "true"
+      },
+      "sources": [
+        {
+          "folders": [
+            "COSPLAYER"
+          ]
+        }
+      ],
+      "profile": "COSPLAYER",
+      "media": [
+        "media_profiles/COSPLAYER/IMG-20251025-WA0049.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0050.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0051(1).jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0051.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0064.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0065.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0066.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0067.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0068.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0069.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0070.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0071.jpg",
+        "media_profiles/COSPLAYER/IMG-20251025-WA0072.jpg",
+        "media_profiles/COSPLAYER/IMG-20251202-WA0207.jpg",
+        "media_profiles/COSPLAYER/IMG-20251202-WA0208.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 20,
+        "height": "1.55",
+        "weight": "44kg",
+        "hair_color": "(personalizable)",
+        "eye_color": "cafe",
+        "location": "cartago",
+        "availability": "todos los días",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡210,000",
+          "two_hours": "₡280,000",
+          "three_hours": "₡350,000",
+          "overnight": "₡600,000"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Recomendacion": "true"
+      },
+      "sources": [
+        {
+          "folders": [
+            "1 (diosa)"
+          ]
+        }
+      ],
+      "profile": "diosa",
+      "media": [
+        "media_profiles/diosa/IMG-20251006-WA0025.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0026.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0028.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0033.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0034.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0037.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0040.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0041.jpg",
+        "media_profiles/diosa/IMG-20251006-WA0043.jpg",
+        "media_profiles/diosa/IMG-20251214-WA0004.jpg",
+        "media_profiles/diosa/IMG-20251214-WA0005.jpg",
+        "media_profiles/diosa/IMG-20251214-WA0008.jpg",
+        "media_profiles/diosa/IMG-20251214-WA0009.jpg",
+        "media_profiles/diosa/IMG-20260108-WA0065 (1).jpg",
+        "media_profiles/diosa/IMG-20260108-WA0070 (1).jpg",
+        "media_profiles/diosa/IMG-20260108-WA0071 (1).jpg",
+        "media_profiles/diosa/IMG-20260108-WA0073 (1).jpg",
+        "media_profiles/diosa/IMG-20260108-WA0078 (1).jpg",
+        "media_profiles/diosa/VID-20251006-WA0047.mp4",
+        "media_profiles/diosa/VID-20260108-WA0083.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": "$400",
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": null
+      },
+      "reviews": [
+        "Quería comentarle que el día de hoy tuve la cita con Diosa y\nhe de decir que SUPERÓ con creces todas las expectativas que tenía.\nLa muchacha es atenta, graciosa, inteligente complaciente y súper guapa.\nFue una experiencia de primer nivel, se lo hice saber a ella y se lo hago saber a usted.\n100% satisfecho."
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "EDITH "
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "EDITH "
+          ]
+        }
+      ],
+      "profile": "EDITH",
+      "media": [
+        "media_profiles/EDITH/1001626073.jpg",
+        "media_profiles/EDITH/1001626074.jpg",
+        "media_profiles/EDITH/IMG-20250911-WA0107.jpg",
+        "media_profiles/EDITH/IMG-20250911-WA0109.jpg",
+        "media_profiles/EDITH/IMG-20250911-WA0110.jpg",
+        "media_profiles/EDITH/IMG-20251227-WA0002.jpg",
+        "media_profiles/EDITH/IMG-20251227-WA0132.jpg",
+        "media_profiles/EDITH/VID-20251227-WA0003.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "HEREDIA",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "120 USD",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "EMILY"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "EMILY"
+          ]
+        }
+      ],
+      "profile": "EMILY",
+      "media": [
+        "media_profiles/EMILY/IMG-20260116-WA0081.jpg",
+        "media_profiles/EMILY/IMG-20260116-WA0082.jpg",
+        "media_profiles/EMILY/IMG-20260116-WA0083.jpg",
+        "media_profiles/EMILY/IMG-20260116-WA0092.jpg",
+        "media_profiles/EMILY/IMG-20260131-WA0078.jpg",
+        "media_profiles/EMILY/IMG-20260131-WA0080.jpg"
+      ],
+      "extraction": {
+        "name": "EMILY",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "San Sebastián",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": "$400",
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "Hunnids"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "Hunnids"
+          ]
+        }
+      ],
+      "profile": "Hunnids",
+      "media": [
+        "media_profiles/Hunnids/IMG-20260124-WA0065.jpg",
+        "media_profiles/Hunnids/IMG-20260124-WA0066.jpg",
+        "media_profiles/Hunnids/IMG-20260124-WA0067.jpg",
+        "media_profiles/Hunnids/IMG-20260124-WA0068.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "San José",
+        "availability": "Horario: Mañana/ Tarde antes de las 4pm Noche después de las 8pm disponibilidad inmediata",
+        "contact": null,
+        "prices": {
+          "one_hour": "250 CRC",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": true,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "disponibilidad": "inmediata"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "Jenni"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "Jenni"
+          ]
+        }
+      ],
+      "profile": "Jenni",
+      "media": [
+        "media_profiles/Jenni/IMG-20250730-WA0123.jpg",
+        "media_profiles/Jenni/IMG-20250730-WA0124.jpg",
+        "media_profiles/Jenni/VID-20250730-WA0136.mp4",
+        "media_profiles/Jenni/VID-20250730-WA0137.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "Alajuela",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$300 CRC",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "ALAJUELA": "ALAJUELA",
+        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "ALAJUELA",
+            "KARINA"
+          ]
+        },
+        {
+          "folders": [
+            "9 - Perfiles - 31 - 40 años",
+            "KARINA"
+          ]
+        }
+      ],
+      "profile": "KARINA",
+      "media": [
+        "media_profiles/KARINA/IMG-20260115-WA0083.jpg",
+        "media_profiles/KARINA/IMG-20260115-WA0084.jpg",
+        "media_profiles/KARINA/IMG-20260115-WA0151.jpg",
+        "media_profiles/KARINA/IMG-20260115-WA0152.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "San Ramón",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "200 USD",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "KATA"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "KATA"
+          ]
+        }
+      ],
+      "profile": "KATA",
+      "media": [
+        "media_profiles/KATA/IMG-20251212-WA0138.jpg",
+        "media_profiles/KATA/IMG-20251212-WA0139.jpg",
+        "media_profiles/KATA/IMG-20251212-WA0140.jpg",
+        "media_profiles/KATA/IMG-20260117-WA0173.jpg",
+        "media_profiles/KATA/IMG-20260117-WA0174.jpg",
+        "media_profiles/KATA/IMG-20260117-WA0175.jpg",
+        "media_profiles/KATA/IMG-20260128-WA0000.jpg",
+        "media_profiles/KATA/VID-20251212-WA0146.mp4",
+        "media_profiles/KATA/VID-20251212-WA0147.mp4",
+        "media_profiles/KATA/VID-20251212-WA0148.mp4",
+        "media_profiles/KATA/VID-20260128-WA0153.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "₡100,000",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "KIKI"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "KIKI"
+          ]
+        }
+      ],
+      "profile": "KIKI",
+      "media": [
+        "media_profiles/KIKI/IMG-20260115-WA0163.jpg",
+        "media_profiles/KIKI/IMG-20260115-WA0164.jpg",
+        "media_profiles/KIKI/VID-20260115-WA0162.mp4",
+        "media_profiles/KIKI/VID-20260115-WA0165.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.58",
+        "weight": "64kg",
+        "hair_color": "negro",
+        "eye_color": "café oscuro",
+        "location": "San José, San Sebastián",
+        "availability": "Todos los días cualquier hora",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": "$400",
+          "overnight": "$850"
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Recomendacion": "true",
+        "profile_emoji": "⭐⭐⭐⭐⭐"
+      },
+      "sources": [
+        {
+          "folders": [
+            "4 - KIMBERLY ⭐⭐⭐⭐⭐"
+          ]
+        }
+      ],
+      "profile": "KIMBERLY",
+      "media": [
+        "media_profiles/KIMBERLY/IMG-20251126-WA0062.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0063.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0064.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0065.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0066.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0067.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0068.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0069.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0070.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0071.jpg",
+        "media_profiles/KIMBERLY/IMG-20251126-WA0072.jpg",
+        "media_profiles/KIMBERLY/IMG-20251129-WA0135.jpg",
+        "media_profiles/KIMBERLY/IMG-20251209-WA0058(1).jpg",
+        "media_profiles/KIMBERLY/IMG-20251209-WA0161.jpg",
+        "media_profiles/KIMBERLY/IMG-20251209-WA0162.jpg",
+        "media_profiles/KIMBERLY/IMG-20251209-WA0163.jpg",
+        "media_profiles/KIMBERLY/IMG-20251211-WA0194.jpg",
+        "media_profiles/KIMBERLY/IMG-20260116-WA0110.jpg",
+        "media_profiles/KIMBERLY/IMG-20260116-WA0111.jpg",
+        "media_profiles/KIMBERLY/IMG-20260116-WA0112.jpg",
+        "media_profiles/KIMBERLY/IMG-20260127-WA0107.jpg",
+        "media_profiles/KIMBERLY/IMG-20260127-WA0108.jpg",
+        "media_profiles/KIMBERLY/IMG-20260201-WA0137.jpg",
+        "media_profiles/KIMBERLY/IMG-20260201-WA0139.jpg",
+        "media_profiles/KIMBERLY/IMG-20260201-WA0141.jpg",
+        "media_profiles/KIMBERLY/IMG-20260201-WA0142.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 22,
+        "height": "1.58",
+        "weight": "52",
+        "hair_color": "negro",
+        "eye_color": "cafe claros",
+        "location": "Heredia",
+        "availability": "Tiempo completo de disponibilidad",
+        "contact": null,
+        "prices": {
+          "one_hour": "$300",
+          "two_hours": "$350",
+          "three_hours": "$400",
+          "overnight": "$800"
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - cortesía": "Perfiles - cortesía"
+      },
+      "sources": [
+        {
+          "folders": [
+            "12 - Perfiles - cortesía",
+            "Kimmy"
+          ]
+        }
+      ],
+      "profile": "Kimmy",
+      "media": [
+        "media_profiles/Kimmy/IMG-20251202-WA0138.jpg",
+        "media_profiles/Kimmy/IMG-20251202-WA0140.jpg",
+        "media_profiles/Kimmy/IMG-20251202-WA0141.jpg",
+        "media_profiles/Kimmy/IMG-20251202-WA0142.jpg",
+        "media_profiles/Kimmy/IMG-20251202-WA0143.jpg"
+      ],
+      "extraction": {
+        "name": "IKimmy",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": "+506 6210 2973",
+        "prices": {
+          "one_hour": "$160 USD",
+          "two_hours": "$200 USD",
+          "three_hours": null,
+          "overnight": "$300 USD"
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": null
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "KLA"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "KLA"
+          ]
+        }
+      ],
+      "profile": "KLA",
+      "media": [
+        "media_profiles/KLA/IMG-20260113-WA0028.jpg",
+        "media_profiles/KLA/IMG-20260113-WA0029.jpg",
+        "media_profiles/KLA/IMG-20260113-WA0031.jpg",
+        "media_profiles/KLA/IMG-20260113-WA0032.jpg",
+        "media_profiles/KLA/IMG-20260113-WA0034.jpg",
+        "media_profiles/KLA/VID-20260113-WA0030.mp4",
+        "media_profiles/KLA/VID-20260113-WA0033.mp4"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 25,
+        "height": "1.53",
+        "weight": "55 kg",
+        "hair_color": "negro",
+        "eye_color": "café oscuro",
+        "location": "SAN JOSE",
+        "availability": "Lunes a viernes mañana y tarde.",
+        "contact": null,
+        "prices": {
+          "one_hour": "₡80,000",
+          "two_hours": "₡145,000",
+          "three_hours": "₡215,000",
+          "overnight": "₡300,000"
+        },
+        "implants": true,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Recomendacion": "true"
+      },
+      "sources": [
+        {
+          "folders": [
+            "2 - LESKY"
+          ]
+        }
+      ],
+      "profile": "LESKY",
+      "media": [
+        "media_profiles/LESKY/IMG-20251213-WA0142.jpg",
+        "media_profiles/LESKY/IMG-20251213-WA0143.jpg",
+        "media_profiles/LESKY/IMG-20251213-WA0144.jpg",
+        "media_profiles/LESKY/IMG-20251213-WA0145.jpg",
+        "media_profiles/LESKY/IMG-20251213-WA0146.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": "1.61",
+        "weight": "53 kg",
+        "hair_color": "Café claro",
+        "eye_color": "café oscuro",
+        "location": "San José",
+        "availability": "24/7",
+        "contact": null,
+        "prices": {
+          "one_hour": "100 mil CRC",
+          "two_hours": "140 mil CRC",
+          "three_hours": null,
+          "overnight": "200 mil CRC"
+        },
+        "implants": true,
+        "uber": true,
+        "cosmetic_surgeries": true,
+        "other_attributes": {
+          "recomendacion": true
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles - cortesía": "Perfiles - cortesía"
+      },
+      "sources": [
+        {
+          "folders": [
+            "12 - Perfiles - cortesía",
+            "Luna"
+          ]
+        }
+      ],
+      "profile": "Luna",
+      "media": [
+        "media_profiles/Luna/IMG-20250918-WA0149.jpg",
+        "media_profiles/Luna/IMG-20250918-WA0151.jpg",
+        "media_profiles/Luna/IMG-20250918-WA0152.jpg",
+        "media_profiles/Luna/IMG-20250918-WA0153.jpg",
+        "media_profiles/Luna/IMG-20250918-WA0154.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": "WhatsApp 71 32 88 34",
+        "prices": {
+          "one_hour": "₡70,000",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": true,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "Niky"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "Niky"
+          ]
+        }
+      ],
+      "profile": "Niky",
+      "media": [
+        "media_profiles/Niky/IMG-20260102-WA0228.jpg",
+        "media_profiles/Niky/IMG-20260102-WA0230.jpg",
+        "media_profiles/Niky/IMG-20260102-WA0232.jpg",
+        "media_profiles/Niky/IMG-20260103-WA0034.jpg",
+        "media_profiles/Niky/IMG-20260103-WA0035.jpg",
+        "media_profiles/Niky/IMG-20260103-WA0038.jpg",
+        "media_profiles/Niky/IMG-20260103-WA0041.jpg",
+        "media_profiles/Niky/IMG-20260110-WA0144.jpg",
+        "media_profiles/Niky/IMG-20260110-WA0145.jpg",
+        "media_profiles/Niky/IMG-20260110-WA0148.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "PAULETTE"
+          ]
+        },
+        {
+          "folders": [
+            "9 - Perfiles - 31 - 40 años",
+            "PAULETTE"
+          ]
+        }
+      ],
+      "profile": "PAULETTE",
+      "media": [
+        "media_profiles/PAULETTE/IMG-20260115-WA0137.jpg",
+        "media_profiles/PAULETTE/IMG-20260115-WA0140.jpg",
+        "media_profiles/PAULETTE/IMG-20260115-WA0141.jpg",
+        "media_profiles/PAULETTE/IMG-20260115-WA0142.jpg",
+        "media_profiles/PAULETTE/IMG-20260115-WA0144.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 35,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "SAN JOSE",
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Recomendacion": "true"
+      },
+      "sources": [
+        {
+          "folders": [
+            "0 - TIKAS"
+          ]
+        }
+      ],
+      "profile": "TIKAS",
+      "media": [
+        "media_profiles/TIKAS/TIKAS 2.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "VALE CH"
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "VALE CH"
+          ]
+        }
+      ],
+      "profile": "VALE CH",
+      "media": [
+        "media_profiles/VALE_CH/IMG-20260102-WA0134.jpg",
+        "media_profiles/VALE_CH/IMG-20260102-WA0135.jpg",
+        "media_profiles/VALE_CH/IMG-20260102-WA0136.jpg",
+        "media_profiles/VALE_CH/IMG-20260102-WA0137.jpg",
+        "media_profiles/VALE_CH/IMG-20260102-WA0138.jpg",
+        "media_profiles/VALE_CH/IMG-20260102-WA0139.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 26,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "HEREDIA",
+        "availability": "Disponible todos los días en el dia y noche",
+        "contact": null,
+        "prices": {
+          "one_hour": "$260 CRC",
+          "two_hours": "$300 USD",
+          "three_hours": null,
+          "overnight": "$600 USD"
+        },
+        "implants": false,
+        "uber": true,
+        "cosmetic_surgeries": false,
+        "other_attributes": {
+          "age_range": "Perfiles - 21- 30 años"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      },
+      "sources": [
+        {
+          "folders": [
+            "6 - Perfiles recientemente incorporados",
+            "Yansy"
+          ]
+        }
+      ],
+      "profile": "Yansy",
+      "media": [
+        "media_profiles/Yansy/IMG-20260202-WA0123.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0124.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0125.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0126.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0127.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0128.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0129.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0130.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0131.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0132.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0133.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0134.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0135.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0136.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0137.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0138.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0142.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0143.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0144.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0146.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0148.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0152.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0153.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0154.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0155.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0156.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0157.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0158.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0159.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0160.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0161.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0162.jpg",
+        "media_profiles/Yansy/IMG-20260202-WA0163.jpg"
+      ],
+      "extraction": {
+        "name": "ISan José",
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "San José",
+        "availability": null,
+        "contact": "+506 xxxxxxxxxx",
+        "prices": {
+          "one_hour": "100 USD",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": true,
+        "cosmetic_surgeries": null,
+        "other_attributes": {
+          "price_transport": "Incluye transporte"
+        }
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "SAN JOSE": "SAN JOSE",
+        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "SAN JOSE",
+            "Yiyi"
+          ]
+        },
+        {
+          "folders": [
+            "7 - Perfiles - 18 - 19 - 20 años",
+            "Yiyi"
+          ]
+        }
+      ],
+      "profile": "Yiyi",
+      "media": [
+        "media_profiles/Yiyi/IMG-20251211-WA0139.jpg",
+        "media_profiles/Yiyi/IMG-20251211-WA0140.jpg",
+        "media_profiles/Yiyi/IMG-20251211-WA0141.jpg",
+        "media_profiles/Yiyi/IMG-20251211-WA0142.jpg",
+        "media_profiles/Yiyi/IMG-20251211-WA0143.jpg",
+        "media_profiles/Yiyi/IMG-20251211-WA0144.jpg",
+        "media_profiles/Yiyi/IMG-20251219-WA0000.jpg",
+        "media_profiles/Yiyi/IMG-20251219-WA0001.jpg",
+        "media_profiles/Yiyi/IMG-20251219-WA0002.jpg",
+        "media_profiles/Yiyi/IMG-20251219-WA0003.jpg",
+        "media_profiles/Yiyi/IMG-20251219-WA0004.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": 18,
+        "height": "1.60",
+        "weight": "57 kilos",
+        "hair_color": "negro",
+        "eye_color": "café",
+        "location": "Desamparados San José Costa Rica",
+        "availability": "Tengo bastante disponibilidad",
+        "contact": null,
+        "prices": {
+          "one_hour": "$200",
+          "two_hours": "$300",
+          "three_hours": "$350",
+          "overnight": "$500"
+        },
+        "implants": false,
+        "uber": null,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "merged_metadata": {
+        "HEREDIA": "HEREDIA",
+        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      },
+      "sources": [
+        {
+          "folders": [
+            "10 - Perfiles - por provincia",
+            "HEREDIA",
+            "ZARY "
+          ]
+        },
+        {
+          "folders": [
+            "8 - Perfiles - 21- 30 años",
+            "ZARY "
+          ]
+        }
+      ],
+      "profile": "ZARY",
+      "media": [
+        "media_profiles/ZARY/IMG-20251221-WA0158.jpg",
+        "media_profiles/ZARY/IMG-20251221-WA0159.jpg",
+        "media_profiles/ZARY/IMG-20251221-WA0160.jpg",
+        "media_profiles/ZARY/IMG-20251221-WA0161.jpg",
+        "media_profiles/ZARY/IMG-20251221-WA0162.jpg",
+        "media_profiles/ZARY/IMG-20251221-WA0163.jpg"
+      ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": "Heredia",
+        "availability": "De lunes a viernes luego de las 3:00pm y sábados y domingos disponibles",
+        "contact": null,
+        "prices": {
+          "one_hour": "$350",
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": false,
+        "uber": false,
+        "cosmetic_surgeries": false,
+        "other_attributes": {}
+      },
+      "enabled": true
+    },
+    {
+      "profile": "277",
+      "media": [],
+      "reviews": [
+        "todo excelente, súper carismática ella y muy guapa"
+      ],
+      "enabled": true
+    }
+  ]
+}
