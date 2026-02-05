@@ -315,6 +315,42 @@
             margin-bottom: 10px;
         }
 
+        .discreet-placeholder {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px;
+            color: rgba(255, 255, 255, 0.92);
+            background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.92));
+            text-align: center;
+        }
+
+        .discreet-placeholder .discreet-icon {
+            width: 74px;
+            height: 74px;
+            opacity: 0.95;
+            filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.35));
+        }
+
+        .discreet-placeholder .discreet-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.2px;
+            line-height: 1.1;
+            text-transform: lowercase;
+        }
+
         .card-img-container img.main-img {
             width: 100%;
             height: 100%;
@@ -452,6 +488,47 @@
             align-items: center;
             justify-content: center;
             position: relative;
+        }
+
+        .lb-discreet {
+            position: absolute;
+            inset: 0;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 28px;
+            color: rgba(255, 255, 255, 0.94);
+            background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.92));
+            text-align: center;
+            z-index: 4;
+        }
+
+        .lb-discreet.active {
+            display: flex;
+        }
+
+        .lb-discreet .discreet-icon {
+            width: 110px;
+            height: 110px;
+            opacity: 0.95;
+            filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.4));
+        }
+
+        .lb-discreet .discreet-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 0.25px;
+            line-height: 1.1;
+            text-transform: lowercase;
         }
 
         .lb-media img,
@@ -1350,6 +1427,7 @@
 	        <div class="lb-content">
 	            <div id="lb-close-global" onclick="closeProfile()">&times;</div>
 	            <div class="lb-media">
+                    <div id="lb-discreet" class="lb-discreet" aria-hidden="true"></div>
 	                <img id="lb-main-img" src="" style="display:none">
 	                <video id="lb-main-video" controls style="display:none" playsinline></video>
                     <button id="lb-nav-left" class="lb-nav lb-nav-left" type="button" aria-label="Mover a la izquierda" onclick="cycleMedia(-1)">‹</button>
@@ -1421,10 +1499,14 @@
         const ENRICHED_DATA_PATH = "catalog.json";
         const MEDIA_BASE_PATH = "";
         const AUTH_SHA256_B64 = "bnU6awo3zRAyyZG6FnzuWW25rcozFi6p5IoLqGxNrtM=";
+        // SHA-256 base64 of the elite/discreet password. Set this to enable media for discreet profiles.
+        // Tip (Node): `node -e "console.log(require('crypto').createHash('sha256').update('YOUR_PASSWORD').digest('base64'))"`
+        const AUTH_ELITE_SHA256_B64 = "";
         const AUTH_STORAGE_KEY = "patron_auth_sha256_b64_v1";
         const LANG_STORAGE_KEY = "patron_lang_v1";
         const ASK_CONTACT_WHATSAPP_E164 = "50684098222";
         let currentLang = "es";
+        let authLevel = null; // "standard" | "elite"
         const CATEGORY_FILTER_VALUES = {
             nuevos_ingresos: "Solo nuevos ingresos",
             sin_experiencia: "Solo sin experiencia",
@@ -1483,6 +1565,7 @@
                     photos: "Fotos",
                     videos: "Videos",
                     reviews: "Reseñas",
+                    discreetProfile: "perfil de lista discreta",
                 },
                 profile: {
                     ageCard: "{age} años",
@@ -1619,6 +1702,7 @@
                     photos: "Photos",
                     videos: "Videos",
                     reviews: "Reviews",
+                    discreetProfile: "discreet list profile",
                 },
                 profile: {
                     ageCard: "{age} years old",
@@ -2030,6 +2114,15 @@
             return true;
         }
 
+        function isDiscreetProfile(profile) {
+            if (!profile || typeof profile !== "object") return false;
+            return (
+                profile.discreet_list === true ||
+                profile.discreet === true ||
+                profile.elite_list === true
+            );
+        }
+
         function transformProfiles(profiles = []) {
             return profiles.filter(isProfileEnabled).map((profile, idx) => {
                 const structured = mergeStructuredData(profile);
@@ -2049,6 +2142,7 @@
                     images: media.images,
                     videos: media.videos,
                     media_entries: mediaEntries,
+                    is_discreet: isDiscreetProfile(profile),
                     raw_profile: profile,
                     metadata_labels: metadataLabels,
                     filter_tokens: filterTokens,
@@ -2561,18 +2655,29 @@
             syncOverlayLock();
         }
 
-        function isAuthRemembered() {
+        function getRememberedAuthLevel() {
             try {
-                return localStorage.getItem(AUTH_STORAGE_KEY) === AUTH_SHA256_B64;
+                const stored = localStorage.getItem(AUTH_STORAGE_KEY);
+                if (!stored) return null;
+                if (stored === "elite") return "elite";
+                if (stored === "standard") return "standard";
+                // Legacy: stored hashes.
+                if (stored === AUTH_SHA256_B64) return "standard";
+                if (AUTH_ELITE_SHA256_B64 && stored === AUTH_ELITE_SHA256_B64) return "elite";
+                return null;
             } catch (_) {
-                return false;
+                return null;
             }
         }
 
-        function setRememberedAuth(enabled) {
+        function isAuthRemembered() {
+            return !!getRememberedAuthLevel();
+        }
+
+        function setRememberedAuth(levelOrNull) {
             try {
-                if (enabled) localStorage.setItem(AUTH_STORAGE_KEY, AUTH_SHA256_B64);
-                else localStorage.removeItem(AUTH_STORAGE_KEY);
+                if (!levelOrNull) localStorage.removeItem(AUTH_STORAGE_KEY);
+                else localStorage.setItem(AUTH_STORAGE_KEY, levelOrNull);
             } catch (_) { /* ignore */ }
         }
 
@@ -2589,6 +2694,7 @@
         }
 
         function startApp() {
+            if (!authLevel) authLevel = "standard";
             showDisclaimer();
             loadData();
         }
@@ -2619,7 +2725,9 @@
                 return;
             }
 
-            if (isAuthRemembered()) {
+            const rememberedLevel = getRememberedAuthLevel();
+            if (rememberedLevel) {
+                authLevel = rememberedLevel;
                 hideAuthGate();
                 startApp();
                 return;
@@ -2640,13 +2748,20 @@
                 setAuthBusy(true);
                 try {
                     const computed = await sha256Base64(pw);
-                    if (computed !== AUTH_SHA256_B64) {
+                    let level = null;
+                    if (AUTH_ELITE_SHA256_B64 && computed === AUTH_ELITE_SHA256_B64) {
+                        level = "elite";
+                    } else if (computed === AUTH_SHA256_B64) {
+                        level = "standard";
+                    }
+                    if (!level) {
                         setAuthError(t("auth.wrong"));
                         input.focus();
                         input.select?.();
                         return;
                     }
-                    setRememberedAuth(!!remember.checked);
+                    authLevel = level;
+                    setRememberedAuth(remember.checked ? level : null);
                     hideAuthGate();
                     startApp();
                 } catch (err) {
@@ -2769,6 +2884,22 @@
 	            return `<div class="media-counter">${parts.join('')}</div>`;
 	        }
 
+        function hasEliteAccess() {
+            return authLevel === "elite";
+        }
+
+        function canShowProfileMedia(item) {
+            return !(item && item.is_discreet) || hasEliteAccess();
+        }
+
+        function discreetIconSvg() {
+            return `<svg class="discreet-icon" viewBox="0 0 64 64" aria-hidden="true" fill="currentColor"><path d="M32 34c8.837 0 16-7.163 16-16S40.837 2 32 2 16 9.163 16 18s7.163 16 16 16Zm0 4c-10.667 0-24 5.333-24 16v6h48v-6c0-10.667-13.333-16-24-16Z"/></svg>`;
+        }
+
+        function renderDiscreetPlaceholderInner() {
+            return `${discreetIconSvg()}<div class="discreet-label">${escapeHtml(t("media.discreetProfile"))}</div>`;
+        }
+
 	        function normalizeText(text) {
 	            if (text === null || text === undefined) return '';
 	            return String(text)
@@ -2814,12 +2945,15 @@
             document.getElementById('grid').innerHTML = filtered.map((item, idx) => {
                 const d = item.structured_data || {};
                 const m = item.path_metadata || [];
-                const primaryMedia = item.media_entries?.[0];
+                const canShowMedia = canShowProfileMedia(item);
+                const primaryMedia = canShowMedia ? item.media_entries?.[0] : null;
                 const reviews = Array.isArray(item.raw_profile?.reviews) ? item.raw_profile.reviews : [];
                 const reviewCount = reviews.filter(r => typeof r === "string" && r.trim()).length;
                 const counterHtml = renderMediaCounter(item.images, item.videos, reviewCount);
                 let mediaInner = '';
-                if (primaryMedia) {
+                if (!canShowMedia) {
+                    mediaInner = `<div class="discreet-placeholder">${renderDiscreetPlaceholderInner()}</div>`;
+                } else if (primaryMedia) {
                     if (primaryMedia.type === "image") {
                         mediaInner = `<img class="main-img" src="${primaryMedia.src}" loading="lazy">`;
                     } else {
@@ -3013,15 +3147,31 @@
 	            const m = item.path_metadata || [];
 
 	            // Media
-	            const mediaEntries = item.media_entries || [];
+                const canShowMedia = canShowProfileMedia(item);
+	            const mediaEntries = canShowMedia ? (item.media_entries || []) : [];
 	            currentMediaEntries = mediaEntries;
+                const discreetEl = document.getElementById('lb-discreet');
+                if (discreetEl) {
+                    if (canShowMedia) {
+                        discreetEl.classList.remove("active");
+                        discreetEl.setAttribute("aria-hidden", "true");
+                        discreetEl.innerHTML = "";
+                    } else {
+                        discreetEl.classList.add("active");
+                        discreetEl.setAttribute("aria-hidden", "false");
+                        discreetEl.innerHTML = renderDiscreetPlaceholderInner();
+                    }
+                }
 	            const mainImg = document.getElementById('lb-main-img');
 	            const mainVideo = document.getElementById('lb-main-video');
 	            const thumbs = document.getElementById('lb-thumbs');
                 const navLeft = document.getElementById('lb-nav-left');
                 const navRight = document.getElementById('lb-nav-right');
-                const showNav = mediaEntries.length > 1;
-	            thumbs.innerHTML = mediaEntries.length > 1 ? mediaEntries.map((entry, mediaIdx) =>
+                const showNav = canShowMedia && mediaEntries.length > 1;
+                if (thumbs) {
+                    thumbs.style.display = (canShowMedia && mediaEntries.length > 1) ? '' : 'none';
+                }
+	            thumbs.innerHTML = (canShowMedia && mediaEntries.length > 1) ? mediaEntries.map((entry, mediaIdx) =>
 	                entry.type === "image"
 	                    ? `<img src="${entry.src}" class="lb-thumb" onclick="switchMedia(${mediaIdx})">`
 	                    : `<video src="${entry.src}" class="lb-thumb" muted playsinline onclick="switchMedia(${mediaIdx})"></video>`
@@ -3030,9 +3180,10 @@
                 if (navRight) navRight.style.display = showNav ? 'flex' : 'none';
 	            currentItemIndex = idx;
 	            currentMediaIndex = 0;
-	            if (mediaEntries.length) {
+	            if (canShowMedia && mediaEntries.length) {
 	                updateLightboxMedia();
             } else {
+                mainVideo.pause();
                 mainImg.style.display = "none";
                 mainVideo.style.display = "none";
                 mainImg.src = "";
