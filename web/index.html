@@ -194,6 +194,61 @@
             padding-bottom: 16px;
         }
 
+        .mobile-topbar {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .brand-mark {
+            width: 34px;
+            height: 34px;
+            border-radius: 12px;
+            background: var(--accent);
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 18px rgba(229, 29, 83, 0.28);
+            flex: 0 0 auto;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .brand-name {
+            font-size: 16px;
+            font-weight: 900;
+            color: #222;
+            line-height: 1.1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .brand-subtitle {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         .controls input {
             padding: 12px 16px;
             border-radius: 40px;
@@ -1256,6 +1311,10 @@
                 justify-content: flex-start;
             }
 
+            .mobile-topbar {
+                display: flex;
+            }
+
             .controls input {
                 width: 100%;
                 flex: 1 1 100%;
@@ -1415,7 +1474,16 @@
 
     <main>
         <div class="controls">
-            <button id="filters-toggle" class="filters-toggle" type="button" aria-label="Abrir filtros" onclick="openFilters()">Filtros</button>
+            <div class="mobile-topbar">
+                <div class="brand" aria-label="Patrón">
+                    <span class="brand-mark" aria-hidden="true">P</span>
+                    <span class="brand-text">
+                        <span class="brand-name" id="main-app-title">Comunidad Patrón</span>
+                        <span class="brand-subtitle" id="main-app-subtitle">Catálogo</span>
+                    </span>
+                </div>
+                <button id="filters-toggle" class="filters-toggle" type="button" aria-label="Abrir filtros" onclick="openFilters()">Filtros</button>
+            </div>
             <input type="search" id="searchInput" placeholder="Buscar..." oninput="render()" inputmode="search" enterkeyhint="search" autocapitalize="none" autocomplete="off">
             <div id="stats"></div>
         </div>
@@ -1518,6 +1586,7 @@
             es: {
                 page: { title: "Catálogo Patrón" },
                 app: { title: "Comunidad Patrón" },
+                brand: { subtitle: "Catálogo" },
                 lang: { aria: "Idioma" },
                 controls: {
                     searchPlaceholder: "Buscar...",
@@ -1655,6 +1724,7 @@
             en: {
                 page: { title: "Patron Catalog" },
                 app: { title: "Patrón Community" },
+                brand: { subtitle: "Catalog" },
                 lang: { aria: "Language" },
                 controls: {
                     searchPlaceholder: "Search...",
@@ -1858,6 +1928,11 @@
 
             const appTitle = document.getElementById("app-title");
             if (appTitle) appTitle.textContent = t("app.title");
+
+            const mainAppTitle = document.getElementById("main-app-title");
+            if (mainAppTitle) mainAppTitle.textContent = t("app.title");
+            const mainAppSubtitle = document.getElementById("main-app-subtitle");
+            if (mainAppSubtitle) mainAppSubtitle.textContent = t("brand.subtitle");
 
             const filtersToggle = document.getElementById("filters-toggle");
             if (filtersToggle) {
