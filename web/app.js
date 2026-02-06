@@ -12,11 +12,12 @@
         const AUTH_STORAGE_KEY = "patron_auth_sha256_b64_v1";
         const LANG_STORAGE_KEY = "patron_lang_v1";
         const ASK_CONTACT_WHATSAPP_E164 = "50684098222";
+        const DISCREET_CONTACT_EMAIL = "patron@patroncr.net";
         let currentLang = "es";
         let authLevel = null;  
         const UBICACION_OPTIONS = ["ALAJUELA", "CARTAGO", "GUAPILES", "HEREDIA", "SAN JOSE"];
         const CATEGORY_FILTER_VALUES = {
-            nuevos_ingresos: "Nuevos ingresos",
+            nuevo_ingreso: "Nuevos ingresos",
             sin_experiencia: "Sin experiencia",
             cortesia: "Cortesía",
             nuevas_fotos_videos: "Nuevas fotos/videos",
@@ -99,9 +100,12 @@
                     notes: "Notas",
                     whatsappCta: "Abrir WhatsApp",
                     askForContactCta: "Solicitar contacto",
+                    discreetEmailCta: "Contacto discreto por email",
                     whatsappMessage: "Hola, vi tu perfil en {app}. ¿Podemos coordinar?",
                     whatsappMessageWithName: "Hola {name}, vi tu perfil en {app}. ¿Podemos coordinar?",
                     askForContactMessage: "Hola Patron, quiero contactar a {profile}.\n- Me llamo # \n-el celular desde donde le escribire es: \n-Fecha aproximada de la cita es: ",
+                    discreetEmailSubject: "Solicitud de contacto discreto - {profile}",
+                    discreetEmailMessage: "Hola Patron, quiero solicitar contacto discreto de {profile}.\n- Me llamo:\n- Celular:\n- Fecha aproximada de la cita:",
                     call: "Llamar {phone}",
                 },
                 extraction_labels: {
@@ -230,9 +234,12 @@
                     notes: "Notes",
                     whatsappCta: "Contactela directamente por WhatsApp",
                     askForContactCta: "Ask for contact",
+                    discreetEmailCta: "Discreet email contact",
                     whatsappMessage: "Hi, I saw your profile on {app}. Can we coordinate?",
                     whatsappMessageWithName: "Hi {name}, I saw your profile on {app}. Can we coordinate?",
                     askForContactMessage: "I want to contact {profile}\n- my name is\n- the phone number I will write from is\n- approximate date of the appointment is",
+                    discreetEmailSubject: "Discreet contact request - {profile}",
+                    discreetEmailMessage: "Hi Patron, I want to request discreet contact for {profile}.\n- My name is:\n- Phone number:\n- Approximate appointment date:",
                     call: "Call {phone}",
                 },
                 extraction_labels: {
@@ -429,13 +436,13 @@
         const FILTER_SPECS = [
             { key: "ubicacion", labelKey: "filters.location" },
             { key: "edad", labelKey: "filters.age" },
-            { key: "nuevos_ingresos", labelKey: "filters.newArrivals" },
+            { key: "nuevo_ingreso", labelKey: "filters.newArrivals" },
             { key: "sin_experiencia", labelKey: "filters.noExperience" },
             { key: "cortesia", labelKey: "filters.courtesy" },
             { key: "nuevas_fotos_videos", labelKey: "filters.newMedia" },
             { key: "lista_discreta", labelKey: "filters.categoryDiscreetListOnly" },
         ];
-        const GROUPED_CATEGORY_FILTER_KEYS = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos", "lista_discreta"]);
+        const GROUPED_CATEGORY_FILTER_KEYS = new Set(["nuevo_ingreso", "sin_experiencia", "cortesia", "nuevas_fotos_videos", "lista_discreta"]);
         const LOCATION_MAP = {
             "alajuela": "Alajuela",
             "alajuela, palmares centro": "Alajuela, Palmares Centro",
@@ -649,7 +656,7 @@
                 labels,
                 ubicacion,
                 edad_rango,
-                nuevos_ingresos: !!metadata.nuevos_ingresos,
+                nuevo_ingreso: !!metadata.nuevo_ingreso,
                 sin_experiencia: !!metadata.sin_experiencia,
                 cortesia: !!metadata.cortesia,
                 nuevas_fotos_videos: !!metadata.nuevas_fotos_videos,
@@ -847,6 +854,14 @@
             return t("contact.askForContactMessage", { profile });
         }
 
+        function buildDiscreetEmailLink(profileLabel) {
+            const profile = (profileLabel || "").toString().trim() || t("common.unknown");
+            const subject = t("contact.discreetEmailSubject", { profile });
+            const body = t("contact.discreetEmailMessage", { profile });
+            const query = `subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            return `mailto:${DISCREET_CONTACT_EMAIL}?${query}`;
+        }
+
         function buildWhatsAppLink(e164Digits, message) {
             const phone = normalizeWhatsAppE164Digits(e164Digits);
             if (!phone) return null;
@@ -969,7 +984,7 @@
             const edadRango = normalizeEdadRango(metadata.edad_rango);
             if (edadRango) labels.push(edadRango);
 
-            if (metadata.nuevos_ingresos) labels.push(CATEGORY_FILTER_VALUES.nuevos_ingresos);
+            if (metadata.nuevo_ingreso) labels.push(CATEGORY_FILTER_VALUES.nuevo_ingreso);
             if (metadata.sin_experiencia) labels.push(CATEGORY_FILTER_VALUES.sin_experiencia);
             if (metadata.cortesia) labels.push(CATEGORY_FILTER_VALUES.cortesia);
             if (metadata.nuevas_fotos_videos) labels.push(CATEGORY_FILTER_VALUES.nuevas_fotos_videos);
@@ -991,7 +1006,7 @@
             const metadata = rawProfile.metadata || {};
             const ubicacion = normalizeMetadataLocation(metadata.ubicacion);
             const edadRango = normalizeEdadRango(metadata.edad_rango);
-            const nuevosIngresos = !!metadata.nuevos_ingresos;
+            const nuevosIngresos = !!metadata.nuevo_ingreso;
             const sinExperiencia = !!metadata.sin_experiencia;
             const cortesia = !!metadata.cortesia;
             const nuevasFotosVideos = !!metadata.nuevas_fotos_videos;
@@ -1000,7 +1015,7 @@
             return {
                 ubicacion: ubicacion ? [ubicacion] : [],
                 edad: edadRango ? [edadRango] : [],
-                nuevos_ingresos: nuevosIngresos ? [CATEGORY_FILTER_VALUES.nuevos_ingresos] : [],
+                nuevo_ingreso: nuevosIngresos ? [CATEGORY_FILTER_VALUES.nuevo_ingreso] : [],
                 sin_experiencia: sinExperiencia ? [CATEGORY_FILTER_VALUES.sin_experiencia] : [],
                 cortesia: cortesia ? [CATEGORY_FILTER_VALUES.cortesia] : [],
                 nuevas_fotos_videos: nuevasFotosVideos ? [CATEGORY_FILTER_VALUES.nuevas_fotos_videos] : [],
@@ -1057,7 +1072,7 @@
             // Always show curated filter choices even if a category has 0 matches.
             filters.ubicacion = new Set(UBICACION_OPTIONS);
             filters.edad = new Set(EDAD_RANGOS);
-            filters.nuevos_ingresos.add(CATEGORY_FILTER_VALUES.nuevos_ingresos);
+            filters.nuevo_ingreso.add(CATEGORY_FILTER_VALUES.nuevo_ingreso);
             filters.sin_experiencia.add(CATEGORY_FILTER_VALUES.sin_experiencia);
             filters.cortesia.add(CATEGORY_FILTER_VALUES.cortesia);
             filters.nuevas_fotos_videos.add(CATEGORY_FILTER_VALUES.nuevas_fotos_videos);
@@ -1110,7 +1125,7 @@
             group.appendChild(header);
 
             const items = [
-                { key: 'nuevos_ingresos', value: CATEGORY_FILTER_VALUES.nuevos_ingresos, labelKey: 'filters.categoryNewArrivalsOnly' },
+                { key: 'nuevo_ingreso', value: CATEGORY_FILTER_VALUES.nuevo_ingreso, labelKey: 'filters.categoryNewArrivalsOnly' },
                 { key: 'sin_experiencia', value: CATEGORY_FILTER_VALUES.sin_experiencia, labelKey: 'filters.categoryNoExperienceOnly' },
                 { key: 'cortesia', value: CATEGORY_FILTER_VALUES.cortesia, labelKey: 'filters.categoryCourtesyOnly' },
                 { key: 'nuevas_fotos_videos', value: CATEGORY_FILTER_VALUES.nuevas_fotos_videos, labelKey: 'filters.categoryNewMediaOnly' },
@@ -1890,6 +1905,7 @@
             const askForContactLink = (!waLink && isExplicitNullContact)
                 ? buildWhatsAppLink(ASK_CONTACT_WHATSAPP_E164, buildAskForContactPrefillMessage(profileRef))
                 : null;
+            const discreetEmailLink = buildDiscreetEmailLink(profileRef);
 
             if (waLink) {
                 contactRows.push(
@@ -1912,6 +1928,9 @@
                 html += `<a href="${waLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${escapeHtml(t("contact.whatsappCta"))}</a>`;
             } else if (askForContactLink) {
                 html += `<a href="${askForContactLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${escapeHtml(t("contact.askForContactCta"))}</a>`;
+            }
+            if (discreetEmailLink) {
+                html += `<a href="${discreetEmailLink}" class="cta-btn cta-btn-email">${escapeHtml(t("contact.discreetEmailCta"))}</a>`;
             }
             if (d.contact?.phone) {
                 html += `<a href="tel:${d.contact.phone}" style="display:block; text-align:center; margin-top:10px; color:#555; text-decoration:underline;">${escapeHtml(t("contact.call", { phone: d.contact.phone }))}</a>`;
