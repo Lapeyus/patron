@@ -1569,7 +1569,7 @@
         const AUTH_SHA256_B64 = "bnU6awo3zRAyyZG6FnzuWW25rcozFi6p5IoLqGxNrtM=";
         // SHA-256 base64 of the elite/discreet password. Set this to enable media for discreet profiles.
         // Tip (Node): `node -e "console.log(require('crypto').createHash('sha256').update('YOUR_PASSWORD').digest('base64'))"`
-        const AUTH_ELITE_SHA256_B64 = "";
+        const AUTH_ELITE_SHA256_B64 = "GoCwaRtpb+GNvJ6UcivHuyMl12B4van90MF2C9TNmGQ="; // Password: elite
         const AUTH_STORAGE_KEY = "patron_auth_sha256_b64_v1";
         const LANG_STORAGE_KEY = "patron_lang_v1";
         const ASK_CONTACT_WHATSAPP_E164 = "50684098222";
@@ -1580,6 +1580,7 @@
             sin_experiencia: "Solo sin experiencia",
             cortesia: "Solo cortesía",
             nuevas_fotos_videos: "Solo nuevas fotos/videos",
+            lista_discreta: "Lista discreta",
         };
 
         const I18N = {
@@ -1624,6 +1625,7 @@
                     categoryNoExperienceOnly: "Solo sin experiencia",
                     categoryCourtesyOnly: "Solo cortesía",
                     categoryNewMediaOnly: "Solo nuevas fotos/videos",
+                    categoryDiscreetListOnly: "Lista discreta",
                 },
                 edad_labels: {
                     "7 - Perfiles - 18 - 19 - 20 años": "18 - 20 años",
@@ -1762,6 +1764,7 @@
                     categoryNoExperienceOnly: "No experience only",
                     categoryCourtesyOnly: "Courtesy only",
                     categoryNewMediaOnly: "New photos/videos only",
+                    categoryDiscreetListOnly: "Discreet list",
                 },
                 edad_labels: {
                     "7 - Perfiles - 18 - 19 - 20 años": "18 - 20 yrs",
@@ -2019,6 +2022,7 @@
             { key: "sin_experiencia", labelKey: "filters.noExperience" },
             { key: "cortesia", labelKey: "filters.courtesy" },
             { key: "nuevas_fotos_videos", labelKey: "filters.newMedia" },
+            { key: "lista_discreta", labelKey: "filters.categoryDiscreetListOnly" },
         ];
         const LOCATION_MAP = {
             "alajuela": "Alajuela",
@@ -2191,10 +2195,19 @@
 
         function isDiscreetProfile(profile) {
             if (!profile || typeof profile !== "object") return false;
+            const isTrueLike = (v) => {
+                if (v === true) return true;
+                if (v === 1) return true;
+                if (typeof v === "string") {
+                    const s = v.trim().toLowerCase();
+                    return s === "true" || s === "1" || s === "yes" || s === "si" || s === "sí";
+                }
+                return false;
+            };
             return (
-                profile.discreet_list === true ||
-                profile.discreet === true ||
-                profile.elite_list === true
+                isTrueLike(profile.discreet_list) ||
+                isTrueLike(profile.discreet) ||
+                isTrueLike(profile.elite_list)
             );
         }
 
@@ -2471,6 +2484,7 @@
             let sinExperiencia = false;
             let cortesia = false;
             let nuevasFotosVideos = false;
+            let listaDiscreta = isDiscreetProfile(rawProfile);
 
             const sources = Array.isArray(rawProfile?.sources) ? rawProfile.sources : [];
             sources.forEach(src => {
@@ -2496,6 +2510,7 @@
                 sin_experiencia: sinExperiencia ? [CATEGORY_FILTER_VALUES.sin_experiencia] : [],
                 cortesia: cortesia ? [CATEGORY_FILTER_VALUES.cortesia] : [],
                 nuevas_fotos_videos: nuevasFotosVideos ? [CATEGORY_FILTER_VALUES.nuevas_fotos_videos] : [],
+                lista_discreta: listaDiscreta ? [CATEGORY_FILTER_VALUES.lista_discreta] : [],
             };
         }
 
@@ -2556,6 +2571,7 @@
             filters.sin_experiencia.add(CATEGORY_FILTER_VALUES.sin_experiencia);
             filters.cortesia.add(CATEGORY_FILTER_VALUES.cortesia);
             filters.nuevas_fotos_videos.add(CATEGORY_FILTER_VALUES.nuevas_fotos_videos);
+            filters.lista_discreta.add(CATEGORY_FILTER_VALUES.lista_discreta);
 
             catalog.forEach(item => {
                 const tokens = item.filter_tokens || {};
@@ -2566,7 +2582,7 @@
                 });
             });
 
-            const groupedCategoryKeys = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos"]);
+            const groupedCategoryKeys = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos", "lista_discreta"]);
             FILTER_SPECS.forEach(spec => {
                 if (groupedCategoryKeys.has(spec.key)) return;
                 renderFilterUI(t(spec.labelKey), filters[spec.key], spec.key);
@@ -2607,6 +2623,7 @@
                 { key: 'sin_experiencia', value: CATEGORY_FILTER_VALUES.sin_experiencia, labelKey: 'filters.categoryNoExperienceOnly' },
                 { key: 'cortesia', value: CATEGORY_FILTER_VALUES.cortesia, labelKey: 'filters.categoryCourtesyOnly' },
                 { key: 'nuevas_fotos_videos', value: CATEGORY_FILTER_VALUES.nuevas_fotos_videos, labelKey: 'filters.categoryNewMediaOnly' },
+                { key: 'lista_discreta', value: CATEGORY_FILTER_VALUES.lista_discreta, labelKey: 'filters.categoryDiscreetListOnly' },
             ];
 
             items.forEach(({ key, value, labelKey }) => {
@@ -2995,7 +3012,7 @@
 	                const haystack = item.search_blob || (item.search_blob = normalizeText(JSON.stringify(item)));
 	                if (qTokens.length && !qTokens.every(token => haystack.includes(token))) return false;
 	                const tokens = item.filter_tokens || {};
-	                const groupedCategoryKeys = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos"]);
+	                const groupedCategoryKeys = new Set(["nuevos_ingresos", "sin_experiencia", "cortesia", "nuevas_fotos_videos", "lista_discreta"]);
 	                let anyCategorySelected = false;
 	                let categoryMatches = false;
                 for (const spec of FILTER_SPECS) {

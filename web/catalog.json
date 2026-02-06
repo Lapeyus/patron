@@ -21,6 +21,7 @@
         }
       ],
       "profile": "011",
+      "discreet_list": true,
       "media": [
         "media_profiles/011/IMG-20250731-WA0103.jpg",
         "media_profiles/011/IMG-20250731-WA0104.jpg",
@@ -79,6 +80,7 @@
         }
       ],
       "profile": "035",
+      "discreet_list": true,
       "media": [
         "media_profiles/035/IMG-20251229-WA0196.jpg",
         "media_profiles/035/IMG-20251229-WA0198.jpg",
@@ -135,6 +137,7 @@
         }
       ],
       "profile": "055",
+      "discreet_list": true,
       "media": [
         "media_profiles/055/IMG-20251022-WA0087.jpg",
         "media_profiles/055/IMG-20251022-WA0088.jpg",
