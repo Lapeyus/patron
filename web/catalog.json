@@ -5,7 +5,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "31 - 40 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -48,7 +48,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": true
@@ -104,7 +104,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": true,
         "nuevas_fotos_videos": false
@@ -167,7 +167,7 @@
         "labels": ["VENEZOLANA"],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -234,7 +234,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": true,
         "nuevas_fotos_videos": false
@@ -278,7 +278,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -337,7 +337,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -390,7 +390,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -440,7 +440,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -492,7 +492,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -546,7 +546,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -599,7 +599,7 @@
         "labels": [],
         "ubicacion": "CARTAGO",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -641,7 +641,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -705,7 +705,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "31 - 40 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -749,7 +749,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -807,7 +807,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -849,7 +849,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -894,7 +894,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -937,7 +937,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -990,7 +990,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1037,7 +1037,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1098,7 +1098,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1142,7 +1142,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1201,7 +1201,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1248,7 +1248,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1296,7 +1296,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1352,7 +1352,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1393,7 +1393,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1438,7 +1438,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1493,7 +1493,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1546,7 +1546,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1591,7 +1591,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1641,7 +1641,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1684,7 +1684,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1732,7 +1732,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1781,7 +1781,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1834,7 +1834,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1888,7 +1888,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "31 - 40 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1931,7 +1931,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -1988,7 +1988,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2033,7 +2033,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2086,7 +2086,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2140,7 +2140,7 @@
         "labels": ["AFROCARIBEÑAS"],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2185,7 +2185,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2234,7 +2234,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2285,7 +2285,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2335,7 +2335,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2413,7 +2413,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2462,7 +2462,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2508,7 +2508,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2557,7 +2557,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2605,7 +2605,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2663,7 +2663,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2704,7 +2704,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2751,7 +2751,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2798,7 +2798,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2844,7 +2844,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2890,7 +2890,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2934,7 +2934,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -2977,7 +2977,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3035,7 +3035,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": true,
+        "nuevo_ingreso": true,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3079,7 +3079,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3123,7 +3123,7 @@
         "labels": ["AFROCARIBEÑAS"],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3182,7 +3182,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3224,7 +3224,7 @@
         "labels": [],
         "ubicacion": "GUAPILES",
         "edad_rango": "31 - 40 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3267,7 +3267,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3315,7 +3315,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": true,
+        "nuevo_ingreso": true,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3360,7 +3360,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": true,
+        "nuevo_ingreso": true,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3408,7 +3408,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": true,
+        "nuevo_ingreso": true,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3452,7 +3452,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": true,
+        "nuevo_ingreso": true,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3494,7 +3494,7 @@
         "labels": [],
         "ubicacion": "CARTAGO",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3544,7 +3544,7 @@
         ],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3593,7 +3593,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3669,7 +3669,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": true,
         "nuevas_fotos_videos": false
@@ -3718,7 +3718,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3761,7 +3761,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": true
@@ -3809,7 +3809,7 @@
         ],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3864,7 +3864,7 @@
         ],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3924,7 +3924,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -3970,7 +3970,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4014,7 +4014,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4058,7 +4058,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4100,7 +4100,7 @@
         "labels": [],
         "ubicacion": "ALAJUELA",
         "edad_rango": "31 - 40 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4142,7 +4142,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4191,7 +4191,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4236,7 +4236,7 @@
         ],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4300,7 +4300,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": true,
         "nuevas_fotos_videos": false
@@ -4343,7 +4343,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4390,7 +4390,7 @@
         ],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4435,7 +4435,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": true,
         "nuevas_fotos_videos": false
@@ -4478,7 +4478,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4526,7 +4526,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "31 - 40 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4571,7 +4571,7 @@
         ],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4610,7 +4610,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4656,7 +4656,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": true,
+        "nuevo_ingreso": true,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4729,7 +4729,7 @@
         "labels": [],
         "ubicacion": "SAN JOSE",
         "edad_rango": "18 - 20 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4778,7 +4778,7 @@
         "labels": [],
         "ubicacion": "HEREDIA",
         "edad_rango": "21 - 30 años",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
@@ -4822,7 +4822,7 @@
         "labels": [],
         "ubicacion": "",
         "edad_rango": "",
-        "nuevos_ingresos": false,
+        "nuevo_ingreso": false,
         "sin_experiencia": false,
         "cortesia": false,
         "nuevas_fotos_videos": false
