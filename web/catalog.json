@@ -1,25 +1,15 @@
 {
   "profiles": [
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "31 - 40 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "011"
-          ]
-        },
-        {
-          "folders": [
-            "9 - Perfiles - 31 - 40 años",
-            "011"
-          ]
-        }
-      ],
       "profile": "011",
       "discreet_list": true,
       "media": [
@@ -50,35 +40,19 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles con nuevas fotos - videos": "Perfiles con nuevas fotos - videos",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": true
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "035"
-          ]
-        },
-        {
-          "folders": [
-            "11 - Perfiles con nuevas fotos - videos",
-            "035"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "035"
-          ]
-        }
-      ],
       "profile": "035",
       "discreet_list": true,
       "media": [
@@ -122,20 +96,19 @@
           "Resenas": "Las reseñas son espectaculares..."
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - cortesía": "Perfiles - cortesía"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": true,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "12 - Perfiles - cortesía",
-            "055"
-          ]
-        }
-      ],
       "profile": "055",
       "discreet_list": true,
       "media": [
@@ -180,28 +153,27 @@
         }
       },
       "reviews": [
-        "Amor de mujer, esta bellisima, es una diosa de la seducción\ny quedas con ganas de repetir en la misma cita.\nLástima que fui corto ese día de dinero porque el cobro es por round y no por hora.\nPero es una sensualidad de dama.",
-        "Fue súper dulce y demasiado atenta,\ncero relojera y el servicio demasiado bueno!!",
-        "Es una cita con final feliz garantizado!\nSabe complacer, no es relojera, se ocupa de vos, como cliente.\nTe hace sentir especial. Una profesional. Es una milf.\nTiene boobs operadas, perfectas a su talle. Recomendadisima",
-        "Me atendí con la 055 y es una de las mejores experiencias que he tenido,\nes una dama en todo el sentido de la palabra, inteligente, sexy, simpática…\nno hay palabras de verdad, ya quiero repetir.",
-        "Es una dama que le gusta complacer en todo sentido,\nalegre, disfruta, puntual, viste bien y lo disfruta.",
-        "Es una mujer muy guapa, de buen vestir; agradable,\ninteresante, cero relojera, se acomoda a los horarios de uno;\nllega donde la citen; muy buena en la xxxx. Repetiré."
+        "Amor de mujer, esta bellisima, es una diosa de la seducción y quedas con ganas de repetir en la misma cita. Lástima que fui corto ese día de dinero porque el cobro es por round y no por hora. Pero es una sensualidad de dama.",
+        "Fue súper dulce y demasiado atenta, cero relojera y el servicio demasiado bueno!!",
+        "Es una cita con final feliz garantizado! Sabe complacer, no es relojera, se ocupa de vos, como cliente. Te hace sentir especial. Una profesional. Es una milf. Tiene boobs operadas, perfectas a su talle. Recomendadisima",
+        "Me atendí con la 055 y es una de las mejores experiencias que he tenido, es una dama en todo el sentido de la palabra, inteligente, sexy, simpática… no hay palabras de verdad, ya quiero repetir.",
+        "Es una dama que le gusta complacer en todo sentido, alegre, disfruta, puntual, viste bien y lo disfruta.",
+        "Es una mujer muy guapa, de buen vestir; agradable, interesante, cero relojera, se acomoda a los horarios de uno; llega donde la citen; muy buena en la xxxx. Repetiré."
       ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "VENEZOLANA": "VENEZOLANA"
+      "metadata": {
+        "labels": ["VENEZOLANA"],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "VENEZOLANA",
-            "071"
-          ]
-        }
-      ],
       "profile": "071",
+      "discreet_list": false,
       "media": [
         "media_profiles/071/Copia de 1000872865 (1).mp4",
         "media_profiles/071/VID-20250612-WA0029.mp4",
@@ -247,30 +219,28 @@
         "other_attributes": {
           "origin": "Venezuela",
           "exotica": "La unica venezolana en la comunidad",
-          "Recomendada":"De los mejores contactos. Bella, carismatica y sensual"
+          "Recomendada": "De los mejores contactos. Bella, carismatica y sensual"
         }
-        
       },
       "reviews": [
-        "La 071 es una de las chicas de esta comunidad del Patron\nque nos recuerdan a las más hermosas concubinas\npor las que este caballero ha sido ampliamente reconocido\nen nuestro medio.\nElla es dulce, cariñosa, físicamente atractiva y\nen la intimidad intensa y complaciente, no es relojera.\nSu acento venezolano la vuelve más deliciosa cuando\nal oído te susurra cariño mientras están juntos\ncon entusiasmo adolescente. Voy a repetir.",
-        "Increíble mujer, inteligente, conversadora,\napasionada y da el 100 %. Súper recomendada.",
-        "Invito a todos los que tengan la oportunidad\nde atenderse con ella no lo duden,\nes bonita, se puede conversar de todo con ella,\ny en la cama ufff insaciable,\nla recomiendo al 100% y un cuerpazo delicioso."
+        "La 071 es una de las chicas de esta comunidad del Patron que nos recuerdan a las más hermosas concubinas por las que este caballero ha sido ampliamente reconocido en nuestro medio. Ella es dulce, cariñosa, físicamente atractiva y en la intimidad intensa y complaciente, no es relojera. Su acento venezolano la vuelve más deliciosa cuando al oído te susurra cariño mientras están juntos con entusiasmo adolescente. Voy a repetir.",
+        "Increíble mujer, inteligente, conversadora, apasionada y da el 100 %. Súper recomendada.",
+        "Invito a todos los que tengan la oportunidad de atenderse con ella no lo duden, es bonita, se puede conversar de todo con ella, y en la cama ufff insaciable, la recomiendo al 100% y un cuerpazo delicioso."
       ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - cortesía": "Perfiles - cortesía"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": true,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "12 - Perfiles - cortesía",
-            "072"
-          ]
-        }
-      ],
       "profile": "072",
+      "discreet_list": false,
       "media": [
         "media_profiles/072/IMG-20251206-WA0155.jpg",
         "media_profiles/072/IMG-20251206-WA0156.jpg",
@@ -300,29 +270,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "073"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "073"
-          ]
-        }
-      ],
       "profile": "073",
+      "discreet_list": false,
       "media": [
         "media_profiles/073/IMG-20250528-WA0315.jpg",
         "media_profiles/073/IMG-20250528-WA0316.jpg",
@@ -365,32 +327,23 @@
         "other_attributes": {}
       },
       "reviews": [
-        "Una de las mejores, en la cama en la personalidad,\nes única y además una mulota, presencialmente,\nya se he atendido varias veces,\nhay que conocerla se puede hablar de cualquier tema con ella.",
-        "Ella es un espectáculo de mujer, guapísima, un cuerpazo.\nEn la cama es increíble. Es un contacto q hay que vivirlo si o si."
+        "Una de las mejores, en la cama en la personalidad, es única y además una mulota, presencialmente, ya se he atendido varias veces, hay que conocerla se puede hablar de cualquier tema con ella.",
+        "Ella es un espectáculo de mujer, guapísima, un cuerpazo. En la cama es increíble. Es un contacto q hay que vivirlo si o si."
       ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "080"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "080"
-          ]
-        }
-      ],
       "profile": "080",
+      "discreet_list": false,
       "media": [
         "media_profiles/080/IMG-20260114-WA0045.jpg",
         "media_profiles/080/IMG-20260114-WA0047.jpg",
@@ -407,7 +360,7 @@
         "hair_color": "negro",
         "eye_color": "claros",
         "location": "Heredia",
-        "availability": "De lunes a viernes de 9 am a 9pm max.\nFines de semana a convertir según mi disponibilidad.",
+        "availability": "De lunes a viernes de 9 am a 9pm max. Fines de semana a convertir según mi disponibilidad.",
         "contact": null,
         "prices": {
           "one_hour": "100,000 CRC",
@@ -421,38 +374,29 @@
         "other_attributes": {}
       },
       "reviews": [
-        "Saludos! Me gustaría confirmarles que sí concreté el encuentro con la dama\ny es una mujer increíble,\nno solo por su belleza física, que de igual manera es espectacular,\nsino que también es muy simpática y brinda un trato único!",
-        "La sensualidad, compañía y conversación que ella tiene\nson de otro planeta... es para no olvidar",
-        "Buena experiencia, me queda lejos por eso\nno he vuelto a repetir pero lo haría apenas pueda",
-	        "Me atiendo seguido con 080, una mujer increíble, divertida,\nbellísima y con un trato excepcional.\nLa mejor experiencia. Aparte inteligente y super creativa.\nMás que recomendada.",
-	        "Ella en general es muy linda de físico,\nviste muy elegante y simpática\ny a la hora de la cita se implica totalmente, se asegura\nde que la estés pasando bien y disfruta mucho también.",
-		        "Vengo a decirle que la 080 se voló todas las expectativas que\nyo pude haber tenido porque es simplemente\nuna mujer excepcional en todos los aspectos,\nuna presencia encantadora y una forma de ser hermosa, un cuerpazo\ny súper inteligente, va para el TOP, voy a repetir!!!!",
-			        "Es para confirmar que tuve el encuentro con la muchacha del perfil 080!\nDe fijo repetiré con ella, es una muchacha muy amena, y físicamente me encantó.\nCoordinar con ella fue súper sencillo.",
-			        "Ayer me atendí con ella y físicamente es preciosa, igual o más que en las fotos,\npero su personalidad aún más, quedé encantado con su trato de inicio a fin.\nPor mucho la mejor atención que he recibido. Planeo repetir con ella apenas pueda."
-			      ],
-			      "enabled": true
-			    },
-    {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
-      },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "123"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "123"
-          ]
-        }
+        "Saludos! Me gustaría confirmarles que sí concreté el encuentro con la dama y es una mujer increíble, no solo por su belleza física, que de igual manera es espectacular, sino que también es muy simpática y brinda un trato único!",
+        "La sensualidad, compañía y conversación que ella tiene son de otro planeta... es para no olvidar",
+        "Buena experiencia, me queda lejos por eso no he vuelto a repetir pero lo haría apenas pueda",
+        "Me atiendo seguido con 080, una mujer increíble, divertida, bellísima y con un trato excepcional. La mejor experiencia. Aparte inteligente y super creativa. Más que recomendada.",
+        "Ella en general es muy linda de físico, viste muy elegante y simpática y a la hora de la cita se implica totalmente, se asegura de que la estés pasando bien y disfruta mucho también.",
+        "Vengo a decirle que la 080 se voló todas las expectativas que yo pude haber tenido porque es simplemente una mujer excepcional en todos los aspectos, una presencia encantadora y una forma de ser hermosa, un cuerpazo y súper inteligente, va para el TOP, voy a repetir!!!!",
+        "Es para confirmar que tuve el encuentro con la muchacha del perfil 080! De fijo repetiré con ella, es una muchacha muy amena, y físicamente me encantó. Coordinar con ella fue súper sencillo.",
+        "Ayer me atendí con ella y físicamente es preciosa, igual o más que en las fotos, pero su personalidad aún más, quedé encantado con su trato de inicio a fin. Por mucho la mejor atención que he recibido. Planeo repetir con ella apenas pueda."
       ],
+      "enabled": true
+    },
+    {
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
+      },
       "profile": "123",
+      "discreet_list": false,
       "media": [
         "media_profiles/123/IMG-20251119-WA0035.jpg",
         "media_profiles/123/IMG-20251119-WA0036.jpg",
@@ -488,29 +432,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "129"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "129"
-          ]
-        }
-      ],
       "profile": "129",
+      "discreet_list": false,
       "media": [
         "media_profiles/129/IMG-20250607-WA0195.jpg",
         "media_profiles/129/IMG-20250614-WA0095.jpg",
@@ -548,68 +484,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "139"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "139"
-          ]
-        }
-      ],
       "profile": "139",
+      "discreet_list": false,
       "media": [
         "media_profiles/139/IMG-20250715-WA0142.jpg",
         "media_profiles/139/IMG-20250720-WA0043.jpg",
@@ -645,31 +534,25 @@
         "implants": false,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [
+        "Puntual , fácil de coordinar , Excelente actitud,no relojera , buena conversación , repito si "
+      ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "153"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "153"
-          ]
-        }
-      ],
       "profile": "153",
+      "discreet_list": false,
       "media": [
         "media_profiles/153/IMG-20250524-WA0284 (1).jpg",
         "media_profiles/153/IMG-20250524-WA0285 (1).jpg",
@@ -707,31 +590,22 @@
         "other_attributes": {}
       },
       "reviews": [
-        "Espectacular el trato, espectacular la forma de ser, espectacular la manera en que se desenvuelve,\nespectacular en la cama y espectacular físicamente..\n10 de 10 para ella en todo aspecto, no está atenta al tiempo,\nsiempre estuvo atenta a mi.."
+        "Espectacular el trato, espectacular la forma de ser, espectacular la manera en que se desenvuelve, espectacular en la cama y espectacular físicamente.. 10 de 10 para ella en todo aspecto, no está atenta al tiempo, siempre estuvo atenta a mi.."
       ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "CARTAGO": "CARTAGO",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "CARTAGO",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "CARTAGO",
-            "190"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "190"
-          ]
-        }
-      ],
       "profile": "190",
+      "discreet_list": false,
       "media": [
         "media_profiles/190/IMG-20251014-WA0001.jpg",
         "media_profiles/190/IMG-20251014-WA0002.jpg",
@@ -759,29 +633,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "221"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "221"
-          ]
-        }
-      ],
       "profile": "221",
+      "discreet_list": false,
       "media": [
         "media_profiles/221/IMG-20250604-WA0162.jpg",
         "media_profiles/221/IMG-20250604-WA0164.jpg",
@@ -831,29 +697,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "31 - 40 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "238"
-          ]
-        },
-        {
-          "folders": [
-            "9 - Perfiles - 31 - 40 años",
-            "238"
-          ]
-        }
-      ],
       "profile": "238",
+      "discreet_list": false,
       "media": [
         "media_profiles/238/IMG-20251213-WA0112.jpg",
         "media_profiles/238/IMG-20251213-WA0113.jpg",
@@ -862,29 +720,42 @@
         "media_profiles/238/IMG-20251213-WA0116.jpg",
         "media_profiles/238/IMG-20251213-WA0117.jpg"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "242"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "242"
-          ]
-        }
-      ],
       "profile": "242",
+      "discreet_list": false,
       "media": [
         "media_profiles/242/IMG-20250610-WA0183.jpg",
         "media_profiles/242/IMG-20250610-WA0184.jpg",
@@ -928,29 +799,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "251"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "251"
-          ]
-        }
-      ],
       "profile": "251",
+      "discreet_list": false,
       "media": [
         "media_profiles/251/IMG-20260108-WA0268.jpg",
         "media_profiles/251/VID-20260108-WA0265.mp4"
@@ -982,26 +845,17 @@
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "255"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "255"
-          ]
-        }
-      ],
       "profile": "255",
+      "discreet_list": false,
       "media": [
         "media_profiles/255/IMG-20250930-WA0328.jpg",
         "media_profiles/255/IMG-20250930-WA0329.jpg",
@@ -1032,29 +886,21 @@
           "lipotransferencia_count": 3
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "258"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "258"
-          ]
-        }
-      ],
       "profile": "258",
+      "discreet_list": false,
       "media": [
         "media_profiles/258/IMG-20251221-WA0194.jpg",
         "media_profiles/258/IMG-20251221-WA0195.jpg",
@@ -1081,31 +927,23 @@
         "implants": true,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "297"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "297"
-          ]
-        }
-      ],
       "profile": "297",
+      "discreet_list": false,
       "media": [
         "media_profiles/297/IMG-20260106-WA0183.jpg",
         "media_profiles/297/IMG-20260106-WA0184.jpg",
@@ -1142,31 +980,23 @@
         "implants": false,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "324"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "324"
-          ]
-        }
-      ],
       "profile": "324",
+      "discreet_list": false,
       "media": [
         "media_profiles/324/IMG-20260105-WA0045.jpg",
         "media_profiles/324/IMG-20260105-WA0046.jpg",
@@ -1199,29 +1029,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "327"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "327"
-          ]
-        }
-      ],
       "profile": "327",
+      "discreet_list": false,
       "media": [
         "media_profiles/327/IMG-20251206-WA0000.jpg",
         "media_profiles/327/IMG-20251206-WA0001.jpg",
@@ -1268,29 +1090,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "376"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "376"
-          ]
-        }
-      ],
       "profile": "376",
+      "discreet_list": false,
       "media": [
         "media_profiles/376/IMG-20260125-WA0118.jpg",
         "media_profiles/376/IMG-20260125-WA0120.jpg",
@@ -1320,29 +1134,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "380"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "380"
-          ]
-        }
-      ],
       "profile": "380",
+      "discreet_list": false,
       "media": [
         "media_profiles/380/IMG-20250524-WA0279 (1).jpg",
         "media_profiles/380/IMG-20250524-WA0281 (1).jpg",
@@ -1385,31 +1191,23 @@
         "implants": true,
         "uber": false,
         "cosmetic_surgeries": true,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "382"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "382"
-          ]
-        }
-      ],
       "profile": "382",
+      "discreet_list": false,
       "media": [
         "media_profiles/382/IMG-20260127-WA0199.jpg",
         "media_profiles/382/IMG-20260127-WA0200.jpg",
@@ -1422,7 +1220,7 @@
         "media_profiles/382/IMG-20260127-WA0207.jpg"
       ],
       "extraction": {
-        "name": "ISan",
+        "name": "382",
         "age": null,
         "height": null,
         "weight": null,
@@ -1442,29 +1240,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "393"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "393"
-          ]
-        }
-      ],
       "profile": "393",
+      "discreet_list": false,
       "media": [
         "media_profiles/393/IMG-20251018-WA0058.jpg",
         "media_profiles/393/IMG-20251018-WA0059.jpg",
@@ -1485,7 +1275,7 @@
         "hair_color": "Rubia",
         "eye_color": "Cafés",
         "location": "Heredia",
-        "availability": "martes a viernes medio dia hasta las 8 pm\nSábados y domingos no realizo citas\nPor favor coordinar con 1 dia previo",
+        "availability": "martes a viernes medio dia hasta las 8 pm Sábados y domingos no realizo citas Por favor coordinar con 1 dia previo",
         "contact": null,
         "prices": {
           "one_hour": "$250",
@@ -1498,29 +1288,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "409"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "409"
-          ]
-        }
-      ],
       "profile": "409",
+      "discreet_list": false,
       "media": [
         "media_profiles/409/IMG-20251204-WA0216.jpg",
         "media_profiles/409/IMG-20251204-WA0217.jpg",
@@ -1562,29 +1344,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "412"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "412"
-          ]
-        }
-      ],
       "profile": "412",
+      "discreet_list": false,
       "media": [
         "media_profiles/412/IMG-20260126-WA0110.jpg",
         "media_profiles/412/IMG-20260126-WA0111.jpg",
@@ -1611,29 +1385,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "414"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "414"
-          ]
-        }
-      ],
       "profile": "414",
+      "discreet_list": false,
       "media": [
         "media_profiles/414/IMG-20260111-WA0144.jpg",
         "media_profiles/414/IMG-20260111-WA0145.jpg",
@@ -1662,31 +1428,23 @@
         "implants": true,
         "uber": true,
         "cosmetic_surgeries": true,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "417"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "417"
-          ]
-        }
-      ],
       "profile": "417",
+      "discreet_list": false,
       "media": [
         "media_profiles/417/IMG-20251204-WA0001.jpg",
         "media_profiles/417/IMG-20251204-WA0002.jpg",
@@ -1727,29 +1485,21 @@
           "Abdominoplastia": true
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "428"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "428"
-          ]
-        }
-      ],
       "profile": "428",
+      "discreet_list": false,
       "media": [
         "media_profiles/428/IMG-20251117-WA0215.jpg",
         "media_profiles/428/IMG-20251117-WA0216.jpg",
@@ -1786,31 +1536,23 @@
         "implants": null,
         "uber": null,
         "cosmetic_surgeries": null,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "432"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "432"
-          ]
-        }
-      ],
       "profile": "432",
+      "discreet_list": false,
       "media": [
         "media_profiles/432/IMG-20251016-WA0077.jpg",
         "media_profiles/432/IMG-20251016-WA0078.jpg",
@@ -1841,29 +1583,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "444"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "444"
-          ]
-        }
-      ],
       "profile": "444",
+      "discreet_list": false,
       "media": [
         "media_profiles/444/IMG-20250603-WA0079.jpg",
         "media_profiles/444/IMG-20250603-WA0080.jpg",
@@ -1899,29 +1633,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "448"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "448"
-          ]
-        }
-      ],
       "profile": "448",
+      "discreet_list": false,
       "media": [
         "media_profiles/448/IMG-20251204-WA0161.jpg",
         "media_profiles/448/IMG-20251204-WA0162.jpg",
@@ -1950,29 +1676,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "465"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "465"
-          ]
-        }
-      ],
       "profile": "465",
+      "discreet_list": false,
       "media": [
         "media_profiles/465/IMG-20251011-WA0054.jpg",
         "media_profiles/465/IMG-20251011-WA0055.jpg",
@@ -2006,21 +1724,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "484"
-          ]
-        }
-      ],
       "profile": "484",
+      "discreet_list": false,
       "media": [
         "media_profiles/484/IMG-20251103-WA0225.jpg",
         "media_profiles/484/IMG-20251103-WA0226.jpg",
@@ -2034,29 +1752,42 @@
         "media_profiles/484/IMG-20251103-WA0235.jpg",
         "media_profiles/484/IMG-20251103-WA0236.jpg"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "486"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "486"
-          ]
-        }
-      ],
       "profile": "486",
+      "discreet_list": false,
       "media": [
         "media_profiles/486/IMG-20251029-WA0071.jpg",
         "media_profiles/486/IMG-20251029-WA0072.jpg",
@@ -2095,29 +1826,21 @@
           "disponibilidad": "negociable"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "489"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "489"
-          ]
-        }
-      ],
       "profile": "489",
+      "discreet_list": false,
       "media": [
         "media_profiles/489/IMG-20250721-WA0204.jpg",
         "media_profiles/489/IMG-20250721-WA0205.jpg",
@@ -2142,7 +1865,7 @@
         "hair_color": "castillo muy oscuro",
         "eye_color": "cafés muy oscuros",
         "location": "*SAN JOSE",
-        "availability": "LUNES MARTES Y MIERCOLES A CUALQUIER COSA\nDEPENDE DE DISPONIBILIDAD DE AMBOS",
+        "availability": "LUNES MARTES Y MIERCOLES A CUALQUIER COSA DEPENDE DE DISPONIBILIDAD DE AMBOS",
         "contact": null,
         "prices": {
           "one_hour": "$160",
@@ -2157,29 +1880,21 @@
           "*SI, TENGO PECHOS PERO PEQUENOS": null
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "31 - 40 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "494"
-          ]
-        },
-        {
-          "folders": [
-            "9 - Perfiles - 31 - 40 años",
-            "494"
-          ]
-        }
-      ],
       "profile": "494",
+      "discreet_list": false,
       "media": [
         "media_profiles/494/IMG-20260114-WA0037.jpg",
         "media_profiles/494/IMG-20260114-WA0038.jpg",
@@ -2187,29 +1902,42 @@
         "media_profiles/494/IMG-20260114-WA0040.jpg",
         "media_profiles/494/VID-20260114-WA0036.mp4"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "495"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "495"
-          ]
-        }
-      ],
       "profile": "495",
+      "discreet_list": false,
       "media": [
         "media_profiles/495/IMG-20251210-WA0159.jpg",
         "media_profiles/495/IMG-20251210-WA0160.jpg",
@@ -2252,29 +1980,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "504"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "504"
-          ]
-        }
-      ],
       "profile": "504",
+      "discreet_list": false,
       "media": [
         "media_profiles/504/IMG-20251210-WA0126.jpg",
         "media_profiles/504/IMG-20251210-WA0127.jpg",
@@ -2303,31 +2023,23 @@
         "implants": false,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "506"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "506"
-          ]
-        }
-      ],
       "profile": "506",
+      "discreet_list": false,
       "media": [
         "media_profiles/506/IMG-20250821-WA0068.jpg",
         "media_profiles/506/IMG-20250821-WA0070.jpg",
@@ -2366,29 +2078,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "511"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "511"
-          ]
-        }
-      ],
       "profile": "511",
+      "discreet_list": false,
       "media": [
         "media_profiles/511/IMG-20250827-WA0301.jpg",
         "media_profiles/511/IMG-20250827-WA0302.jpg",
@@ -2426,23 +2130,23 @@
         "implants": false,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "AFROCARIBEÑAS": "AFROCARIBEÑAS"
+      "metadata": {
+        "labels": ["AFROCARIBEÑAS"],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "AFROCARIBEÑAS",
-            "513"
-          ]
-        }
-      ],
       "profile": "513",
+      "discreet_list": false,
       "media": [
         "media_profiles/513/IMG-20260109-WA0044.jpg",
         "media_profiles/513/IMG-20260109-WA0045.jpg",
@@ -2460,7 +2164,7 @@
         "hair_color": "Castaño oscuro",
         "eye_color": "Marrón",
         "location": "San José",
-        "availability": "Jueves: 7:00 pm – 12:00 am\nViernes: 1:00 pm – 8:00 pm\nDomingo: 8:00 pm – 10:00 pm\nMartes: 6:00 pm – 10:00 pm",
+        "availability": "Jueves: 7:00 pm – 12:00 am Viernes: 1:00 pm – 8:00 pm Domingo: 8:00 pm – 10:00 pm Martes: 6:00 pm – 10:00 pm",
         "contact": null,
         "prices": {
           "one_hour": "$250",
@@ -2473,29 +2177,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "518"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "518"
-          ]
-        }
-      ],
       "profile": "518",
+      "discreet_list": false,
       "media": [
         "media_profiles/518/IMG-20260127-WA0110.jpg",
         "media_profiles/518/IMG-20260127-WA0111.jpg",
@@ -2530,29 +2226,21 @@
           "Metadatos de carpetas": "Perfiles - por provincia: Perfiles - por provincia, SAN JOSE: SAN JOSE, Perfiles - 18 - 19 - 20 años: Perfiles - 18 - 19 - 20 años"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "533"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "533"
-          ]
-        }
-      ],
       "profile": "533",
+      "discreet_list": false,
       "media": [
         "media_profiles/533/IMG-20250926-WA0065.jpg",
         "media_profiles/533/IMG-20250926-WA0066.jpg",
@@ -2589,29 +2277,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "534"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "534"
-          ]
-        }
-      ],
       "profile": "534",
+      "discreet_list": false,
       "media": [
         "media_profiles/534/IMG-20251124-WA0124.jpg",
         "media_profiles/534/IMG-20251124-WA0125.jpg",
@@ -2647,29 +2327,21 @@
           "skin_color": "blanca"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "537"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "537"
-          ]
-        }
-      ],
       "profile": "537",
+      "discreet_list": false,
       "media": [
         "media_profiles/537/IMG-20250929-WA0132.jpg",
         "media_profiles/537/IMG-20250929-WA0135.jpg",
@@ -2712,29 +2384,42 @@
         "media_profiles/537/IMG-20251105-WA0090.jpg",
         "media_profiles/537/VID-20250929-WA0177.mp4"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "539"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "539"
-          ]
-        }
-      ],
       "profile": "539",
+      "discreet_list": false,
       "media": [
         "media_profiles/539/IMG-20251003-WA0270.jpg",
         "media_profiles/539/IMG-20251003-WA0272.jpg",
@@ -2769,29 +2454,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "541"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "541"
-          ]
-        }
-      ],
       "profile": "541",
+      "discreet_list": false,
       "media": [
         "media_profiles/541/IMG-20251023-WA0111.jpg",
         "media_profiles/541/IMG-20251023-WA0112.jpg",
@@ -2823,29 +2500,21 @@
           "breast_size": "grandes naturales"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "554"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "554"
-          ]
-        }
-      ],
       "profile": "554",
+      "discreet_list": false,
       "media": [
         "media_profiles/554/VID-20251111-WA0152.mp4",
         "media_profiles/554/VID-20251111-WA0153.mp4",
@@ -2880,29 +2549,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "558"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "558"
-          ]
-        }
-      ],
       "profile": "558",
+      "discreet_list": false,
       "media": [
         "media_profiles/558/IMG-20251031-WA0099.jpg",
         "media_profiles/558/IMG-20251031-WA0100.jpg",
@@ -2936,29 +2597,21 @@
           "additional_info": "No tengo implantes y si me gustaría implantes Ningún cirugía y si me gustarían cirugías"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "560"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "560"
-          ]
-        }
-      ],
       "profile": "560",
+      "discreet_list": false,
       "media": [
         "media_profiles/560/IMG-20251103-WA0096.jpg",
         "media_profiles/560/IMG-20251103-WA0097.jpg",
@@ -3002,21 +2655,21 @@
           "labios_inyectados": true
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "564"
-          ]
-        }
-      ],
       "profile": "564",
+      "discreet_list": false,
       "media": [
         "media_profiles/564/IMG-20251204-WA0145.jpg",
         "media_profiles/564/IMG-20251204-WA0147.jpg",
@@ -3043,29 +2696,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "570"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "570"
-          ]
-        }
-      ],
       "profile": "570",
+      "discreet_list": false,
       "media": [
         "media_profiles/570/IMG-20251119-WA0101.jpg",
         "media_profiles/570/IMG-20251119-WA0102.jpg",
@@ -3082,7 +2727,7 @@
         "hair_color": "Castaño",
         "eye_color": "Café",
         "location": "Escazú",
-        "availability": "Toda la semana horarios preferiblemente después de la 1 pm\nEstudio sábados de 12 md a 3 pm y martes y jueves de 6 pm a 9 pm",
+        "availability": "Toda la semana horarios preferiblemente después de la 1 pm Estudio sábados de 12 md a 3 pm y martes y jueves de 6 pm a 9 pm",
         "contact": null,
         "prices": {
           "one_hour": "$200",
@@ -3098,29 +2743,21 @@
           "level": "básico medio"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "571"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "571"
-          ]
-        }
-      ],
       "profile": "571",
+      "discreet_list": false,
       "media": [
         "media_profiles/571/IMG-20251119-WA0047.jpg",
         "media_profiles/571/IMG-20251119-WA0048.jpg",
@@ -3153,29 +2790,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "572"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "572"
-          ]
-        }
-      ],
       "profile": "572",
+      "discreet_list": false,
       "media": [
         "media_profiles/572/IMG-20251120-WA0192.jpg",
         "media_profiles/572/IMG-20251120-WA0193.jpg",
@@ -3207,42 +2836,21 @@
           "lipo_transferencia": true
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "582"
-          ]
-        },
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "582"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "582"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "582"
-          ]
-        }
-      ],
       "profile": "582",
+      "discreet_list": false,
       "media": [
         "media_profiles/582/IMG-20251203-WA0060.jpg",
         "media_profiles/582/IMG-20251203-WA0063.jpg",
@@ -3274,29 +2882,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "585"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "585"
-          ]
-        }
-      ],
       "profile": "585",
+      "discreet_list": false,
       "media": [
         "media_profiles/585/IMG-20251218-WA0118.jpg",
         "media_profiles/585/IMG-20251218-WA0119.jpg",
@@ -3313,7 +2913,7 @@
         "hair_color": "Café",
         "eye_color": "Café",
         "location": "San José, Coronado-Moravia",
-        "availability": "- Lunes\n- Martes: antes de las 6:30 pm o después de las 9pm\n- Miércoles: antes de las 4\n- Jueves: antes de las 4 o después de las 6:30\n- Viernes: antes de las 4 o después de las 6:30\n- Fines de semana",
+        "availability": "- Lunes - Martes: antes de las 6:30 pm o después de las 9pm - Miércoles: antes de las 4 - Jueves: antes de las 4 o después de las 6:30 - Viernes: antes de las 4 o después de las 6:30 - Fines de semana",
         "contact": null,
         "prices": {
           "one_hour": "110,000 CRC",
@@ -3326,29 +2926,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "589"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "589"
-          ]
-        }
-      ],
       "profile": "589",
+      "discreet_list": false,
       "media": [
         "media_profiles/589/IMG-20260106-WA0092.jpg",
         "media_profiles/589/IMG-20260106-WA0097.jpg",
@@ -3377,29 +2969,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "592"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "592"
-          ]
-        }
-      ],
       "profile": "592",
+      "discreet_list": false,
       "media": [
         "media_profiles/592/IMG-20260113-WA0056.jpg",
         "media_profiles/592/IMG-20260113-WA0057.jpg",
@@ -3443,21 +3027,21 @@
           "lipo transferencia": null
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": true,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "6 - Perfiles recientemente incorporados",
-            "593"
-          ]
-        }
-      ],
       "profile": "593",
+      "discreet_list": false,
       "media": [
         "media_profiles/593/IMG-20260202-WA0191.jpg",
         "media_profiles/593/IMG-20260202-WA0192.jpg",
@@ -3487,29 +3071,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "594"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "594"
-          ]
-        }
-      ],
       "profile": "594",
+      "discreet_list": false,
       "media": [
         "media_profiles/594/IMG-20260117-WA0024.jpg",
         "media_profiles/594/IMG-20260117-WA0169.jpg",
@@ -3537,23 +3113,23 @@
         "implants": false,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "AFROCARIBEÑAS": "AFROCARIBEÑAS"
+      "metadata": {
+        "labels": ["AFROCARIBEÑAS"],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "AFROCARIBEÑAS",
-            "595"
-          ]
-        }
-      ],
       "profile": "595",
+      "discreet_list": false,
       "media": [
         "media_profiles/595/IMG-20260119-WA0095.jpg",
         "media_profiles/595/IMG-20260119-WA0096.jpg",
@@ -3598,29 +3174,21 @@
           "desire_for_cosmetic_surgeries": true
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "596"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "596"
-          ]
-        }
-      ],
       "profile": "596",
+      "discreet_list": false,
       "media": [
         "media_profiles/596/IMG-20260124-WA0002.jpg",
         "media_profiles/596/IMG-20260124-WA0003.jpg",
@@ -3648,29 +3216,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "GUAPILES": "GUAPILES",
-        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "GUAPILES",
+        "edad_rango": "31 - 40 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "GUAPILES",
-            "597"
-          ]
-        },
-        {
-          "folders": [
-            "9 - Perfiles - 31 - 40 años",
-            "597"
-          ]
-        }
-      ],
       "profile": "597",
+      "discreet_list": false,
       "media": [
         "media_profiles/597/IMG-20260125-WA0137.jpg",
         "media_profiles/597/IMG-20260125-WA0138.jpg",
@@ -3678,29 +3238,42 @@
         "media_profiles/597/IMG-20260125-WA0140.jpg",
         "media_profiles/597/IMG-20260125-WA0141.jpg"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "598"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "598"
-          ]
-        }
-      ],
       "profile": "598",
+      "discreet_list": false,
       "media": [
         "media_profiles/598/IMG-20260128-WA0070.jpg",
         "media_profiles/598/IMG-20260128-WA0071.jpg",
@@ -3734,21 +3307,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": true,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "6 - Perfiles recientemente incorporados",
-            "599"
-          ]
-        }
-      ],
       "profile": "599",
+      "discreet_list": false,
       "media": [
         "media_profiles/599/IMG-20260129-WA0183.jpg",
         "media_profiles/599/IMG-20260129-WA0184.jpg",
@@ -3779,21 +3352,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": true,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "6 - Perfiles recientemente incorporados",
-            "600"
-          ]
-        }
-      ],
       "profile": "600",
+      "discreet_list": false,
       "media": [
         "media_profiles/600/IMG-20260130-WA0322.jpg",
         "media_profiles/600/IMG-20260130-WA0333.jpg",
@@ -3827,21 +3400,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": true,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "6 - Perfiles recientemente incorporados",
-            "601"
-          ]
-        }
-      ],
       "profile": "601",
+      "discreet_list": false,
       "media": [
         "media_profiles/601/IMG-20260130-WA0309.jpg",
         "media_profiles/601/IMG-20260130-WA0310.jpg",
@@ -3871,36 +3444,21 @@
         "cosmetic_surgeries": true,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": true,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "602"
-          ]
-        },
-        {
-          "folders": [
-            "6 - Perfiles recientemente incorporados",
-            "602"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "602"
-          ]
-        }
-      ],
       "profile": "602",
+      "discreet_list": false,
       "media": [
         "media_profiles/602/IMG-20260131-WA0140.jpg",
         "media_profiles/602/IMG-20260131-WA0141.jpg",
@@ -3928,29 +3486,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "CARTAGO": "CARTAGO",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "CARTAGO",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "CARTAGO",
-            "ANA"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "ANA"
-          ]
-        }
-      ],
       "profile": "ANA",
+      "discreet_list": false,
       "media": [
         "media_profiles/ANA/IMG-20251225-WA0066.jpg",
         "media_profiles/ANA/IMG-20251225-WA0067.jpg",
@@ -3984,20 +3534,23 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Recomendacion": "true"
+      "metadata": {
+        "labels": [
+          "Recomendacion"
+        ],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "3 - ANGEL"
-          ]
-        }
-      ],
       "profile": "ANGEL",
+      "discreet_list": false,
       "media": [
         "media_profiles/ANGEL/IMG-20250917-WA0055.jpg",
         "media_profiles/ANGEL/IMG-20250917-WA0056.jpg",
@@ -4011,29 +3564,42 @@
         "media_profiles/ANGEL/IMG-20260127-WA0032.jpg",
         "media_profiles/ANGEL/IMG-20260127-WA0050.jpg"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "Angelica"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "Angelica"
-          ]
-        }
-      ],
       "profile": "Angelica",
+      "discreet_list": false,
       "media": [
         "media_profiles/Angelica/IMG-20250629-WA0001.jpg",
         "media_profiles/Angelica/IMG-20250629-WA0002.jpg",
@@ -4066,7 +3632,7 @@
         "media_profiles/Angelica/scg0_scg0IMG20250204WA0096 (1).jpg"
       ],
       "extraction": {
-        "name": "IAngelica",
+        "name": "Angelica",
         "age": null,
         "height": null,
         "weight": null,
@@ -4094,23 +3660,22 @@
       },
       "reviews": [
         "Angelica es un monumento, así como una persona muy amigable e interesante.",
-        "Guapa, dulce, inteligente y complaciente, las fotos no le hacen justicia a la belleza\nque uno ve entrar por la puerta, el servicio es súper bueno."
+        "Guapa, dulce, inteligente y complaciente, las fotos no le hacen justicia a la belleza que uno ve entrar por la puerta, el servicio es súper bueno."
       ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - cortesía": "Perfiles - cortesía"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": true,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "12 - Perfiles - cortesía",
-            "Angie"
-          ]
-        }
-      ],
       "profile": "Angie",
+      "discreet_list": false,
       "media": [
         "media_profiles/Angie/IMG-20251013-WA0054.jpg",
         "media_profiles/Angie/IMG-20251013-WA0059.jpg",
@@ -4145,29 +3710,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "Anny"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "Anny"
-          ]
-        }
-      ],
       "profile": "Anny",
+      "discreet_list": false,
       "media": [
         "media_profiles/Anny/IMG-20251127-WA0230.jpg",
         "media_profiles/Anny/IMG-20251127-WA0231.jpg",
@@ -4196,21 +3753,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles con nuevas fotos - videos": "Perfiles con nuevas fotos - videos"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": true
       },
-      "sources": [
-        {
-          "folders": [
-            "11 - Perfiles con nuevas fotos - videos",
-            "BARBARA"
-          ]
-        }
-      ],
       "profile": "BARBARA",
+      "discreet_list": false,
       "media": [
         "media_profiles/BARBARA/IMG-20260203-WA0037.jpg",
         "media_profiles/BARBARA/IMG-20260203-WA0038.jpg",
@@ -4222,7 +3779,7 @@
         "media_profiles/BARBARA/VID-20260203-WA0042.mp4"
       ],
       "extraction": {
-        "name": "ISan José",
+        "name": "BARBARA",
         "age": null,
         "height": null,
         "weight": null,
@@ -4240,22 +3797,25 @@
         "implants": null,
         "uber": null,
         "cosmetic_surgeries": null,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Recomendacion": "true"
+      "metadata": {
+        "labels": [
+          "Recomendacion"
+        ],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "COSPLAYER"
-          ]
-        }
-      ],
       "profile": "COSPLAYER",
+      "discreet_list": false,
       "media": [
         "media_profiles/COSPLAYER/IMG-20251025-WA0049.jpg",
         "media_profiles/COSPLAYER/IMG-20251025-WA0050.jpg",
@@ -4294,20 +3854,23 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Recomendacion": "true"
+      "metadata": {
+        "labels": [
+          "Recomendacion"
+        ],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "1 (diosa)"
-          ]
-        }
-      ],
       "profile": "diosa",
+      "discreet_list": false,
       "media": [
         "media_profiles/diosa/IMG-20251006-WA0025.jpg",
         "media_profiles/diosa/IMG-20251006-WA0026.jpg",
@@ -4349,34 +3912,25 @@
         "implants": null,
         "uber": null,
         "cosmetic_surgeries": null,
-        "other_attributes": null
+        "other_attributes": {}
       },
       "reviews": [
-        "Quería comentarle que el día de hoy tuve la cita con Diosa y\nhe de decir que SUPERÓ con creces todas las expectativas que tenía.\nLa muchacha es atenta, graciosa, inteligente complaciente y súper guapa.\nFue una experiencia de primer nivel, se lo hice saber a ella y se lo hago saber a usted.\n100% satisfecho."
+        "Quería comentarle que el día de hoy tuve la cita con Diosa y he de decir que SUPERÓ con creces todas las expectativas que tenía. La muchacha es atenta, graciosa, inteligente complaciente y súper guapa. Fue una experiencia de primer nivel, se lo hice saber a ella y se lo hago saber a usted. 100% satisfecho."
       ],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "EDITH "
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "EDITH "
-          ]
-        }
-      ],
       "profile": "EDITH",
+      "discreet_list": false,
       "media": [
         "media_profiles/EDITH/1001626073.jpg",
         "media_profiles/EDITH/1001626074.jpg",
@@ -4408,29 +3962,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "EMILY"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "EMILY"
-          ]
-        }
-      ],
       "profile": "EMILY",
+      "discreet_list": false,
       "media": [
         "media_profiles/EMILY/IMG-20260116-WA0081.jpg",
         "media_profiles/EMILY/IMG-20260116-WA0082.jpg",
@@ -4458,31 +4004,23 @@
         "implants": null,
         "uber": null,
         "cosmetic_surgeries": null,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "Hunnids"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "Hunnids"
-          ]
-        }
-      ],
       "profile": "Hunnids",
+      "discreet_list": false,
       "media": [
         "media_profiles/Hunnids/IMG-20260124-WA0065.jpg",
         "media_profiles/Hunnids/IMG-20260124-WA0066.jpg",
@@ -4512,29 +4050,21 @@
           "disponibilidad": "inmediata"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "Jenni"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "Jenni"
-          ]
-        }
-      ],
       "profile": "Jenni",
+      "discreet_list": false,
       "media": [
         "media_profiles/Jenni/IMG-20250730-WA0123.jpg",
         "media_profiles/Jenni/IMG-20250730-WA0124.jpg",
@@ -4562,29 +4092,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "ALAJUELA": "ALAJUELA",
-        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "ALAJUELA",
+        "edad_rango": "31 - 40 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "ALAJUELA",
-            "KARINA"
-          ]
-        },
-        {
-          "folders": [
-            "9 - Perfiles - 31 - 40 años",
-            "KARINA"
-          ]
-        }
-      ],
       "profile": "KARINA",
+      "discreet_list": false,
       "media": [
         "media_profiles/KARINA/IMG-20260115-WA0083.jpg",
         "media_profiles/KARINA/IMG-20260115-WA0084.jpg",
@@ -4612,29 +4134,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "KATA"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "KATA"
-          ]
-        }
-      ],
       "profile": "KATA",
+      "discreet_list": false,
       "media": [
         "media_profiles/KATA/IMG-20251212-WA0138.jpg",
         "media_profiles/KATA/IMG-20251212-WA0139.jpg",
@@ -4669,29 +4183,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "KIKI"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "KIKI"
-          ]
-        }
-      ],
       "profile": "KIKI",
+      "discreet_list": false,
       "media": [
         "media_profiles/KIKI/IMG-20260115-WA0163.jpg",
         "media_profiles/KIKI/IMG-20260115-WA0164.jpg",
@@ -4717,23 +4223,26 @@
         "implants": false,
         "uber": true,
         "cosmetic_surgeries": false,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Recomendacion": "true",
-        "profile_emoji": "⭐⭐⭐⭐⭐"
+      "metadata": {
+        "labels": [
+          "Recomendacion",
+          "⭐⭐⭐⭐⭐"
+        ],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "4 - KIMBERLY ⭐⭐⭐⭐⭐"
-          ]
-        }
-      ],
       "profile": "KIMBERLY",
+      "discreet_list": false,
       "media": [
         "media_profiles/KIMBERLY/IMG-20251126-WA0062.jpg",
         "media_profiles/KIMBERLY/IMG-20251126-WA0063.jpg",
@@ -4783,21 +4292,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - cortesía": "Perfiles - cortesía"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": true,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "12 - Perfiles - cortesía",
-            "Kimmy"
-          ]
-        }
-      ],
       "profile": "Kimmy",
+      "discreet_list": false,
       "media": [
         "media_profiles/Kimmy/IMG-20251202-WA0138.jpg",
         "media_profiles/Kimmy/IMG-20251202-WA0140.jpg",
@@ -4806,7 +4315,7 @@
         "media_profiles/Kimmy/IMG-20251202-WA0143.jpg"
       ],
       "extraction": {
-        "name": "IKimmy",
+        "name": "Kimmy",
         "age": null,
         "height": null,
         "weight": null,
@@ -4824,31 +4333,23 @@
         "implants": null,
         "uber": null,
         "cosmetic_surgeries": null,
-        "other_attributes": null
+        "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "KLA"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "KLA"
-          ]
-        }
-      ],
       "profile": "KLA",
+      "discreet_list": false,
       "media": [
         "media_profiles/KLA/IMG-20260113-WA0028.jpg",
         "media_profiles/KLA/IMG-20260113-WA0029.jpg",
@@ -4879,20 +4380,23 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Recomendacion": "true"
+      "metadata": {
+        "labels": [
+          "Recomendacion"
+        ],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "2 - LESKY"
-          ]
-        }
-      ],
       "profile": "LESKY",
+      "discreet_list": false,
       "media": [
         "media_profiles/LESKY/IMG-20251213-WA0142.jpg",
         "media_profiles/LESKY/IMG-20251213-WA0143.jpg",
@@ -4923,21 +4427,21 @@
           "recomendacion": true
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles - cortesía": "Perfiles - cortesía"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": true,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "12 - Perfiles - cortesía",
-            "Luna"
-          ]
-        }
-      ],
       "profile": "Luna",
+      "discreet_list": false,
       "media": [
         "media_profiles/Luna/IMG-20250918-WA0149.jpg",
         "media_profiles/Luna/IMG-20250918-WA0151.jpg",
@@ -4966,29 +4470,21 @@
         "cosmetic_surgeries": null,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "Niky"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "Niky"
-          ]
-        }
-      ],
       "profile": "Niky",
+      "discreet_list": false,
       "media": [
         "media_profiles/Niky/IMG-20260102-WA0228.jpg",
         "media_profiles/Niky/IMG-20260102-WA0230.jpg",
@@ -5001,29 +4497,42 @@
         "media_profiles/Niky/IMG-20260110-WA0145.jpg",
         "media_profiles/Niky/IMG-20260110-WA0148.jpg"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 31 - 40 años": "Perfiles - 31 - 40 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "31 - 40 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "PAULETTE"
-          ]
-        },
-        {
-          "folders": [
-            "9 - Perfiles - 31 - 40 años",
-            "PAULETTE"
-          ]
-        }
-      ],
       "profile": "PAULETTE",
+      "discreet_list": false,
       "media": [
         "media_profiles/PAULETTE/IMG-20260115-WA0137.jpg",
         "media_profiles/PAULETTE/IMG-20260115-WA0140.jpg",
@@ -5052,46 +4561,62 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Recomendacion": "true"
+      "metadata": {
+        "labels": [
+          "Recomendacion"
+        ],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "0 - TIKAS"
-          ]
-        }
-      ],
       "profile": "TIKAS",
+      "discreet_list": false,
       "media": [
         "media_profiles/TIKAS/TIKAS 2.jpg"
       ],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "VALE CH"
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "VALE CH"
-          ]
-        }
-      ],
       "profile": "VALE CH",
+      "discreet_list": false,
       "media": [
         "media_profiles/VALE_CH/IMG-20260102-WA0134.jpg",
         "media_profiles/VALE_CH/IMG-20260102-WA0135.jpg",
@@ -5123,21 +4648,21 @@
           "age_range": "Perfiles - 21- 30 años"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "Perfiles recientemente incorporados": "Perfiles recientemente incorporados"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": true,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "6 - Perfiles recientemente incorporados",
-            "Yansy"
-          ]
-        }
-      ],
       "profile": "Yansy",
+      "discreet_list": false,
       "media": [
         "media_profiles/Yansy/IMG-20260202-WA0123.jpg",
         "media_profiles/Yansy/IMG-20260202-WA0124.jpg",
@@ -5174,7 +4699,7 @@
         "media_profiles/Yansy/IMG-20260202-WA0163.jpg"
       ],
       "extraction": {
-        "name": "ISan José",
+        "name": "Yansy",
         "age": null,
         "height": null,
         "weight": null,
@@ -5196,29 +4721,21 @@
           "price_transport": "Incluye transporte"
         }
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "SAN JOSE": "SAN JOSE",
-        "Perfiles - 18 - 19 - 20 años": "Perfiles - 18 - 19 - 20 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "SAN JOSE",
+        "edad_rango": "18 - 20 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "SAN JOSE",
-            "Yiyi"
-          ]
-        },
-        {
-          "folders": [
-            "7 - Perfiles - 18 - 19 - 20 años",
-            "Yiyi"
-          ]
-        }
-      ],
       "profile": "Yiyi",
+      "discreet_list": false,
       "media": [
         "media_profiles/Yiyi/IMG-20251211-WA0139.jpg",
         "media_profiles/Yiyi/IMG-20251211-WA0140.jpg",
@@ -5253,29 +4770,21 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
-      "merged_metadata": {
-        "HEREDIA": "HEREDIA",
-        "Perfiles - 21- 30 años": "Perfiles - 21- 30 años"
+      "metadata": {
+        "labels": [],
+        "ubicacion": "HEREDIA",
+        "edad_rango": "21 - 30 años",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
       },
-      "sources": [
-        {
-          "folders": [
-            "10 - Perfiles - por provincia",
-            "HEREDIA",
-            "ZARY "
-          ]
-        },
-        {
-          "folders": [
-            "8 - Perfiles - 21- 30 años",
-            "ZARY "
-          ]
-        }
-      ],
       "profile": "ZARY",
+      "discreet_list": false,
       "media": [
         "media_profiles/ZARY/IMG-20251221-WA0158.jpg",
         "media_profiles/ZARY/IMG-20251221-WA0159.jpg",
@@ -5305,11 +4814,43 @@
         "cosmetic_surgeries": false,
         "other_attributes": {}
       },
+      "reviews": [],
       "enabled": true
     },
     {
+      "metadata": {
+        "labels": [],
+        "ubicacion": "",
+        "edad_rango": "",
+        "nuevos_ingresos": false,
+        "sin_experiencia": false,
+        "cortesia": false,
+        "nuevas_fotos_videos": false
+      },
       "profile": "277",
+      "discreet_list": false,
       "media": [],
+      "extraction": {
+        "name": null,
+        "age": null,
+        "height": null,
+        "weight": null,
+        "hair_color": null,
+        "eye_color": null,
+        "location": null,
+        "availability": null,
+        "contact": null,
+        "prices": {
+          "one_hour": null,
+          "two_hours": null,
+          "three_hours": null,
+          "overnight": null
+        },
+        "implants": null,
+        "uber": null,
+        "cosmetic_surgeries": null,
+        "other_attributes": {}
+      },
       "reviews": [
         "todo excelente, súper carismática ella y muy guapa"
       ],
