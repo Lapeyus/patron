@@ -69,8 +69,8 @@
                 media: {
                     photos: "Fotos",
                     videos: "Videos",
-                    reviews: "Reseñas",
                     discreetProfile: "perfil de lista discreta",
+                    discreetBanner: "Ella es parte de los perfiles que manejo de forma discreta.\nSi desea acceder a la lista discreta con más info y fotos hagalo por 10,000\nal sinpe móvil 84 09 82 22, o retiro al cajero sin tarjeta BNCR y BAC.",
                 },
                 profile: {
                     ageCard: "{age} años",
@@ -82,12 +82,6 @@
                     rates: "Tarifas",
                     services: "Servicios",
                     contact: "Contacto",
-                    reviews: "Reseñas",
-                },
-                reviews: {
-                    aria: "Carrusel de reseñas",
-                    prev: "Anterior",
-                    next: "Siguiente",
                 },
                 table: {
                     service: "Servicio",
@@ -203,8 +197,8 @@
                 media: {
                     photos: "Photos",
                     videos: "Videos",
-                    reviews: "Reviews",
                     discreetProfile: "discreet list profile",
+                    discreetBanner: "Ella es parte de los perfiles que manejo de forma discreta.\nSi desea acceder a la lista discreta con más info y fotos hagalo por 10,000\nal sinpe móvil 84 09 82 22, o retiro al cajero sin tarjeta BNCR y BAC.",
                 },
                 profile: {
                     ageCard: "{age} years old",
@@ -216,12 +210,6 @@
                     rates: "Rates",
                     services: "Services",
                     contact: "Contact",
-                    reviews: "Reviews",
-                },
-                reviews: {
-                    aria: "Reviews carousel",
-                    prev: "Previous",
-                    next: "Next",
                 },
                 table: {
                     service: "Service",
@@ -233,14 +221,14 @@
                     email: "Email",
                     social: "Social",
                     notes: "Notes",
-                    whatsappCta: "Contactela directamente por WhatsApp",
+                    whatsappCta: "WhatsApp",
                     askForContactCta: "Ask for contact",
-                    discreetEmailCta: "Discreet email contact",
+                    discreetEmailCta: "Email contact",
                     whatsappMessage: "Hi, I saw your profile on {app}. Can we coordinate?",
                     whatsappMessageWithName: "Hi {name}, I saw your profile on {app}. Can we coordinate?",
                     askForContactMessage: "I want to contact {profile}\n- my name is\n- the phone number I will write from is\n- approximate date of the appointment is",
-                    discreetEmailSubject: "Discreet contact request - {profile}",
-                    discreetEmailMessage: "Hi Patron, I want to request discreet contact for {profile}.\n- My name is:\n- Phone number:\n- Approximate appointment date:",
+                    discreetEmailSubject: "Contact request - {profile}",
+                    discreetEmailMessage: "Hi Patron, I want to request contact for {profile}.\n- My name is:\n- Phone number:\n- Approximate appointment date:",
                     call: "Call {phone}",
                 },
                 extraction_labels: {
@@ -671,16 +659,12 @@
             const media = Array.isArray(p.media)
                 ? p.media.filter(src => typeof src === "string" && src.trim())
                 : [];
-            const reviews = Array.isArray(p.reviews)
-                ? p.reviews.filter(review => typeof review === "string" && review.trim())
-                : [];
             return {
                 ...p,
                 profile: p.profile || `profile_${idx + 1}`,
                 metadata,
                 media,
                 extraction: (p.extraction && typeof p.extraction === "object" && !Array.isArray(p.extraction)) ? p.extraction : {},
-                reviews,
                 discreet_list: !!p.discreet_list,
             };
         }
@@ -713,7 +697,6 @@
             collectSearchValues(metadataLabels, parts);
             collectSearchValues(profile.metadata, parts);
             collectSearchValues(profile.extraction, parts);
-            collectSearchValues(profile.reviews, parts);
             collectSearchValues(structured, parts);
             return normalizeText(parts.join(" "));
         }
@@ -728,11 +711,7 @@
                     const metadataLabels = buildMetadataLabels(profile);
                     const filterTokens = buildFilterTokens(profile);
                     const media = resolveMediaAssets(profile);
-                    const mediaEntries = [
-                        ...media.images.map(src => ({ type: "image", src })),
-                        ...media.videos.map(src => ({ type: "video", src })),
-                    ];
-                    const reviewCount = profile.reviews.length;
+                    const mediaEntries = media.entries;
                     const searchBlob = buildSearchBlob(profile, structured, pathMetadata, metadataLabels);
                     return {
                         id: profile.profile,
@@ -741,7 +720,6 @@
                         images: media.images,
                         videos: media.videos,
                         media_entries: mediaEntries,
-                        review_count: reviewCount,
                         search_blob: searchBlob,
                         is_discreet: profile.discreet_list,
                         raw_profile: profile,
@@ -1051,16 +1029,19 @@
             const seen = new Set();
             const images = [];
             const videos = [];
+            const entries = [];
             profile.media.map(src => normalizeMediaPath(src)).filter(Boolean).forEach(path => {
                 if (seen.has(path)) return;
                 seen.add(path);
                 if (IMAGE_PATH_REGEX.test(path)) {
                     images.push(path);
+                    entries.push({ type: "image", src: path });
                 } else if (VIDEO_PATH_REGEX.test(path)) {
                     videos.push(path);
+                    entries.push({ type: "video", src: path });
                 }
             });
-            return { images, videos };
+            return { images, videos, entries };
         }
 
         function normalizeMediaPath(src) {
@@ -1473,18 +1454,15 @@
         let currentMediaEntries = [];
         let renderScheduled = false;
 
-	        function renderMediaCounter(images, videos, reviewsCount) {
+	        function renderMediaCounter(images, videos) {
 	            const photoCount = Array.isArray(images) ? images.length : 0;
 	            const videoCount = Array.isArray(videos) ? videos.length : 0;
-                const reviewCount = Number.isFinite(Number(reviewsCount)) ? Number(reviewsCount) : 0;
-	            if (!photoCount && !videoCount && !reviewCount) return '';
+	            if (!photoCount && !videoCount) return '';
             const iconPhoto = `<svg class="mc-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>`;
             const iconVideo = `<svg class="mc-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect><polygon points="23 7 16 12 23 17 23 7" fill="currentColor" stroke="none"></polygon></svg>`;
-            const iconReview = `<svg class="mc-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>`;
             const parts = [];
             if (photoCount) parts.push(`<span class="mc-item" title="${escapeHtml(t("media.photos"))}">${iconPhoto} ${photoCount}</span>`);
             if (videoCount) parts.push(`<span class="mc-item" title="${escapeHtml(t("media.videos"))}">${iconVideo} ${videoCount}</span>`);
-            if (reviewCount) parts.push(`<span class="mc-item" title="${escapeHtml(t("media.reviews"))}">${iconReview} ${reviewCount}</span>`);
 	            return `<div class="media-counter">${parts.join('')}</div>`;
 	        }
 
@@ -1501,7 +1479,11 @@
         }
 
         function renderDiscreetPlaceholderInner() {
-            return `${discreetIconSvg()}<div class="discreet-label">${escapeHtml(t("media.discreetProfile"))}</div>`;
+            const discreetBanner = String(t("media.discreetBanner") || "")
+                .split("\n")
+                .map(line => escapeHtml(line))
+                .join("<br>");
+            return `${discreetIconSvg()}<div class="discreet-label">${escapeHtml(t("media.discreetProfile"))}</div>${discreetBanner ? `<div class="discreet-banner">${discreetBanner}</div>` : ""}`;
         }
 
         function normalizeText(text) {
@@ -1565,10 +1547,7 @@
                 const d = item.structured_data || {};
                 const canShowMedia = canShowProfileMedia(item);
                 const primaryMedia = canShowMedia ? item.media_entries?.[0] : null;
-                const reviewCount = Number.isFinite(Number(item.review_count))
-                    ? Number(item.review_count)
-                    : (Array.isArray(item.raw_profile?.reviews) ? item.raw_profile.reviews.filter(r => typeof r === "string" && r.trim()).length : 0);
-                const counterHtml = renderMediaCounter(item.images, item.videos, reviewCount);
+                const counterHtml = renderMediaCounter(item.images, item.videos);
                 let mediaInner = "";
                 if (!canShowMedia) {
                     mediaInner = `<div class="discreet-placeholder">${renderDiscreetPlaceholderInner()}</div>`;
@@ -1627,135 +1606,6 @@
 
         function exitLightboxMediaFullscreen() {
             setLightboxMediaFullscreen(false);
-        }
-
-        function getReviewsCarouselEls() {
-            const track = document.getElementById("reviews-track");
-            if (!track) return null;
-            const slides = Array.from(track.children || []);
-            return {
-                track,
-                slides,
-                total: slides.length,
-                carousel: document.getElementById("reviews-carousel"),
-                prevBtn: document.getElementById("reviews-prev"),
-                nextBtn: document.getElementById("reviews-next"),
-                indicator: document.getElementById("reviews-indicator"),
-                dots: document.getElementById("reviews-dots"),
-            };
-        }
-
-        function getReviewsCarouselIndex(track) {
-            const n = Number(track?.dataset?.index || 0);
-            return Number.isFinite(n) ? n : 0;
-        }
-
-        function updateReviewsCarousel() {
-            const els = getReviewsCarouselEls();
-            if (!els) return;
-            const { track, slides, total, prevBtn, nextBtn, indicator, dots } = els;
-            if (!total) return;
-
-            const idxRaw = getReviewsCarouselIndex(track);
-            const idx = Math.min(Math.max(idxRaw, 0), total - 1);
-            track.dataset.index = String(idx);
-            track.style.transform = `translateX(-${idx * 100}%)`;
-
-            if (prevBtn) prevBtn.disabled = total <= 1;
-            if (nextBtn) nextBtn.disabled = total <= 1;
-            if (indicator) indicator.textContent = total > 1 ? `${idx + 1} / ${total}` : "";
-
-            slides.forEach((slide, i) => {
-                slide.setAttribute("aria-hidden", i === idx ? "false" : "true");
-            });
-
-            if (dots) {
-                const dotBtns = Array.from(dots.querySelectorAll("button.reviews-dot"));
-                dotBtns.forEach((btn, i) => btn.classList.toggle("active", i === idx));
-            }
-        }
-
-        function setReviewsCarouselIndex(index) {
-            const els = getReviewsCarouselEls();
-            if (!els) return;
-            const { track, total } = els;
-            if (!total) return;
-            const next = ((index % total) + total) % total;
-            track.dataset.index = String(next);
-            updateReviewsCarousel();
-        }
-
-        window.reviewCarouselStep = (delta) => {
-            const els = getReviewsCarouselEls();
-            if (!els) return;
-            const { track, total } = els;
-            if (total <= 1) return;
-            const idx = getReviewsCarouselIndex(track);
-            const step = Number(delta);
-            setReviewsCarouselIndex(idx + (Number.isFinite(step) ? step : 0));
-        };
-
-        window.reviewCarouselGo = (idx) => {
-            const n = Number(idx);
-            if (!Number.isFinite(n)) return;
-            setReviewsCarouselIndex(n);
-        };
-
-        function initReviewsCarousel() {
-            const els = getReviewsCarouselEls();
-            if (!els) return;
-            const { track, slides, total, dots, carousel } = els;
-            if (!total) return;
-
-            track.dataset.index = "0";
-
-            if (dots) {
-                if (total > 1 && total <= 8) {
-                    dots.style.display = "flex";
-                    dots.innerHTML = slides.map((_, i) => {
-                        const active = i === 0 ? " active" : "";
-                        const title = `${t("sections.reviews")} ${i + 1}`;
-                        return `<button class="reviews-dot${active}" type="button" title="${escapeHtml(title)}" onclick="reviewCarouselGo(${i})"></button>`;
-                    }).join("");
-                } else {
-                    dots.style.display = "none";
-                    dots.innerHTML = "";
-                }
-            }
-
-            updateReviewsCarousel();
-
-            if (carousel) {
-                let startX = null;
-                let startY = null;
-                let pointerId = null;
-
-                carousel.onpointerdown = (e) => {
-                    if (total <= 1) return;
-                    pointerId = e.pointerId;
-                    startX = e.clientX;
-                    startY = e.clientY;
-                    try { carousel.setPointerCapture(pointerId); } catch (_) { /* ignore */ }
-                };
-
-                carousel.onpointerup = (e) => {
-                    if (pointerId == null || e.pointerId !== pointerId) return;
-                    const dx = e.clientX - startX;
-                    const dy = e.clientY - startY;
-                    pointerId = null;
-                    startX = null;
-                    startY = null;
-                    if (Math.abs(dx) < 40) return;
-                    if (Math.abs(dx) <= Math.abs(dy)) return;
-                    window.reviewCarouselStep(dx < 0 ? 1 : -1);
-                };
-
-                carousel.onpointercancel = () => {
-                    pointerId = null;
-                    startX = null;
-                    startY = null;
-                };
-            }
         }
 
 	        window.openProfile = (idx) => {
@@ -1880,31 +1730,6 @@
                 </div></div>`;
             }
 
-            // Reviews
-            const reviews = Array.isArray(item.raw_profile?.reviews) ? item.raw_profile.reviews : [];
-            const cleanReviews = reviews.filter(r => typeof r === "string" && r.trim());
-            const reviewSlides = cleanReviews
-                .map(r => `<li class="review-slide"><div class="review-card"><div class="review-text">${escapeHtml(r.trim())}</div></div></li>`)
-                .join("");
-            if (reviewSlides) {
-                html += `
-                    <div class="lb-section">
-                        <div class="reviews-head">
-                            <h3>${escapeHtml(t("sections.reviews"))}<span class="reviews-count">${cleanReviews.length}</span></h3>
-                            <div class="reviews-controls">
-                                <button id="reviews-prev" class="reviews-nav-btn" type="button" aria-label="${escapeHtml(t("reviews.prev"))}" onclick="reviewCarouselStep(-1)">‹</button>
-                                <span id="reviews-indicator" class="reviews-indicator"></span>
-                                <button id="reviews-next" class="reviews-nav-btn" type="button" aria-label="${escapeHtml(t("reviews.next"))}" onclick="reviewCarouselStep(1)">›</button>
-                            </div>
-                        </div>
-                        <div id="reviews-carousel" class="reviews-carousel" role="region" aria-label="${escapeHtml(t("reviews.aria"))}">
-                            <ol id="reviews-track" class="reviews-track">${reviewSlides}</ol>
-                        </div>
-                        <div id="reviews-dots" class="reviews-dots" aria-hidden="true"></div>
-                    </div>
-                `;
-            }
-
             // Contact
             const contactRows = [];
             const extractionContact = item.raw_profile?.extraction?.contact;
@@ -1958,7 +1783,6 @@
             }
 
             document.getElementById('lb-details-content').innerHTML = html;
-            initReviewsCarousel();
             document.getElementById('lightbox').classList.add('active');
             syncOverlayLock();
 	        };

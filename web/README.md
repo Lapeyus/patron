@@ -99,6 +99,16 @@ Strict validation (fails when a profile has local media files but empty/missing 
 node scripts/expand-catalog-media.js --input catalog.json --output catalog.json --media-root . --require-media-roots
 ```
 
+Ad media interleaving (default from `media_profiles/000`):
+```bash
+node scripts/expand-catalog-media.js --input catalog.json --output catalog.json --media-root . --ads-root media_profiles/000 --require-media-roots
+```
+Rules:
+- Ad images are injected once per profile library.
+- Ad media is interleaved in deterministic pseudo-random order.
+- If the profile has its own media, the first item is never an ad.
+- Profiles without own media are left unchanged by ad injection.
+
 Notes:
 
 - Supported media extensions: `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.mp4`, `.mov`, `.m4v`, `.webm`
@@ -107,6 +117,26 @@ Notes:
 - Missing folder references fail fast in CI to catch typos
 - If `media_roots` is missing, the script can derive roots from existing `media` file paths for backward compatibility
 - CI deploy uses strict mode (`--require-media-roots`)
+
+## Move media from `PATRON` into `media_profiles` (no duplicates)
+
+Use the Python mover script to relocate photos/videos into profile folders and avoid duplicates by content:
+
+```bash
+python3 /Users/jvillarreal/Documents/Projects/patron/web/scripts/move_patron_media.py \
+  --source /Users/jvillarreal/Documents/Projects/patron/web/PATRON \
+  --target /Users/jvillarreal/Documents/Projects/patron/web/media_profiles \
+  --create-missing-targets \
+  --apply
+```
+
+Note: the mover skips screenshot images named `Screenshot_*.jpg` / `Screenshot_*.jpeg`.
+
+After moving files, rebuild `catalog.json` media entries:
+
+```bash
+node scripts/expand-catalog-media.js --input catalog.json --output catalog.json --media-root . --require-media-roots
+```
 
 ## Security note
 
@@ -144,16 +174,3 @@ Notes:
 - The link uses `https://wa.me/<E164>?text=...`.
 - If the contact only contains **8 digits**, the UI assumes Costa Rica and prefixes `+506`.
 - If `extraction.contact` is explicitly `null`, the UI shows a “Solicitar contacto / Ask for contact” button that opens WhatsApp to `+506 8409 8222` with a prefilled template.
-
-## Reviews
-
-Profiles can optionally include a `reviews` array (strings) in `catalog.json`. If present, the profile modal will show a “Reseñas/Reviews” section.
-
-Example:
-
-```json
-{
-  "profile": "055",
-  "reviews": ["Excelente experiencia, volvería a repetir."]
-}
-```

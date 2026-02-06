@@ -21,6 +21,7 @@ function parseArgs(argv) {
         output: "web/catalog.json",
         mediaRoot: "web",
         requireMediaRoots: false,
+        adsRoot: "media_profiles/000",
     };
 
     for (let i = 0; i < argv.length; i += 1) {
@@ -35,6 +36,10 @@ function parseArgs(argv) {
         }
         if (token === "--media-root" && argv[i + 1]) {
             args.mediaRoot = argv[++i];
+            continue;
+        }
+        if (token === "--ads-root" && argv[i + 1]) {
+            args.adsRoot = argv[++i];
             continue;
         }
         if (token === "--require-media-roots") {
@@ -54,16 +59,18 @@ function parseArgs(argv) {
 function printHelpAndExit(code) {
     const usage = `
 Usage:
-  node web/scripts/expand-catalog-media.js [--input <path>] [--output <path>] [--media-root <path>] [--require-media-roots]
+  node web/scripts/expand-catalog-media.js [--input <path>] [--output <path>] [--media-root <path>] [--ads-root <path>] [--require-media-roots]
 
 Defaults:
   --input     web/catalog.json
   --output    web/catalog.json
   --media-root web
+  --ads-root  media_profiles/000
 
 Behavior:
   - Reads per-profile "media_roots" as folder references.
-  - Builds/refreshes "media" with expanded file paths from those roots.
+  - Rebuilds "media" from scratch with expanded file paths from those roots.
+  - Interleaves ad media from --ads-root into each profile once (ad will not be first when profile has its own media).
   - If "media_roots" is missing, derives roots from existing "media" entries.
   - Optional strict mode: --require-media-roots fails if a profile has local media files but missing/empty media_roots.
 `;
@@ -171,6 +178,62 @@ function dedupePreserveOrder(values) {
     return out;
 }
 
+function hashFnv1a(value) {
+    const text = String(value);
+    let hash = 0x811c9dc5;
+    for (let i = 0; i < text.length; i += 1) {
+        hash ^= text.charCodeAt(i);
+        hash = Math.imul(hash, 0x01000193);
+    }
+    return hash >>> 0;
+}
+
+function deterministicShuffle(values, seed) {
+    return values
+        .map((value, index) => ({
+            value,
+            index,
+            rank: hashFnv1a(`${seed}::${value}::${index}`),
+        }))
+        .sort((a, b) => {
+            if (a.rank !== b.rank) return a.rank - b.rank;
+            return a.index - b.index;
+        })
+        .map((entry) => entry.value);
+}
+
+function interleaveAdsForProfile({
+    profileId,
+    media,
+    mediaRoots,
+    adMedia,
+    adMediaSet,
+    adsRootNormalized,
+}) {
+    if (!adMedia.length) return media;
+
+    // Skip ad injection for the ad profile itself.
+    if (mediaRoots.includes(adsRootNormalized)) return media;
+
+    // Remove ad paths if they already exist, then inject exactly once.
+    const profileOnlyMedia = media.filter((item) => !adMediaSet.has(item));
+    const shuffledAds = deterministicShuffle(adMedia, `ads:${profileId}`);
+
+    // Enforce "ad is not first": if profile has no own media, skip ad injection.
+    if (!profileOnlyMedia.length) return media;
+
+    const firstProfileMedia = profileOnlyMedia[0];
+    const remainingPool = [...profileOnlyMedia.slice(1), ...shuffledAds];
+    const mixedRemaining = deterministicShuffle(remainingPool, `mix:${profileId}`);
+    return dedupePreserveOrder([firstProfileMedia, ...mixedRemaining]);
+}
+
+function isUnderRoot(filePath, rootPath) {
+    const normalizedFile = normalizePathValue(filePath);
+    const normalizedRoot = normalizeMediaRoot(rootPath);
+    return normalizedFile === normalizedRoot || normalizedFile.startsWith(`${normalizedRoot}/`);
+}
+
 function main() {
     const args = parseArgs(process.argv.slice(2));
     const cwd = process.cwd();
@@ -189,6 +252,10 @@ function main() {
         throw new Error(`Invalid catalog format: expected { profiles: [] } in ${inputPath}`);
     }
 
+    const adsRootNormalized = normalizeMediaRoot(args.adsRoot);
+    const adMedia = dedupePreserveOrder(expandMediaRoot(adsRootNormalized, mediaRootAbs));
+    const adMediaSet = new Set(adMedia);
+
     let rootsExpanded = 0;
     let totalRoots = 0;
     let discoveredFiles = 0;
@@ -200,7 +267,9 @@ function main() {
         const rawMedia = normalizeStringArray(profile.media);
         const rawMediaRoots = normalizeStringArray(profile.media_roots);
         const hasDeclaredRoots = rawMediaRoots.length > 0;
-        const hasLocalMediaFiles = rawMedia.some((mediaEntry) => isSupportedLocalMediaFile(mediaEntry));
+        const hasLocalMediaFiles = rawMedia.some(
+            (mediaEntry) => isSupportedLocalMediaFile(mediaEntry) && !isUnderRoot(mediaEntry, adsRootNormalized)
+        );
 
         if (args.requireMediaRoots && hasLocalMediaFiles && !hasDeclaredRoots) {
             const profileId = (profile.profile || "").toString().trim() || `index_${index}`;
@@ -208,7 +277,6 @@ function main() {
         }
 
         const collectedRoots = [];
-        const passthroughMedia = [];
 
         for (const root of rawMediaRoots) {
             if (isHttpLike(root)) {
@@ -224,18 +292,14 @@ function main() {
                 continue;
             }
             if (isSupportedLocalMediaFile(mediaEntry)) {
-                const normalizedMediaEntry = normalizePathValue(mediaEntry);
                 const derivedRoot = deriveRootFromMediaFilePath(mediaEntry);
                 if (!hasDeclaredRoots) {
+                    if (isUnderRoot(mediaEntry, adsRootNormalized)) {
+                        continue;
+                    }
                     if (derivedRoot) collectedRoots.push(derivedRoot);
-                    continue;
                 }
-                if (!derivedRoot || !declaredRootsSet.has(derivedRoot)) {
-                    passthroughMedia.push(normalizedMediaEntry);
-                }
-                continue;
             }
-            passthroughMedia.push(mediaEntry);
         }
 
         const finalMediaRoots = dedupePreserveOrder(collectedRoots);
@@ -249,7 +313,15 @@ function main() {
             expandedMedia.push(...files);
         }
 
-        const finalMedia = dedupePreserveOrder([...expandedMedia, ...passthroughMedia]);
+        // Always rebuild media from discovered files; do not carry stale entries from prior runs.
+        const finalMedia = interleaveAdsForProfile({
+            profileId: (profile.profile || "").toString().trim() || `index_${index}`,
+            media: dedupePreserveOrder(expandedMedia),
+            mediaRoots: finalMediaRoots,
+            adMedia,
+            adMediaSet,
+            adsRootNormalized,
+        });
 
         const rootsChanged = !arraysEqual(finalMediaRoots, rawMediaRoots.map((root) => normalizeMediaRoot(root)));
         const mediaChanged = !arraysEqual(finalMedia, rawMedia);
