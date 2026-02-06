@@ -1024,6 +1024,11 @@
 
         const IMAGE_PATH_REGEX = /\.(jpe?g|png|webp|gif)$/i;
         const VIDEO_PATH_REGEX = /\.(mp4|mov|m4v|webm)$/i;
+        const AD_MEDIA_PATH_REGEX = /(^|\/)media_profiles\/000\//i;
+
+        function isAdMediaPath(path) {
+            return AD_MEDIA_PATH_REGEX.test(path);
+        }
 
         function resolveMediaAssets(profile) {
             const seen = new Set();
@@ -1033,11 +1038,12 @@
             profile.media.map(src => normalizeMediaPath(src)).filter(Boolean).forEach(path => {
                 if (seen.has(path)) return;
                 seen.add(path);
+                const isAdMedia = isAdMediaPath(path);
                 if (IMAGE_PATH_REGEX.test(path)) {
-                    images.push(path);
+                    if (!isAdMedia) images.push(path);
                     entries.push({ type: "image", src: path });
                 } else if (VIDEO_PATH_REGEX.test(path)) {
-                    videos.push(path);
+                    if (!isAdMedia) videos.push(path);
                     entries.push({ type: "video", src: path });
                 }
             });

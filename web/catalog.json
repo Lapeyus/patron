@@ -36,7 +36,9 @@
       "metadata": {
         "cortesia": false,
         "edad_rango": "",
-        "labels": ["DISCRETA"],
+        "labels": [
+          "DISCRETA"
+        ],
         "nuevas_fotos_videos": true,
         "nuevo_ingreso": true,
         "sin_experiencia": false,
@@ -581,21 +583,20 @@
       },
       "media": [
         "media_profiles/139/IMG-20250715-WA0142.jpg",
-        "media_profiles/139/Screenshot_20250725_090007_WhatsApp.jpg",
+        "media_profiles/139/IMG-20250725_085958_WhatsApp.jpg",
+        "media_profiles/139/IMG-20251221-WA0067.jpg",
+        "media_profiles/139/IMG-20250725_090001_WhatsApp.jpg",
         "media_profiles/139/IMG-20250808-WA0076.jpg",
-        "media_profiles/139/Screenshot_20250725_085958_WhatsApp.jpg",
+        "media_profiles/139/IMG-20251221-WA0066.jpg",
         "media_profiles/139/IMG-20250808-WA0075.jpg",
         "media_profiles/000/Screenshot_20260202_182149_ChatGPT.jpg",
         "media_profiles/139/IMG-20250720-WA0043.jpg",
-        "media_profiles/139/Screenshot_20250725_090001_WhatsApp.jpg",
-        "media_profiles/139/IMG-20251221-WA0066.jpg",
+        "media_profiles/139/IMG-20250725_090007_WhatsApp.jpg",
         "media_profiles/139/IMG-20250720-WA0044.jpg",
         "media_profiles/139/IMG-20250720-WA0045.jpg",
-        "media_profiles/139/IMG-20251221-WA0067.jpg",
         "media_profiles/000/IMG-20260204-WA0243.jpg",
         "media_profiles/139/IMG-20251221-WA0065.jpg",
         "media_profiles/139/IMG-20250808-WA0077.jpg",
-        "media_profiles/139/Screenshot_20251130_081421_Gmail.jpg",
         "media_profiles/000/TIKAS 2.jpg"
       ],
       "media_roots": [
@@ -4055,7 +4056,7 @@
       "extraction": {
         "age": null,
         "availability": "Todos los días de 9:00 am a 8:00 pm",
-        "contact": "WhatsApp 6342-0283",
+        "contact": "WhatsApp 63420283",
         "cosmetic_surgeries": null,
         "eye_color": null,
         "hair_color": null,
@@ -4563,7 +4564,9 @@
       "metadata": {
         "cortesia": false,
         "edad_rango": "31 - 40 años",
-        "labels": [],
+        "labels": [
+          "Honorarios rebajados"
+        ],
         "nuevas_fotos_videos": true,
         "nuevo_ingreso": false,
         "sin_experiencia": false,
@@ -4901,7 +4904,7 @@
       "extraction": {
         "age": null,
         "availability": null,
-        "contact": "WhatsApp 71 32 88 34",
+        "contact": "WhatsApp 71328834",
         "cosmetic_surgeries": null,
         "eye_color": null,
         "hair_color": null,
@@ -4939,7 +4942,7 @@
         "nuevas_fotos_videos": false,
         "nuevo_ingreso": false,
         "sin_experiencia": false,
-        "ubicacion": ""
+        "ubicacion": "SAN JOSE"
       },
       "profile": "Luna"
     },
@@ -5110,10 +5113,10 @@
         "location": "San José",
         "name": "Yansy",
         "other_attributes": {
-          "price_transport": "Incluye transporte"
+          "price_transport": "Pide transporte"
         },
         "prices": {
-          "one_hour": "100 USD",
+          "one_hour": "$100 USD",
           "overnight": null,
           "three_hours": null,
           "two_hours": null
@@ -5165,7 +5168,9 @@
       "metadata": {
         "cortesia": false,
         "edad_rango": "",
-        "labels": [],
+        "labels": [
+          "Honorarios rebajados"
+        ],
         "nuevas_fotos_videos": false,
         "nuevo_ingreso": true,
         "sin_experiencia": false,
@@ -5317,25 +5322,25 @@
       "discreet_list": false,
       "enabled": true,
       "extraction": {
-        "age": null,
-        "availability": null,
+        "age": 22,
+        "availability": "A cualquier hora",
         "contact": null,
-        "cosmetic_surgeries": null,
-        "eye_color": null,
-        "hair_color": null,
-        "height": null,
-        "implants": null,
+        "cosmetic_surgeries": false,
+        "eye_color": "Marrón",
+        "hair_color": "Castaño",
+        "height": 150,
+        "implants": false,
         "location": null,
         "name": null,
         "other_attributes": {},
         "prices": {
-          "one_hour": null,
-          "overnight": null,
+          "one_hour": "₡100,000 CRC",
+          "overnight": "₡160,000 CRC",
           "three_hours": null,
           "two_hours": null
         },
-        "uber": null,
-        "weight": null
+        "uber": true,
+        "weight": 52
       },
       "media": [
         "media_profiles/101/IMG-20260204-WA0000.jpg",
@@ -5359,7 +5364,7 @@
         "nuevas_fotos_videos": true,
         "nuevo_ingreso": true,
         "sin_experiencia": false,
-        "ubicacion": ""
+        "ubicacion": "Desamparados, San José, San Juan de Dios"
       },
       "profile": "101"
     },
@@ -5367,25 +5372,25 @@
       "discreet_list": false,
       "enabled": true,
       "extraction": {
-        "age": null,
-        "availability": null,
+        "age": 23,
+        "availability": "Consultar disponibilidad",
         "contact": null,
-        "cosmetic_surgeries": null,
-        "eye_color": null,
-        "hair_color": null,
-        "height": null,
-        "implants": null,
+        "cosmetic_surgeries": false,
+        "eye_color": "Café",
+        "hair_color": "Negro",
+        "height": 156,
+        "implants": false,
         "location": null,
         "name": null,
         "other_attributes": {},
         "prices": {
-          "one_hour": null,
-          "overnight": null,
+          "one_hour": "$230 USD",
+          "overnight": "$350 USD",
           "three_hours": null,
           "two_hours": null
         },
-        "uber": null,
-        "weight": null
+        "uber": true,
+        "weight": 45
       },
       "media": [
         "media_profiles/586/IMG-20260205-WA0192.jpg",
@@ -5407,7 +5412,7 @@
         "nuevas_fotos_videos": true,
         "nuevo_ingreso": true,
         "sin_experiencia": false,
-        "ubicacion": ""
+        "ubicacion": "ALAJUELA"
       },
       "profile": "586"
     },
@@ -5417,7 +5422,7 @@
       "extraction": {
         "age": null,
         "availability": null,
-        "contact": null,
+        "contact": "+50670440017",
         "cosmetic_surgeries": null,
         "eye_color": null,
         "hair_color": null,
@@ -5447,13 +5452,13 @@
         "media_profiles/Fressy"
       ],
       "metadata": {
-        "cortesia": false,
+        "cortesia": true,
         "edad_rango": "",
         "labels": [],
         "nuevas_fotos_videos": true,
         "nuevo_ingreso": true,
         "sin_experiencia": false,
-        "ubicacion": ""
+        "ubicacion": "SAN JOSE"
       },
       "profile": "Fressy"
     },
@@ -5463,7 +5468,7 @@
       "extraction": {
         "age": null,
         "availability": null,
-        "contact": null,
+        "contact": "+50670440017",
         "cosmetic_surgeries": null,
         "eye_color": null,
         "hair_color": null,
@@ -5496,7 +5501,7 @@
         "media_profiles/kim"
       ],
       "metadata": {
-        "cortesia": false,
+        "cortesia": true,
         "edad_rango": "",
         "labels": [],
         "nuevas_fotos_videos": true,
@@ -5510,25 +5515,25 @@
       "discreet_list": false,
       "enabled": true,
       "extraction": {
-        "age": null,
-        "availability": null,
+        "age": 23,
+        "availability": "A convenir para ambos",
         "contact": null,
-        "cosmetic_surgeries": null,
-        "eye_color": null,
-        "hair_color": null,
-        "height": null,
-        "implants": null,
+        "cosmetic_surgeries": "BBL",
+        "eye_color": "Café",
+        "hair_color": "Café",
+        "height": 160,
+        "implants": true,
         "location": null,
         "name": null,
         "other_attributes": {},
         "prices": {
-          "one_hour": null,
-          "overnight": null,
+          "one_hour": "$350 USD",
+          "overnight": "$500 USD",
           "three_hours": null,
           "two_hours": null
         },
-        "uber": null,
-        "weight": null
+        "uber": "Depende de la ubicación",
+        "weight": 55
       },
       "media": [
         "media_profiles/MAR/IMG-20260205-WA0034.jpg",
@@ -5552,7 +5557,7 @@
         "nuevas_fotos_videos": true,
         "nuevo_ingreso": true,
         "sin_experiencia": false,
-        "ubicacion": ""
+        "ubicacion": "Santa Ana"
       },
       "profile": "MAR"
     }
