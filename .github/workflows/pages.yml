@@ -27,6 +27,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Expand media folders in catalog
+        run: node web/scripts/expand-catalog-media.js --input web/catalog.json --output web/catalog.json --media-root web --require-media-roots
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -35,4 +38,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-

@@ -60,6 +60,54 @@ python -m http.server 8000
 
 Then open `http://localhost:8000/`.
 
+## Media folder references (optional)
+
+You can keep folder sources and expanded media paths separated:
+
+```json
+{
+  "media_roots": ["media_profiles/Yansy"],
+  "media": [
+    "media_profiles/Yansy/IMG-20260202-WA0123.jpg",
+    "media_profiles/Yansy/IMG-20260202-WA0124.jpg"
+  ]
+}
+```
+
+The script uses `media_roots` to build/refresh `media`:
+
+- GitHub Actions deploy workflow (automatic)
+- Local script (manual), when needed:
+
+From `/Users/jvillarreal/Documents/Projects/patron/newapp`:
+```bash
+node ../web/scripts/expand-catalog-media.js --input ../web/catalog.json --output ../web/catalog.json --media-root ../web
+```
+
+From `/Users/jvillarreal/Documents/Projects/patron`:
+```bash
+node web/scripts/expand-catalog-media.js --input web/catalog.json --output web/catalog.json --media-root web
+```
+
+From `/Users/jvillarreal/Documents/Projects/patron/web`:
+```bash
+node scripts/expand-catalog-media.js --input catalog.json --output catalog.json --media-root .
+```
+
+Strict validation (fails when a profile has local media files but empty/missing `media_roots`):
+```bash
+node scripts/expand-catalog-media.js --input catalog.json --output catalog.json --media-root . --require-media-roots
+```
+
+Notes:
+
+- Supported media extensions: `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.mp4`, `.mov`, `.m4v`, `.webm`
+- Folder references support both forms: `media_profiles/Yansy` and `media_profiles/Yansy/`
+- Folder expansion is non-recursive (files directly in that folder only)
+- Missing folder references fail fast in CI to catch typos
+- If `media_roots` is missing, the script can derive roots from existing `media` file paths for backward compatibility
+- CI deploy uses strict mode (`--require-media-roots`)
+
 ## Security note
 
 This is a lightweight **UI gate** (client-side). It is not a replacement for real server-side authentication if you publish this catalog to the internet.

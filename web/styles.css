@@ -976,10 +976,11 @@ main {
 }
 
 .cta-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #25D366;
     color: white;
-    text-align: center;
     padding: 14px;
     border-radius: 8px;
     text-decoration: none;
@@ -988,12 +989,33 @@ main {
     font-size: 15px;
 }
 
+.cta-btn-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta-icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+}
+
 .cta-btn-email {
     background: #2f3545;
 }
 
 .cta-btn-email:hover {
     background: #242938;
+}
+
+.contact-call-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #555;
+    text-decoration: underline;
 }
 
 /* Password gate modal (blocks catalog load until authenticated) */

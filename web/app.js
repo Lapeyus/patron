@@ -13,6 +13,7 @@
         const LANG_STORAGE_KEY = "patron_lang_v1";
         const ASK_CONTACT_WHATSAPP_E164 = "50684098222";
         const DISCREET_CONTACT_EMAIL = "patron@patroncr.net";
+        const DISCREET_CONTACT_EMAIL_CC = "patroncr75@gmail.com";
         let currentLang = "es";
         let authLevel = null;  
         const UBICACION_OPTIONS = ["ALAJUELA", "CARTAGO", "GUAPILES", "HEREDIA", "SAN JOSE"];
@@ -99,13 +100,13 @@
                     social: "Redes",
                     notes: "Notas",
                     whatsappCta: "Abrir WhatsApp",
-                    askForContactCta: "Solicitar contacto",
-                    discreetEmailCta: "Contacto discreto por email",
+                    askForContactCta: "Solicitar contacto por WhatsApp",
+                    discreetEmailCta: "Solicitar contacto por Email",
                     whatsappMessage: "Hola, vi tu perfil en {app}. ¿Podemos coordinar?",
                     whatsappMessageWithName: "Hola {name}, vi tu perfil en {app}. ¿Podemos coordinar?",
                     askForContactMessage: "Hola Patron, quiero contactar a {profile}.\n- Me llamo # \n-el celular desde donde le escribire es: \n-Fecha aproximada de la cita es: ",
-                    discreetEmailSubject: "Solicitud de contacto discreto - {profile}",
-                    discreetEmailMessage: "Hola Patron, quiero solicitar contacto discreto de {profile}.\n- Me llamo:\n- Celular:\n- Fecha aproximada de la cita:",
+                    discreetEmailSubject: "Solicitud de contacto - {profile}",
+                    discreetEmailMessage: "Hola Patron, quiero solicitar contacto de {profile}.\n- Me llamo:\n- Celular:\n- Fecha aproximada de la cita:",
                     call: "Llamar {phone}",
                 },
                 extraction_labels: {
@@ -858,8 +859,28 @@
             const profile = (profileLabel || "").toString().trim() || t("common.unknown");
             const subject = t("contact.discreetEmailSubject", { profile });
             const body = t("contact.discreetEmailMessage", { profile });
-            const query = `subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            const query = `cc=${encodeURIComponent(DISCREET_CONTACT_EMAIL_CC)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             return `mailto:${DISCREET_CONTACT_EMAIL}?${query}`;
+        }
+
+        function whatsappIconSvg() {
+            return `<svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.52 3.48A11.83 11.83 0 0 0 12.02 0C5.4 0 .03 5.37.03 11.99c0 2.11.55 4.17 1.6 5.99L0 24l6.22-1.62a11.97 11.97 0 0 0 5.79 1.48h.01c6.62 0 11.99-5.37 11.99-11.99a11.9 11.9 0 0 0-3.49-8.39Zm-8.5 18.35h-.01a9.97 9.97 0 0 1-5.08-1.39l-.36-.21-3.69.96.99-3.6-.23-.37a9.89 9.89 0 0 1-1.52-5.23C2.12 6.48 6.5 2.1 11.99 2.1c2.64 0 5.12 1.03 6.99 2.9a9.8 9.8 0 0 1 2.9 6.99c0 5.49-4.39 9.84-9.86 9.84Zm5.4-7.38c-.29-.15-1.72-.85-1.98-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.94 1.14-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.35-1.43a8.8 8.8 0 0 1-1.64-2.05c-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.58-.9-2.17-.24-.58-.49-.5-.66-.5h-.56c-.2 0-.51.08-.78.37-.27.29-1.02.99-1.02 2.42s1.05 2.81 1.2 3c.15.2 2.05 3.13 4.97 4.39.69.3 1.23.49 1.65.62.69.22 1.31.19 1.81.12.55-.08 1.72-.7 1.97-1.38.24-.68.24-1.26.17-1.38-.08-.12-.27-.2-.56-.34Z"/></svg>`;
+        }
+
+        function emailIconSvg() {
+            return `<svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><path d="m22 7-10 7L2 7"></path></svg>`;
+        }
+
+        function phoneIconSvg() {
+            return `<svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.65 2.61a2 2 0 0 1-.45 2.11L8.03 9.73a16 16 0 0 0 6.24 6.24l1.29-1.28a2 2 0 0 1 2.11-.45c.84.31 1.71.53 2.61.65A2 2 0 0 1 22 16.92z"></path></svg>`;
+        }
+
+        function renderContactCtaContent(type, label) {
+            const safeLabel = escapeHtml((label || "").toString());
+            let icon = whatsappIconSvg();
+            if (type === "email") icon = emailIconSvg();
+            if (type === "phone") icon = phoneIconSvg();
+            return `<span class="cta-btn-content">${icon}<span>${safeLabel}</span></span>`;
         }
 
         function buildWhatsAppLink(e164Digits, message) {
@@ -1925,15 +1946,15 @@
                 html += `<div class="lb-section"><h3>${escapeHtml(t("sections.contact"))}</h3>${contactRows.join("")}</div>`;
             }
             if (waLink) {
-                html += `<a href="${waLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${escapeHtml(t("contact.whatsappCta"))}</a>`;
+                html += `<a href="${waLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${renderContactCtaContent("whatsapp", t("contact.whatsappCta"))}</a>`;
             } else if (askForContactLink) {
-                html += `<a href="${askForContactLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${escapeHtml(t("contact.askForContactCta"))}</a>`;
+                html += `<a href="${askForContactLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">${renderContactCtaContent("whatsapp", t("contact.askForContactCta"))}</a>`;
             }
             if (discreetEmailLink) {
-                html += `<a href="${discreetEmailLink}" class="cta-btn cta-btn-email">${escapeHtml(t("contact.discreetEmailCta"))}</a>`;
+                html += `<a href="${discreetEmailLink}" class="cta-btn cta-btn-email">${renderContactCtaContent("email", t("contact.discreetEmailCta"))}</a>`;
             }
             if (d.contact?.phone) {
-                html += `<a href="tel:${d.contact.phone}" style="display:block; text-align:center; margin-top:10px; color:#555; text-decoration:underline;">${escapeHtml(t("contact.call", { phone: d.contact.phone }))}</a>`;
+                html += `<a href="tel:${d.contact.phone}" class="contact-call-link">${renderContactCtaContent("phone", t("contact.call", { phone: d.contact.phone }))}</a>`;
             }
 
             document.getElementById('lb-details-content').innerHTML = html;
